@@ -1,3 +1,5 @@
+![Harmony app logo](harmony_logo.png)
+
 # Harmaniacz
 
 **Team name:** Harmaniacz
