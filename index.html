@@ -2,17 +2,80 @@
 
     <head>
 
+        <title>Harmony</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <style>
 
             body {
-                font-family: 'Courier New', Courier, monospace;
+                font-family: Arial, Helvetica, sans-serif;
                 text-align: center;
+                padding:0px;
+                margin:0px;
             }
 
             h1 {
                 margin: auto;
                 width:fit-content;
                 border-bottom: 1px solid black;
+            }
+
+            .navigation_container {
+                width: 100%;
+                background-color: black;
+                color:white;
+                height:40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .heading_container {
+                background-color: #cfcfcf;
+                padding: 100px 0px 100px 0px;
+                text-align: center;
+                
+            }
+
+            .heading_container h1 h3 p {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .check_container {
+                border: solid 2px #cfcfcf;
+                width: 500px;
+                margin: auto;
+                padding:25px;
+                text-align: left;
+            }
+
+            button {
+                background-color: black;
+                border: none;
+                color: white;
+                padding: 10px 25px 10px 25px;
+            }
+
+            button:hover {
+                cursor: pointer;
+                background-color: grey;
+            }
+
+            @media only screen and (max-width: 620px) {
+                .check_container {
+                    width: 100%;
+                    padding:0;
+                }
+            }
+
+            .closing_container {
+                margin:auto;
+                padding: 25px 0px 50px 0px;
+            }
+
+            .roadmap_container {
+                margin-top:25px;
             }
     
         </style>
@@ -21,10 +84,56 @@
 
     <body>
 
-    <!--Test commit-->
-    <h1>Website in development</h1>
-    <h3>Thank you for your patience!</h3>
-    <p>-Harmaniacz</p>
+        <div class="main_container">
+
+            <div class="navigation_container">
+
+                <p>Harmony</p>
+
+            </div>
+
+            <div class="heading_container">
+
+                <h1>Website in development</h1>
+                <h3>Thank you for your patience!</h3>
+                <p>-Harmaniacz</p>
+                <button onclick="window.open('https://github.com/Harmaniacz','_blank')">Check out our GitHub</button>
+
+            </div>
+
+            <div class="roadmap_container">
+
+                <h2>Check out our progress below*</h2>
+                <p>Stay informed with our periodic updates! <br><i>*This will not be constantedly updated and details will intentionally be left out</i>
+                </p>
+
+                <div class="check_container">
+
+                    <b>September 2024:</b>
+                    <ul>
+                        <li>Formed a team</li>
+                        <li>Determined a product to develop and market</li>
+                        <li>Set up GIT on our devices</li>
+                        <li>Placeholder website prepared (this is not our actual website)!</li>
+                    </ul>
+
+                    <b>October 2024:</b>
+                    <ul>
+                        <li>Drafted logos and webpages</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="closing_container">
+
+                <h2>Stay up to date on our GitHub</h2>
+                <button onclick="window.open('https://github.com/Harmaniacz','_blank')">Check out our GitHub</button>
+
+            </div>
+            
+        </div>
 
     </body>
 
