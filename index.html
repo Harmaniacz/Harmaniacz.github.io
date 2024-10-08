@@ -27,10 +27,28 @@
                 width: 100%;
                 background-color: black;
                 color:white;
-                height:40px;
+                height:50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+            }
+
+            .left_nav {
+                width:50%;
+                text-align: left;
+            }
+
+            .right_nav {
+                align-items:center;
+                justify-content: right;
+                display:flex;
+                width:50%; 
+                text-align: right;
+            }
+
+            .nav_container {
+                width: 800px;
+                display:flex;   
             }
 
             .heading_container {
@@ -52,6 +70,14 @@
                 text-align: left;
             }
 
+            .border_container {
+                width:500px;
+                margin:auto;
+                padding:25px;
+                border: solid 2px #cfcfcf;
+                text-align:left;
+            }
+
             button {
                 background-color: black;
                 border: none;
@@ -69,6 +95,10 @@
                     width: 100%;
                     padding:0;
                 }
+                .border_container {
+                    width:100%;
+                    padding:0;
+                }
             }
 
             .closing_container {
@@ -79,7 +109,17 @@
             .roadmap_container {
                 margin-top:25px;
             }
-    
+
+            .navigation_container button {
+                background-color: white;
+                color: black;
+            }
+
+            .navigation_container button:hover {
+                background-color: grey;
+                color: black;
+            }
+
         </style>
 
     </head>
@@ -90,7 +130,17 @@
 
             <div class="navigation_container">
 
-                <p>Harmony</p>
+                <div class="nav_container">
+
+                    <div class="left_nav">
+                        <p>Harmony</p>
+                    </div>
+
+                    <div class="right_nav">
+                        <button onclick="window.open('https://github.com/Harmaniacz','_blank')">GitHub</button>
+                    </div>
+
+                </div>
 
             </div>
 
@@ -101,6 +151,23 @@
                 <p>-Harmaniacz</p>
                 <button onclick="window.open('https://github.com/Harmaniacz','_blank')">Check out our GitHub</button>
 
+            </div>
+
+            <div class="team_container">
+
+                <h2>Meet the team</h2>
+                <p>We're a team of 5 Software Engineering students from uOttawa.</p>
+                
+                <div class="border_container">
+
+                    <p>AidanLam06</p>
+                    <p>najibelmi</p>
+                    <p>Riki</p>
+                    <p>SamuelLeoneGanado</p>
+                    <p>yassmine</p>
+
+
+                </div>
 
             </div>
 
@@ -116,7 +183,7 @@
                     <ul>
                         <li>Formed a team</li>
                         <li>Determined a product to develop and market</li>
-                        <li>Set up GIT on our devices</li>
+                        <li>Set up GIT and GitHub on our devices</li>
                         <li>Placeholder website prepared (this is not our actual website)!</li>
                     </ul>
 
