@@ -24,6 +24,7 @@ h1 {
 .left_nav {
     width:50%;
     text-align: left;
+    align-content: center;
 }
 
 .right_nav {
@@ -51,7 +52,7 @@ h1 {
 }
 
 .check_container {
-    border: solid 2px #cfcfcf;
+    outline: solid 2px #cfcfcf;
     width: 500px;
     margin: auto;
     padding:25px;
@@ -60,9 +61,9 @@ h1 {
 
 .border_container {
     width:500px;
-    margin:auto;
+    margin:auto;    
     padding:25px;
-    border: solid 2px #cfcfcf;
+    outline: solid 2px #cfcfcf;
     text-align:left;
 }
 
@@ -79,12 +80,8 @@ button:hover {
 }
 
 @media only screen and (max-width: 620px) {
-    .check_container {
+    .check_container, .border_container, .closing_container {
         width: 100%;
-        padding:0;
-    }
-    .border_container {
-        width:100%;
         padding:0;
     }
 }
@@ -92,6 +89,9 @@ button:hover {
 .closing_container {
     margin:auto;
     padding: 25px 0px 50px 0px;
+    margin: 25px 0px 0px 0px;
+    background-color:black;
+    color: white
 }
 
 .roadmap_container {
@@ -107,3 +107,14 @@ button:hover {
     background-color: grey;
     color: black;
 }
+
+.closing_container button {
+    background-color: white;
+    color: black;
+}
+
+.closing_container button:hover {
+    background-color: grey;
+    color: black;
+}
+
