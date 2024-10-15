@@ -49,6 +49,14 @@ h1 {
 .heading_container h1 h3 p {
     display: inline-block;
     vertical-align: middle;
+    animation-timing-function: ease-in;
+    animation: slide_animation 3s;    
+}
+
+.heading_container button {
+    animation-name: rainbow_animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .check_container {
@@ -86,6 +94,53 @@ button:hover {
     }
 }
 
+@keyframes rainbow_animation {
+    0% {
+        background-color: red;
+    }
+    10% {
+        background-color: orange;
+    }
+    20% {
+        background-color: yellow;
+    }
+    30% {
+        background-color: green;
+    }
+    40% {
+        background-color: cyan;
+    }
+    50% {
+        background-color: blue;
+    }
+    60% {
+        background-color: azure;
+    }
+    70% {
+        background-color: violet;
+    }
+    80% {
+        background-color: purple;
+    }
+    90% {
+        background-color: magenta;
+    }
+    100% {
+        background: red;
+    }
+}
+
+@keyframes button_fade_animation {
+    0% {
+        background-color: white;
+        color:black;
+    }
+    100% {
+        background-color: grey;
+        color: black;
+    }
+}
+
 .closing_container {
     margin:auto;
     padding: 25px 0px 50px 0px;
@@ -106,15 +161,28 @@ button:hover {
 .navigation_container button:hover {
     background-color: grey;
     color: black;
+    animation-name: button_fade_animation;
+    animation-duration: 0.5s;
 }
 
 .closing_container button {
     background-color: white;
     color: black;
+    align-content: center;
 }
 
 .closing_container button:hover {
     background-color: grey;
     color: black;
+    animation-name: button_fade_animation;
+    animation-duration: 0.5s;
 }
 
+a {
+    color: #585858;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+}
