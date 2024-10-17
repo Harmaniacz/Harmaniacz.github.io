@@ -4,13 +4,14 @@
   </head>  
   <style>
     body {
-        font-family:Arial
+        font-family:Arial;
+        background-color: rgba(147, 142, 142, 0.776);
     }
     .navbar {
         background-color:black;
         padding:10px;
         color:white;
-        display:flex
+        display:flex;
     }
     .boutonNavbar {
         padding:10px;
@@ -18,11 +19,21 @@
         color: black;
         text-align: right;
     }
-    .boutonNavbar:hover {background-color:gray}
+    .boutonNavbar:hover {background-color:gray;}
     .nomNavbar {
         margin-right: auto;
-        padding:10px
+        padding:10px;
     }
+    .join {
+        display:flex;
+        justify-content: center;
+         align-items: center;
+    }
+    .joinButton {
+        background-color: white;
+        padding:10px;
+    }
+    .joinButton:hover {background-color:gray;}
   </style>
   <body>
     <div class="navbar">
@@ -36,21 +47,31 @@
     <div class="FeaturesGeneral">
         <h2>Meet new friends</h2>
         <img src="Features_pictures/meet_new_friends.png">
+
         <h2>Music + People = Harmony</h2>
         <img src="Features_pictures/music_people_harmony.png">
+
         <h2>How it works</h2>
         <img src="Features_pictures/how_it_works.png">
+
         <h2>Listen to music around you and say hi!</h2>
         <img src="Features_pictures/music_around_you.png">
+
         <h2>Make new friends</h2>
         <img src="Features_pictures/make_new_friends.png">
+
         <h2>Stay up to date with friends and more</h2>
         <img src="Features_pictures/up_to_date.png">
+
         <h2>Create a profile and customize your account</h2>
         <img src="Features_pictures/profile_and_customize.png">
         <h3>and so much more!</h3>
+
         <h2>Thanks for listening. Harmonize w/ others now</h2>
-        <button>Join Harmony</button>
+        
+        <div class="join">
+         <button class="joinButton">Join Harmony</button>
+        </div>
     </div>
   </body>
 </html>
