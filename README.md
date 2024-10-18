@@ -1,6 +1,6 @@
 <div align="center">
 <a href="https://harmaniacz.github.io" target="_blank" align="center">
-    <img src="website_images/banner.png" alt="Harmony GitHub README banner" width="100%" align="center"></img>
+    <img src="/assets/banner.png" alt="Harmony GitHub README banner" width="100%" align="center"></img>
 </a>
 </div>
 
