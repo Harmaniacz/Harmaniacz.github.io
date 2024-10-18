@@ -1,6 +1,6 @@
 <div align="center">
 <a href="https://harmaniacz.github.io" target="_blank" align="center">
-    <img src="website_images/heading_2.png" alt="Harmony GitHub README banner" height="150" align="center"></img>
+    <img src="website_images/banner.png" alt="Harmony GitHub README banner" width="100%" align="center"></img>
 </a>
 </div>
 
@@ -8,7 +8,9 @@
 
 <h1 align="center">Harmaniacz</h1>
 
-<h1 align="center">
+<p align="center">We are a team of 5 software engineering students from uOttawa developing a music social app to connect the world.<p>
+
+<h1 align="center"S>
 <a href="https://github.com/Harmaniacz/Harmaniacz.github.io/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=Harmaniacz/Harmaniacz.github.io" />
 </a>
@@ -27,6 +29,3 @@
 - [Features](https://harmaniacz.github.io/features)
 - [Pricing](https://harmaniacz.github.io/pricing)
 - [Contact](https://harmaniacz.github.io/contact)
-
-## Contributors
-
