@@ -1,9 +1,17 @@
-<h1 align="center">
-<a href="https://harmaniacz.github.io" target="_blank">
-    <img src="website_images/heading.png" alt="Harmony GitHub README banner" height="150" align="center"></img>
+<div align="center">
+<a href="https://harmaniacz.github.io" target="_blank" align="center">
+    <img src="website_images/heading_2.png" alt="Harmony GitHub README banner" height="150" align="center"></img>
 </a>
+</div>
 
-Harmaniacz
+<br>
+
+<h1 align="center">Harmaniacz</h1>
+
+<h1 align="center">
+<a href="https://github.com/Harmaniacz/Harmaniacz.github.io/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=Harmaniacz/Harmaniacz.github.io" />
+</a>
 </h1>
 
 **Team name:** Harmaniacz
@@ -21,6 +29,4 @@ Harmaniacz
 - [Contact](https://harmaniacz.github.io/contact)
 
 ## Contributors
-<a href="https://github.com/Harmaniacz/Harmaniacz.github.io/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Harmaniacz/Harmaniacz.github.io" />
-</a>
+
