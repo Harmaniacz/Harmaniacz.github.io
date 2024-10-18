@@ -24,7 +24,6 @@
 ## Website links
 
 - [Home](https://harmaniacz.github.io/)
-- [About](https://harmaniacz.github.io/about)
 - [Features](https://harmaniacz.github.io/features)
 - [Pricing](https://harmaniacz.github.io/pricing)
 - [Contact](https://harmaniacz.github.io/contact)
