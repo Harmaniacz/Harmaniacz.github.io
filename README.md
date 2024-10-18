@@ -6,6 +6,13 @@
 
 <br>
 
+<div>
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors-anon/Harmaniacz/Harmaniacz.github.io">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/Harmaniacz/Harmaniacz.github.io">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/Harmaniacz/Harmaniacz.github.io">
+<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Harmaniacz/Harmaniacz.github.io?logo=html5">
+</div>
+<br>
 
 # Harmony
 
