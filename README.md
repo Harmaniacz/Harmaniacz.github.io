@@ -12,7 +12,6 @@
 <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/Harmaniacz/Harmaniacz.github.io">
 <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/Harmaniacz/Harmaniacz.github.io?logo=html5">
 </div>
-<br>
 
 # Harmony
 
