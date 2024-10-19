@@ -23,7 +23,7 @@
             }
 
             .main_container {
-                width: 800px;
+                width: 1000px;
                 margin: auto;
             }
 
@@ -33,7 +33,7 @@
             }
 
             .nav_container {
-                width:800px;
+                width:1000px;
                 margin:auto;
                 display: flex;
                 height:70px;
@@ -55,7 +55,6 @@
                 background-color: var(--secondary_color);
                 width:100%;
                 padding: 50px 0px 50px 0px;
-                text-align: center;
             }
 
             .nav_button {
@@ -90,17 +89,18 @@
 
             .plan_container {
                 width:32%;
-                background-color: whitesmoke;
+                background-color: white;
                 border-radius: 4px;
                 overflow: hidden;
             }
 
             .plan_content_container {
-                padding: 10px;
+                padding: 30px;
             }
 
             .heading_container {
                 text-align: center;
+                margin-bottom: 25px;
             }
 
             .choose_button {
@@ -120,13 +120,14 @@
             }
 
             .plan_heading_container {
-                background-color: var(--secondary_color);
+                background-color: black;
                 width:100%;
-                padding:5px 0px 5px 20px;
+                padding:10px 0px 10px 30px;
+                color:white;
             }
 
             #secondary_choose_button {
-                background-color: whitesmoke;
+                background-color: white;
                 border: 1px solid black;
                 color:black;
             }
@@ -141,6 +142,31 @@
 
             a {
                 text-decoration: none;
+            }
+
+            .switch_container {
+                background-color: whitesmoke;
+                padding: 15px 5px 15px 5px;
+                border-radius: 4px;
+                width: fit-content;
+                margin: auto;
+            }
+
+            .switch_button {
+                padding: 10px 20px 10px 20px;
+                border-radius: 4px;
+            }
+
+            .switch_button:hover {
+                cursor: pointer;
+            }
+
+            #enabled_button {
+                background-color: white;
+            }
+
+            #enabled_button:hover {
+                background-color: var(--secondary_color);
             }
 
         </style>
@@ -175,81 +201,97 @@
 
         <div class="hero_container">
 
-            <h1>Pricing & Plans</h1>
+            <h1 style="text-align: center;">Pricing & Plans</h1>
 
-        </div>
+            <div class="main_container">
 
-        <div class="main_container">
-
-            <div class="heading_container">
-                <h2>There's something for everyone</h2>
-
-            </div>
-
-
-            <div class="pricing_container">
-
-                <div class="plan_container">
-                    <div class="plan_heading_container">
-                        <h3>Free</h3>
-                        <p><span style="font-size: 30px; font-weight: bold;">$0</span>/month</p>
+                <div class="heading_container">
+    
+                    <h2>There's something for everyone</h2>
+    
+                    <div class="switch_container">
+    
+                        <a class="switch_button" id="enabled_button">Monthly</a>
+                        <a class="switch_button" id="disabled_button">Yearly</a>
+    
                     </div>
-                    <div class="plan_content_container">
-                        <b>Fundamental features</b>
-                        <ul>
-                            <li>Benefit</li>
-                            <li>Benefit</li>
-                            <li>Benefit</li>
-                            <li>Benefit</li>
-                            <li>Benefit</li>
-                            <li>Benefit</li>
-                        </ul>
-                        <a class="choose_button" id="secondary_choose_button">Choose Plan</a>
-                    </div>
+    
+                    <p>Save 20% with yearly</p>
+    
                 </div>
-
-                <div class="plan_container" id="annual_container">
-                    <div class="plan_heading_container">
-                        <h3>Gold <span style="font-size: small">(Best deal)</span></h3>
-                        <p><span style="font-size: 30px; font-weight: bold;">$3</span>/month</p>
+    
+    
+                <div class="pricing_container">
+    
+                    <div class="plan_container">
+                        <div class="plan_heading_container">
+                            <h3>Free</h3>
+                            <p><span style="font-size: 30px; font-weight: bold;">$0</span>/month</p>
+                        </div>
+                        <div class="plan_content_container">
+                            <b>Free features:</b>
+                            <ul>
+                                <li>Benefit</li>
+                                <li>Benefit</li>
+                                <li>Benefit</li>
+                                <li>Benefit</li>
+                                <li>Benefit</li>
+                                <li>Benefit</li>
+                            </ul>
+                            <a class="choose_button" id="secondary_choose_button">Choose Plan</a>
+                        </div>
                     </div>
-                    <div class="plan_content_container">
-                        <b>Enjoy everything in Free +</b>
-                        <ul>
-                            <li>Benefit</li>
-                            <li>Benefit</li>
-                            <li>Benefit</li>
-                            <li>Benefit</li>
-                            <li>Benefit</li>
-                            <li>Benefit</li>
-                        </ul>
-                        <a class="choose_button">Choose Plan</a>
+    
+                    <div class="plan_container" id="annual_container">
+                        <div class="plan_heading_container">
+                            <h3>Gold <span style="font-size: small">(Best deal)</span></h3>
+                            <p><span style="font-size: 30px; font-weight: bold;">$3</span>/month</p>
+                        </div>
+                        <div class="plan_content_container">
+                            <b>Enjoy everything in Free, plus:</b>
+                            <ul>
+                                <li>Benefit</li>
+                                <li>Benefit</li>
+                                <li>Benefit</li>
+                                <li>Benefit</li>
+                                <li>Benefit</li>
+                                <li>Benefit</li>
+                            </ul>
+                            <a class="choose_button">Choose Plan</a>
+                        </div>
                     </div>
+                    
+                    <div class="plan_container">
+                        <div class="plan_heading_container">
+                            <h3>Executive</h3>
+                            <p><span style="font-size: 30px; font-weight: bold;">$10</span>/month</p>
+                        </div>
+                        <div class="plan_content_container">
+                            <b>Get everything in Gold, plus:</b>
+                            <ul>
+                                <li>Benefit</li>
+                                <li>Benefit</li>
+                                <li>Benefit</li>
+                                <li>Benefit</li>
+                                <li>Benefit</li>
+                                <li>Benefit</li>
+                            </ul>
+                            <a class="choose_button" id="secondary_choose_button">Choose Plan</a>
+                        </div>
+                    </div>
+    
                 </div>
                 
-                <div class="plan_container">
-                    <div class="plan_heading_container">
-                        <h3>Executive</h3>
-                        <p><span style="font-size: 30px; font-weight: bold;">$10</span>/month</p>
-                    </div>
-                    <div class="plan_content_container">
-                        <b>Get everything in Gold +</b>
-                        <ul>
-                            <li>Benefit</li>
-                            <li>Benefit</li>
-                            <li>Benefit</li>
-                            <li>Benefit</li>
-                            <li>Benefit</li>
-                            <li>Benefit</li>
-                        </ul>
-                        <a class="choose_button" id="secondary_choose_button">Choose Plan</a>
-                    </div>
-                </div>
-
             </div>
-            
-         
+
         </div>
+
+        <div class="content_container">
+
+
+        </div>
+
+        
 
     </body>
 
