@@ -3,7 +3,10 @@
 
     <head>
 
-        <title>Pricing | Harmony</title>
+        <title>Pricing & Plans | Harmony</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/harmony_favicon.png" type="image/icon type">
 
         <style>
 
@@ -21,6 +24,7 @@
 
             .main_container {
                 width: 800px;
+                margin: auto;
             }
 
             .navigation_container {
@@ -38,6 +42,7 @@
             .nav_left {
                 width:30%;
                 align-content: center;
+                font-size:larger;
             }
 
             .nav_right {
@@ -61,19 +66,75 @@
             }
 
             .nav_button:hover {
-                background-color: var(--tertiary_color);
+                border-bottom: 1px solid white;
                 cursor: pointer;
                 position:relative;
             }
 
             #download_button {
-                background-color: white;
-                color:black;
+                border:1px solid white;
+                border-radius: 4px;
+                color:white;
             }
 
             #download_button:hover {
                 background-color: var(--tertiary_color);
                 cursor: pointer;
+            }
+
+            .pricing_container {
+                width:100%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .plan_container {
+                width:30%;
+                background-color: whitesmoke;
+                border-radius: 4px;
+                overflow: hidden;
+            }
+
+            .plan_content_container {
+                padding: 10px;
+            }
+
+            .heading_container {
+                text-align: center;
+            }
+
+            .choose_button {
+                width:100%;
+                background-color: black;
+                color:white;
+                padding:10px 0px 10px 0px;
+                border-radius: 4px;
+                border: none;
+            }
+
+            .choose_button:hover {
+                cursor: pointer;
+                background-color: var(--tertiary_color);
+            }
+
+            .plan_heading_container {
+                background-color: var(--secondary_color);
+                width:100%;
+                padding:5px 0px 5px 20px;
+            }
+
+            #secondary_choose_button {
+                background-color: whitesmoke;
+                border: 1px solid black;
+                color:black;
+            }
+
+            #secondary_choose_button:hover {
+                background-color: var(--secondary_color);
+            }
+
+            li {
+                padding: 5px 0px 5px 0px;
             }
 
         </style>
@@ -94,13 +155,12 @@
     
                 <div class="nav_right">
 
-                    <button class="nav_button">Home</button>
-                    <button class="nav_button">Features</button>
-                    <button class="nav_button">Pricing</button>
-                    <button class="nav_button">Contact</button>
-                    <button class="nav_button" id="download_button">Download</button>
+                    <button class="nav_button" href="home.html">Home</button>
+                    <button class="nav_button" href="features.html">Features</button>
+                    <button class="nav_button" href="pricing.html">Pricing</button>
+                    <button class="nav_button" href="contact.html">Contact</button>
+                    <button class="nav_button" id="download_button" href="download.html">Download</button>
 
-    
                 </div>
 
             </div>
@@ -109,15 +169,73 @@
 
         <div class="hero_container">
 
-            <h1>Pricing</h1>
+            <h1>Pricing & Plans</h1>
 
         </div>
 
         <div class="main_container">
 
-            <div class="">
+            <div class="heading_container">
+                <h2>There's something for everyone</h2>
 
             </div>
+
+
+            <div class="pricing_container">
+
+                <div class="plan_container">
+                    <div class="plan_heading_container">
+                        <h3>Free</h3>
+                        <p><span style="font-size: 30px; font-weight: bold;">$0</span>/month</p>
+                    </div>
+                    <div class="plan_content_container">
+                        <b>Fundamental features</b>
+                        <ul>
+                            <li>Benefit</li>
+                            <li>Benefit</li>
+                        </ul>
+                        <button class="choose_button" id="secondary_choose_button">Choose Plan</button>
+                    </div>
+                </div>
+
+                <div class="plan_container" id="annual_container">
+                    <div class="plan_heading_container">
+                        <h3>Gold <span style="font-size: small">(Best deal)</span></h3>
+                        <p><span style="font-size: 30px; font-weight: bold;">$3</span>/month</p>
+                    </div>
+                    <div class="plan_content_container">
+                        <b>Enjoy everything in Free +</b>
+                        <ul>
+                            <li>Benefit</li>
+                            <li>Benefit</li>
+                            <li>Benefit</li>
+                            <li>Benefit</li>
+                        </ul>
+                        <button class="choose_button">Choose Plan</button>
+                    </div>
+                </div>
+                
+                <div class="plan_container">
+                    <div class="plan_heading_container">
+                        <h3>Executive</h3>
+                        <p><span style="font-size: 30px; font-weight: bold;">$10</span>/month</p>
+                    </div>
+                    <div class="plan_content_container">
+                        <b>Get everything in Gold +</b>
+                        <ul>
+                            <li>Benefit</li>
+                            <li>Benefit</li>
+                            <li>Benefit</li>
+                            <li>Benefit</li>
+                            <li>Benefit</li>
+                            <li>Benefit</li>
+                        </ul>
+                        <button class="choose_button" id="secondary_choose_button">Choose Plan</button>
+                    </div>
+                </div>
+
+            </div>
+            
          
         </div>
 
