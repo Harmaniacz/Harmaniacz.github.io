@@ -4,5 +4,5 @@ function myFunction() {
 }
 
 function myFunction_2() {
-    window.open('https://github.com/Harmaniacz/home.html','_blank');
+    window.open('home.html','_blank');
 }
