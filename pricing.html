@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="assets/harmony_favicon.png" type="image/icon type">
-
+        
         <style>
 
             :root {
@@ -145,7 +145,7 @@
             }
 
             .switch_container {
-                background-color: whitesmoke;
+                background-color: white;
                 padding: 15px 5px 15px 5px;
                 border-radius: 4px;
                 width: fit-content;
@@ -162,11 +162,37 @@
             }
 
             #enabled_button {
-                background-color: white;
+                background-color: black;
+                color:white;
             }
 
             #enabled_button:hover {
-                background-color: var(--secondary_color);
+                background-color: var(--tertiary_color);
+            }
+
+            .main_content_container {
+                padding: 50px 0px 50px 0px;
+            }
+
+            .content_container {
+                text-align: center;
+                width:1000px;
+                margin: auto;
+            }
+
+            table {
+                border-collapse: collapse;
+                width:100%;
+                text-align: left;
+            }
+            
+            td, th {
+                border-bottom: 1px solid var(--secondary_color);
+                padding: 20px;
+            }
+
+            .table_feature {
+                font-weight: bold;
             }
 
         </style>
@@ -286,8 +312,79 @@
 
         </div>
 
-        <div class="content_container">
+        <div class="main_content_container">
 
+            <div class="content_container">
+
+                <div clas="content_heading_container">
+                    <h2>Feature comparison</h2>
+                    <p>Get started for free or upgrade for an enhanced experience.</p>
+                </div>
+
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Free</th>
+                        <th>Gold</th>
+                        <th>Executive</th>
+                    </tr>
+                    <tr>
+                        <td class="table_feature">Chat</td>
+                        <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                        <td><span ><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                        <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
+
+                    </tr>
+                    <tr>
+                        <td class="table_feature">Chat</td>
+                        <td><span ><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                        <td><span ><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                        <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="table_feature">Chat</td>
+                        <td></td>
+                        <td><span ><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                        <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="table_feature">Chat</td>
+                        <td></td>
+                        <td><span ><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                        <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="table_feature">Chat</td>
+                        <td></td>
+                        <td><span ><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                        <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="table_feature">Chat</td>
+                        <td></td>
+                        <td></td>
+                        <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="table_feature">Chat</td>
+                        <td></td>
+                        <td></td>
+                        <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="table_feature">Chat</td>
+                        <td></td>
+                        <td></td>
+                        <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><a class="choose_button" id="secondary_choose_button">Choose Plan</a></td>
+                        <td><a class="choose_button">Choose Plan</a></td>
+                        <td><a class="choose_button" id="secondary_choose_button">Choose Plan</a></td>
+                    </tr>
+                </table>
+            <div>
 
         </div>
 
