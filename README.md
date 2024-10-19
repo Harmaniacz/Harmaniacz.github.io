@@ -26,7 +26,7 @@
 - [Home](https://harmaniacz.github.io/)
 - [Features](https://harmaniacz.github.io/features)
 - [Pricing](https://harmaniacz.github.io/pricing)
-- [Contact](https://harmaniacz.github.io/contact)
+- [Team](https://harmaniacz.github.io/team)
 - [Download](https://harmaniacz.github.io/download)
 
 ## Meet the team
