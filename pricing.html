@@ -128,7 +128,7 @@
 
             #secondary_choose_button {
                 background-color: white;
-                border: 1px solid black;
+                border: 1px solid #c3c3c3;
                 color:black;
             }
 
@@ -176,10 +176,6 @@
                 color:white;
             }
 
-            #enabled_button:hover {
-                background-color: var(--tertiary_color);
-            }
-
             .main_content_container {
                 padding: 50px 0px 50px 0px;
             }
@@ -194,6 +190,11 @@
                 border-collapse: collapse;
                 width:100%;
                 text-align: left;
+                table-layout: fixed
+            }
+            
+            .table_feature {
+                font-weight: bold;
             }
             
             td, th {
@@ -201,8 +202,8 @@
                 padding: 20px;
             }
 
-            .table_feature {
-                font-weight: bold;
+            tr:hover {
+                background-color: whitesmoke;
             }
 
             .gold_plan_table {
@@ -213,6 +214,11 @@
 
             .gold_plan_row {
                 border:2px black solid;
+            }
+
+            abbr {
+                text-decoration: none;
+                border-bottom: 1px dashed rgb(63, 63, 63);
             }
 
         </style>
@@ -247,7 +253,7 @@
 
         <div class="hero_container">
 
-            <h1 style="text-align: center;">Pricing & Plans</h1>
+            <h1 style="text-align: center;">Pricing & plans</h1>
 
             <div class="main_container">
 
@@ -349,52 +355,52 @@
                         <th>Executive</th>
                     </tr>
                     <tr>
-                        <td class="table_feature">Chat</td>
+                        <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
                         <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
                         <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
                         <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
 
                     </tr>
                     <tr>
-                        <td class="table_feature">Chat</td>
+                        <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
                         <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
                         <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
                         <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
                     </tr>
                     <tr>
-                        <td class="table_feature">Chat</td>
-                        <td></td>
+                        <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                        <td>10 swipes per day</td>
+                        <td class="gold_plan_row">Unlimited</td>
+                        <td>Unlimited</td>
+                    </tr>
+                    <tr>
+                        <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                        <td><span><img src="assets/close.svg" alt="Description of SVG" style="fill: black;"></span></td>
                         <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
                         <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
                     </tr>
                     <tr>
-                        <td class="table_feature">Chat</td>
-                        <td></td>
+                        <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                        <td><span><img src="assets/close.svg" alt="Description of SVG" style="fill: black;"></span></td>
                         <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
                         <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
                     </tr>
                     <tr>
-                        <td class="table_feature">Chat</td>
-                        <td></td>
-                        <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                        <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                        <td>Limited</td>
+                        <td class="gold_plan_row">24/7</td>
+                        <td>24/7</td>
+                    </tr>
+                    <tr>
+                        <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                        <td><span><img src="assets/close.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                        <td class="gold_plan_row"><span><img src="assets/close.svg" alt="Description of SVG" style="fill: black;"></span></td>
                         <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
                     </tr>
                     <tr>
-                        <td class="table_feature">Chat</td>
-                        <td></td>
-                        <td class="gold_plan_row"></td>
-                        <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
-                    </tr>
-                    <tr>
-                        <td class="table_feature">Chat</td>
-                        <td></td>
-                        <td class="gold_plan_row"></td>
-                        <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
-                    </tr>
-                    <tr>
-                        <td class="table_feature">Chat</td>
-                        <td></td>
-                        <td class="gold_plan_row"></td>
+                        <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                        <td><span><img src="assets/close.svg" alt="Description of SVG" style="fill: black;"></span></td>
+                        <td class="gold_plan_row"><span><img src="assets/close.svg" alt="Description of SVG" style="fill: black;"></span></td>
                         <td><span><img src="assets/check.svg" alt="Description of SVG" style="fill: black;"></span></td>
                     </tr>
                     <tr>
