@@ -1,6 +1,77 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Home | Harmony</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="harmony_favicon.png" type="image/icon type">
+        <link rel="stylesheet" href="rikiStyle.css">
+        <style>
+            .left_text {
+                overflow:visible;
+                font-size: 60px;
+                text-align: center;
+                display: flex;
+            }
+            .left_symbols {
+                overflow:visible;
+                margin-top: 30px;
+                font-size: 60px;
+                text-align: center;
+                line-height: 1.2;
+                display: flex;
+            }
+            .phone {
+                align-content: center;
+                overflow:visible;
+                margin-top: 60px;
+                font-size: 55px;
 
-    <h1>Home page</h1>
+            }
+        </style>
+    </head>
+    
+    <body style="background-color: var(--secondary_color)">
+        <div class="navigation_container">
+            <div class="nav_container">
+                <div class="nav_left">
+                    <b>Harmony</b>
+                </div>
+                <div class="nav_right">
+                    <a class="nav_button" href="home.html" target="_blank">Home</a>
+                    <a class="nav_button" href="features.html" target="_blank">Features</a>
+                    <a class="nav_button" href="pricing.html" target="_blank">Pricing</a>
+                    <a class="nav_button" href="team.html" target="_blank">Team</a>
+                    <a class="nav_button" id="download_button" href="download.html" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+        <!--If you're wondering why this next section of code appears twice (kind of), its to space the phone
+        from the text properly while still having the text be fixed on the sceen-->
+        <h1 style="text-align: center;font-size: 60px;">Home</h1>
+        <div style="display:flex;">
+            <div style="display: flex; margin-left: 15%;margin-right: 15%">
+                <div class="left_text" style="position: fixed;">
+                    <p>Music<br>People<br><b>Harmony</b></p>
+                </div>
+                <div class="left_symbols" style="position: fixed;margin-left:270px;">
+                    <p>+<br>=</p>
+                </div>
+            </div>
+        </div>
+        <div style="display:flex;">
+            <div style="display: flex; margin-left: 15%;margin-right: 15%">
+                <div class="left_text" style="visibility: hidden;">
+                    <p>Music<br>People<br><b>Harmony</b></p>
+                </div>
+                <div class="left_symbols" style="visibility: hidden;">
+                    <p>+<br>=</p>
+                </div>
+            </div>
+            <div class="phone">
+                <img src="assets/phone.png" alt="Phone" width="650" >
+            </div>
+        </div>
+    </body>
 
 </html>
