@@ -23,7 +23,7 @@
 
 ## Website links
 
-- [Home](https://harmaniacz.github.io/)
+- [Home](https://harmaniacz.github.io/home)
 - [Features](https://harmaniacz.github.io/features)
 - [Pricing](https://harmaniacz.github.io/pricing)
 - [Team](https://harmaniacz.github.io/team)
