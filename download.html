@@ -3,6 +3,10 @@
 
 <head>
     <script src="main.js"></script>
+    <title>Download | Harmony</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    <link rel="icon" href="assets/harmony_favicon.png" type="image/icon type">
     <style>
 
         :root {
@@ -15,6 +19,16 @@
             font-family: Arial, Helvetica, sans-serif;
             padding:0px;
             margin:0px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+
+        .clickable-text {
+            cursor: pointer;
+            color: white;
+            text-decoration: none;
         }
 
         .main_container {
@@ -43,6 +57,12 @@
             width:70%;
             text-align: end;
             align-content: center;
+        }
+
+        .harmony-clickable {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
         }
 
         .hero-image {
@@ -139,20 +159,15 @@
         <div class="nav_container">
 
             <div class="nav_left">
-                <div class="clickable_text" onclick="index()">
-                    <b>Harmony</b>
-                </div>
+                <a class="harmony-clickable" href="index.html">Harmony</a>
             </div>
 
             <div class="nav_right">
-
-                <button class="nav_button" onclick="home()">Home</button>
-                <button class="nav_button" onclick="features()">Features</button>
-                <button class="nav_button" onclick="pricing()">Pricing</button>
-                <button class="nav_button" onclick="contact()">Contact</button>
-                <button class="nav_button" id="download_button" onclick="download()">Download</button>
-
-
+                <a class="nav_button" href="home.html">Home</a>
+                <a class="nav_button" href="features.html">Features</a>
+                <a class="nav_button" href="pricing.html">Pricing</a>
+                <a class="nav_button" href="team.html">Team</a>
+                <a class="nav_button" id="download_button" href="download.html">Download</a>
             </div>
 
         </div>
@@ -165,7 +180,7 @@
         <div class="hero-image">
             <div class = "hero-text">
                 <h1>Harmonize with the world around you</h1>
-                <button onclick="download()">Sign up</button>
+                <a class="hero-button" href="pricing.html">Sign up</a>
             </div> 
 
         </div>
