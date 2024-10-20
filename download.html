@@ -1,17 +1,181 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
+<head>
+    <script src="main.js"></script>
+    <style>
 
-        <title>Download Harmony</title>
+        :root {
+            --main-color:black;
+            --secondary_color:rgb(196, 196, 196);
+            --tertiary_color:rgb(66, 66, 66);
+        }
+    
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            padding:0px;
+            margin:0px;
+        }
 
-    </head>
+        .main_container {
+            width: 100vw;
+            margin: 0;
+        }
 
-    <body>
+        .navigation_container {
+            background-color: var(--main-color);
+            color:white;
+        }
 
-        <button>Download on App Store</button>
-        <button>Get it on Google Play</button>
+        .nav_container {
+            width:800px;
+            margin:auto;
+            display: flex;
+            height:70px;
+        }
 
-    </body>
+        .nav_left {
+            width:30%;
+            align-content: center;
+        }
+
+        .nav_right {
+            width:70%;
+            text-align: end;
+            align-content: center;
+        }
+
+        .hero-image {
+            background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(./assets/earfwithguy.jpg);
+            width: 100vw;
+            height: 100vh;
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            margin: 0;
+        }
+
+        .hero-text {
+            text-align: center;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+        }
+
+        .hero-text h1{
+            font-size: 4rem;
+            line-height: 1.2;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 2.5rem
+            }
+        }
+
+        .hero-text button {
+            margin-top: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            background: linear-gradient(#FF5252, #FFF8F2);
+            color: black;
+            cursor: url(./assets/music_note_cursor.png), pointer;
+        }
+
+        .hero-text button:hover {
+            background: linear-gradient(#FFF8F2, #FF5252)
+        }
+
+        .content-section {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .content-section img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .nav_button {
+            padding: 10px 20px 10px 20px;
+            background-color: var(--main-color);
+            color:white;
+            border:none;
+        }
+
+        .nav_button:hover {
+            background-color: var(--tertiary_color);
+            cursor: pointer;
+            position:relative;
+        }
+
+        #download_button {
+            background-color: white;
+            color:black;
+        }
+
+        #download_button:hover {
+            background-color: var(--tertiary_color);
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navigation_container">
+
+        <div class="nav_container">
+
+            <div class="nav_left">
+                <div class="clickable_text" onclick="index()">
+                    <b>Harmony</b>
+                </div>
+            </div>
+
+            <div class="nav_right">
+
+                <button class="nav_button" onclick="home()">Home</button>
+                <button class="nav_button" onclick="features()">Features</button>
+                <button class="nav_button" onclick="pricing()">Pricing</button>
+                <button class="nav_button" onclick="contact()">Contact</button>
+                <button class="nav_button" id="download_button" onclick="download()">Download</button>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+    <div class="main_container">
+        <div class="hero-image">
+            <div class = "hero-text">
+                <h1>Harmonize with the world around you</h1>
+                <button onclick="download()">Sign up</button>
+            </div> 
+
+        </div>
+
+        <div class="content-section">
+            <img src="./assets/map_demo.jpg" alt="1:1 depiction of what will be on website" style="width:100%; height:auto;">
+        </div>
+        
+    </div>
+
+</body>
 
 </html>
