@@ -33,7 +33,6 @@
             .navigation_container {
                 background-color: var(--main-color);
                 color:white;
-                position:fixed;
                 width:100%;
             }
 
@@ -57,14 +56,6 @@
                 align-content: center;
             }
 
-            /*Pricing section*/
-            .hero_container {
-                background-color: #dddddd;
-                width:100%;
-                padding: 120px 0px 50px 0px;
-                border-bottom: 1px solid #c3c3c3;
-            }
-
             .nav_button {
                 padding: 10px 20px 10px 20px;
                 background-color: var(--main-color);
@@ -79,9 +70,9 @@
             }
 
             .harmony-clickable {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
+                color: white;
+                text-decoration: none;
+                font-weight: bold;
             }
 
             #download_button {
@@ -93,6 +84,33 @@
             #download_button:hover {
                 background-color: var(--tertiary_color);
                 cursor: pointer;
+            }
+
+            .nav_container_mobile {
+                visibility: collapse;
+                display: none;
+            }
+
+            /*Mobile navigation bar*/
+            .nav_left_mobile {
+                width:50%;
+                padding: 20px;
+                align-content: center;
+            }
+
+            .nav_right_mobile {
+                width:50%;
+                align-content: center;
+                text-align: right;
+                padding: 20px;
+            }
+            
+            /*Pricing section*/
+            .hero_container {
+                background-color: #dddddd;
+                width:100%;
+                padding: 50px 0px 50px 0px;
+                border-bottom: 1px solid #c3c3c3;
             }
 
             .pricing_container {
@@ -282,6 +300,31 @@
                 cursor: pointer;
             }
 
+            /*Mobile display*/
+            @media only screen and (max-width: 1000px) {
+                .navigation_container, .nav_container, .hero_container, .main_container, .heading_container, .content_container, .main_content_container, .footer_container, .footer_content_container, table{
+                    width: 100%;
+                }
+                .nav_container {
+                    visibility: hidden;
+					display: none;
+                }
+                .nav_container_mobile {
+                    visibility: visible;
+                    display: flex;
+                }
+                .pricing_container {
+                    flex-direction: column;
+                }
+
+                .plan_container {
+                    width: 95%;
+                    margin: auto;
+                    margin-bottom: 20px;
+                }
+            
+            }
+
         </style>
 
     </head>
@@ -305,6 +348,18 @@
                     <a class="nav_button" href="pricing.html">Pricing</a>
                     <a class="nav_button" href="team.html">Team</a>
                     <a class="nav_button" id="download_button" href="download.html">Download</a>
+                </div>
+
+            </div>
+
+            <div class="nav_container_mobile">
+
+                <div class="nav_left_mobile">
+                    <a class="harmony-clickable" href="index.html" style="font-size: larger;">Harmony</a>
+                </div>
+
+                <div class="nav_right_mobile">
+                    <a href=""><img src="assets/hamburger_menu.svg"></a>
                 </div>
 
             </div>
@@ -474,9 +529,9 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td><a class="choose_button" id="secondary_choose_button">Choose Plan</a></td>
-                        <td class="gold_plan_table"><a class="choose_button" id="tertiary_choose_button">Choose Plan</a></td>
-                        <td><a class="choose_button" id="secondary_choose_button">Choose Plan</a></td>
+                        <td><a class="choose_button" id="secondary_choose_button">Start for free</a></td>
+                        <td class="gold_plan_table"><a class="choose_button" id="tertiary_choose_button">Get started</a></td>
+                        <td><a class="choose_button" id="secondary_choose_button">Get started</a></td>
                     </tr>
                 </table>
 
@@ -491,7 +546,7 @@
 
                 <!--Left footer-->
                 <div class="left_foot">
-                  <b style="font-size: larger;">Harmony</b>
+                  <b>Harmony</b>
                 </div>
 
                 <!--Middle footer-->
@@ -505,8 +560,8 @@
 
                 <!--Right foot-->
                 <div class="right_foot">
-                    <a class="foot_link"><img src="assets/linkedin.svg" alt="LinkedIn" style="stroke: white; fill: white; fill-opacity: inherit; height: 20px;"></a>
-                    <a class="foot_link" href="https://github.com/Harmaniacz/Harmaniacz.github.io" target="_blank"><img src="assets/github.svg" alt="GitHub" style="stroke: white; fill: white; fill-opacity: inherit; height: 20px;"></a>
+                    <img class="foot_link" src="assets/linkedin.svg" alt="LinkedIn" style="height: 16px;">
+                    <img class="foot_link" href="https://github.com/Harmaniacz/Harmaniacz.github.io" target="_blank" src="assets/github.svg" alt="GitHub" style="height: 16px;">
                 </div>
 
             </div>
