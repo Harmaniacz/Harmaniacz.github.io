@@ -7,6 +7,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="assets/harmony_favicon.png" type="image/icon type">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <style>
 
@@ -89,20 +90,32 @@
             .nav_container_mobile {
                 visibility: collapse;
                 display: none;
+                align-content: center;
             }
 
             /*Mobile navigation bar*/
+            .nav_container_mobile {
+                padding: 20px;
+            }
+
             .nav_left_mobile {
                 width:50%;
-                padding: 20px;
-                align-content: center;
             }
 
             .nav_right_mobile {
                 width:50%;
                 align-content: center;
                 text-align: right;
-                padding: 20px;
+            }
+
+            .mobile_nav_button {
+                background-color: inherit;
+                border: none;
+                padding: 0 0 0 30px;
+            }
+
+            .mobile_nav_button:hover {
+                cursor: pointer;
             }
             
             /*Pricing section*/
@@ -322,10 +335,92 @@
                     margin: auto;
                     margin-bottom: 20px;
                 }
-            
+            }
+
+            .mobile_page_content {
+                width: 100%;
+            }
+
+            .mobile_navigation_list {
+                padding: 20px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .mobile_page_download_container {
+                padding: 20px 20px 20px 0px;
+                background-color: black;
+                color:white;
+                border-radius:4px
+            }
+
+            .mobile_menu_button {
+                border-bottom: 1px solid var(--tertiary_color);
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .mobile_menu_button:hover {
+                cursor: pointer;
+                background-color: var(--secondary_color);
+            }
+
+            .mobile_menu_button_2 {
+                width: 100%;
+                background-color: black;
+                color: white;
+                border-radius: 4px;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .mobile_menu_button_2:hover {
+                cursor: pointer;
+                background-color: var(--tertiary_color);
             }
 
         </style>
+
+        <!--Mobile navigation dropdown-->
+        <script>
+
+            let menu_press = true
+
+            function navigation_button() {
+                const web_element = document.getElementsByClassName("web_page_content");
+                const mobile_element = document.getElementsByClassName("mobile_page_content");
+                const image_element = document.getElementById("menu_hamburger");
+                
+                if (menu_press == true) {
+
+                    for (var i = 0; i < web_element.length; i = i + 1) {
+                        web_element[i].style.display = "none";
+                        web_element[i].style.visibility = "hidden";
+
+                        mobile_element[i].style.display = "";
+                        mobile_element[i].style.visibility = "visible";
+
+                        image_element.src = "assets/close_menu.svg";
+                    }
+                    menu_press = false;
+                    
+                } else {
+                    for (var i = 0; i < web_element.length; i = i + 1) {
+                        web_element[i].style.display = "";
+                        web_element[i].style.visibility = "visible";
+
+                        mobile_element[i].style.display = "none";
+                        mobile_element[i].style.visibility = "hidden";
+
+                        image_element.src = "assets/hamburger_menu.svg";
+                    }
+                    menu_press = true;
+                }
+
+            }
+
+        </script>
 
     </head>
 
@@ -334,6 +429,7 @@
         <!--Navigation bar-->
         <div class="navigation_container">
 
+            <!--Web navigation-->
             <div class="nav_container">
 
                 <!--Left navigation-->
@@ -352,6 +448,7 @@
 
             </div>
 
+            <!--Mobile navigation-->
             <div class="nav_container_mobile">
 
                 <div class="nav_left_mobile">
@@ -359,210 +456,228 @@
                 </div>
 
                 <div class="nav_right_mobile">
-                    <a href=""><img src="assets/hamburger_menu.svg"></a>
+                    <button class="mobile_nav_button" onclick="navigation_button()"><img id ="menu_hamburger" src="assets/hamburger_menu.svg"></button>
                 </div>
 
             </div>
 
         </div>
 
-        <!--Hero section-->
-        <div class="hero_container">
+        <div class="web_page_content">
 
-            <h1 style="text-align: center;">Pricing & plans</h1>
+            <!--Hero section-->
+            <div class="hero_container">
 
-            <div class="main_container">
+                <h1 style="text-align: center;">Pricing & plans</h1>
 
-                <div class="heading_container">
-    
-                    <h2>There's something for everyone</h2>
-    
-                    <!--Monthly/yearly/lifetime pricing options-->
-                    <div class="switch_container">
-                        <a class="switch_button" id="enabled_button">Monthly</a>
-                        <a class="switch_button" id="disabled_button">Yearly</a>
-                        <a class="switch_button" id="disabled_button">Lifetime</a>
+                <div class="main_container">
+
+                    <div class="heading_container">
+        
+                        <h2>There's something for everyone</h2>
+        
+                        <!--Monthly/yearly/lifetime pricing options-->
+                        <div class="switch_container">
+                            <a class="switch_button" id="enabled_button">Monthly</a>
+                            <a class="switch_button" id="disabled_button">Yearly</a>
+                            <a class="switch_button" id="disabled_button">Lifetime</a>
+                        </div>
+        
+                        <p>Save 20% with yearly</p>
+        
                     </div>
-    
-                    <p>Save 20% with yearly</p>
-    
-                </div>
-    
-                <!--Pricing plans-->
-                <div class="pricing_container">
-    
-                    <!--Free-->
-                    <div class="plan_container">
-                        <div class="plan_heading_container">
-                            <h3>Free</h3>
-                            <p><span style="font-size: 30px; font-weight: bold;">$0</span>/month</p>
-                            <p style="font-size: smaller;color: #c3c3c3;">Free forever</p>
+        
+                    <!--Pricing plans-->
+                    <div class="pricing_container">
+        
+                        <!--Free-->
+                        <div class="plan_container">
+                            <div class="plan_heading_container">
+                                <h3>Free</h3>
+                                <p><span style="font-size: 30px; font-weight: bold;">$0</span>/month</p>
+                                <p style="font-size: smaller;color: #c3c3c3;">Free forever</p>
+                            </div>
+                            <div class="plan_content_container">
+                                <b>Free features:</b>
+                                <ul>
+                                    <li>Benefit</li>
+                                    <li>Benefit</li>
+                                    <li>Benefit</li>
+                                    <li>Benefit</li>
+                                    <li>Benefit</li>
+                                    <li>Benefit</li>
+                                </ul>
+                                <a class="choose_button" id="secondary_choose_button">Get started for free</a>
+                            </div>
                         </div>
-                        <div class="plan_content_container">
-                            <b>Free features:</b>
-                            <ul>
-                                <li>Benefit</li>
-                                <li>Benefit</li>
-                                <li>Benefit</li>
-                                <li>Benefit</li>
-                                <li>Benefit</li>
-                                <li>Benefit</li>
-                            </ul>
-                            <a class="choose_button" id="secondary_choose_button">Get started for free</a>
+        
+                        <!--Gold-->
+                        <div class="plan_container" id="gold_container">
+                            <div class="plan_heading_container">
+                                <h3>Gold <span style="font-size: small">(Best deal)</span></h3>
+                                <p><span style="font-size: 30px; font-weight: bold;">$3</span>/month</p>
+                                <p style="font-size: smaller;color: #c3c3c3;">Cancel anytime</p>
+                            </div>
+                            <div class="plan_content_container">
+                                <b>Enjoy everything in Free, plus:</b>
+                                <ul>
+                                    <li>Benefit</li>
+                                    <li>Benefit</li>
+                                    <li>Benefit</li>
+                                    <li>Benefit</li>
+                                    <li>Benefit</li>
+                                    <li>Benefit</li>
+                                </ul>
+                                <a class="choose_button">Get started</a>
+                            </div>
                         </div>
-                    </div>
-    
-                    <!--Gold-->
-                    <div class="plan_container" id="gold_container">
-                        <div class="plan_heading_container">
-                            <h3>Gold <span style="font-size: small">(Best deal)</span></h3>
-                            <p><span style="font-size: 30px; font-weight: bold;">$3</span>/month</p>
-                            <p style="font-size: smaller;color: #c3c3c3;">Cancel anytime</p>
+                        
+                        <!--Executive-->
+                        <div class="plan_container">
+                            <div class="plan_heading_container">
+                                <h3>Executive</h3>
+                                <p><span style="font-size: 30px; font-weight: bold;">$10</span>/month</p>
+                                <p style="font-size: smaller;color: #c3c3c3;">Cancel anytime</p>
+                            </div>
+                            <div class="plan_content_container">
+                                <b>Get everything in Gold, plus:</b>
+                                <ul>
+                                    <li>Benefit</li>
+                                    <li>Benefit</li>
+                                    <li>Benefit</li>
+                                    <li>Benefit</li>
+                                    <li>Benefit</li>
+                                    <li>Benefit</li>
+                                </ul>
+                                <a class="choose_button" id="secondary_choose_button">Get started</a>
+                            </div>
                         </div>
-                        <div class="plan_content_container">
-                            <b>Enjoy everything in Free, plus:</b>
-                            <ul>
-                                <li>Benefit</li>
-                                <li>Benefit</li>
-                                <li>Benefit</li>
-                                <li>Benefit</li>
-                                <li>Benefit</li>
-                                <li>Benefit</li>
-                            </ul>
-                            <a class="choose_button">Get started</a>
-                        </div>
+        
                     </div>
                     
-                    <!--Executive-->
-                    <div class="plan_container">
-                        <div class="plan_heading_container">
-                            <h3>Executive</h3>
-                            <p><span style="font-size: 30px; font-weight: bold;">$10</span>/month</p>
-                            <p style="font-size: smaller;color: #c3c3c3;">Cancel anytime</p>
-                        </div>
-                        <div class="plan_content_container">
-                            <b>Get everything in Gold, plus:</b>
-                            <ul>
-                                <li>Benefit</li>
-                                <li>Benefit</li>
-                                <li>Benefit</li>
-                                <li>Benefit</li>
-                                <li>Benefit</li>
-                                <li>Benefit</li>
-                            </ul>
-                            <a class="choose_button" id="secondary_choose_button">Get started</a>
-                        </div>
+                </div>
+
+            </div>
+
+            <!--Feature comparisons-->
+            <div class="main_content_container">
+
+                <div class="content_container">
+
+                    <div clas="content_heading_container">
+                        <h2>Feature comparison</h2>
+                        <p>Get started for free or upgrade for an enhanced experience.</p>
                     </div>
-    
+
+                    <!--Table for features chart-->
+                    <table>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Free</th>
+                            <th class="gold_plan_table">Gold</th>
+                            <th>Executive</th>
+                        </tr>
+                        <tr>
+                            <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                            <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                            <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                            <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+
+                        </tr>
+                        <tr>
+                            <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                            <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                            <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                            <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                            <td>10 swipes per day</td>
+                            <td class="gold_plan_row">Unlimited</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                            <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
+                            <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                            <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                            <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
+                            <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                            <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                            <td>Limited</td>
+                            <td class="gold_plan_row">24/7</td>
+                            <td>24/7</td>
+                        </tr>
+                        <tr>
+                            <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                            <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
+                            <td class="gold_plan_row"><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
+                            <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                        </tr>
+                        <tr>
+                            <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                            <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
+                            <td class="gold_plan_row"><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
+                            <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><a class="choose_button" id="secondary_choose_button">Start for free</a></td>
+                            <td class="gold_plan_table"><a class="choose_button" id="tertiary_choose_button">Get started</a></td>
+                            <td><a class="choose_button" id="secondary_choose_button">Get started</a></td>
+                        </tr>
+                    </table>
+
                 </div>
-                
-            </div>
-
-        </div>
-
-        <!--Feature comparisons-->
-        <div class="main_content_container">
-
-            <div class="content_container">
-
-                <div clas="content_heading_container">
-                    <h2>Feature comparison</h2>
-                    <p>Get started for free or upgrade for an enhanced experience.</p>
-                </div>
-
-                <!--Table for features chart-->
-                <table>
-                    <tr>
-                        <th>Feature</th>
-                        <th>Free</th>
-                        <th class="gold_plan_table">Gold</th>
-                        <th>Executive</th>
-                    </tr>
-                    <tr>
-                        <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
-                        <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
-                        <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
-                        <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
-
-                    </tr>
-                    <tr>
-                        <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
-                        <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
-                        <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
-                        <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
-                    </tr>
-                    <tr>
-                        <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
-                        <td>10 swipes per day</td>
-                        <td class="gold_plan_row">Unlimited</td>
-                        <td>Unlimited</td>
-                    </tr>
-                    <tr>
-                        <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
-                        <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
-                        <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
-                        <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
-                    </tr>
-                    <tr>
-                        <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
-                        <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
-                        <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
-                        <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
-                    </tr>
-                    <tr>
-                        <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
-                        <td>Limited</td>
-                        <td class="gold_plan_row">24/7</td>
-                        <td>24/7</td>
-                    </tr>
-                    <tr>
-                        <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
-                        <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
-                        <td class="gold_plan_row"><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
-                        <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
-                    </tr>
-                    <tr>
-                        <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
-                        <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
-                        <td class="gold_plan_row"><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
-                        <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><a class="choose_button" id="secondary_choose_button">Start for free</a></td>
-                        <td class="gold_plan_table"><a class="choose_button" id="tertiary_choose_button">Get started</a></td>
-                        <td><a class="choose_button" id="secondary_choose_button">Get started</a></td>
-                    </tr>
-                </table>
 
             </div>
 
+            <!--Footer-->
+            <div class="footer_container">
+
+                <div class="footer_content_container">
+
+                    <!--Left footer-->
+                    <div class="left_foot">
+                    <b>Harmony</b>
+                    </div>
+
+                    <!--Middle footer-->
+                    <div class="middle_foot">
+                        <a class="foot_link" href="home.html">Home</a>
+                        <a class="foot_link" href="features.html">Features</a>
+                        <a class="foot_link" href="pricing.html">Pricng</a>
+                        <a class="foot_link" href="team.html">Team</a>
+                        <a class="foot_link" href="download.html">Download</a>
+                    </div>
+
+                    <!--Right foot-->
+                    <div class="right_foot">
+                        <img class="foot_link" src="assets/linkedin.svg" alt="LinkedIn" style="height: 16px;">
+                        <img class="foot_link" href="https://github.com/Harmaniacz/Harmaniacz.github.io" target="_blank" src="assets/github.svg" alt="GitHub" style="height: 16px;">
+                    </div>
+
+                </div>
+
+            </div>
+        
         </div>
 
-        <!--Footer-->
-        <div class="footer_container">
+        <div class="mobile_page_content" style="display: none; visibility: hidden;"> 
 
-            <div class="footer_content_container">
+            <div class="mobile_navigation_list">
 
-                <!--Left footer-->
-                <div class="left_foot">
-                  <b>Harmony</b>
-                </div>
-
-                <!--Middle footer-->
-                <div class="middle_foot">
-                    <a class="foot_link" href="home.html">Home</a>
-                    <a class="foot_link" href="features.html">Features</a>
-                    <a class="foot_link" href="pricing.html">Pricng</a>
-                    <a class="foot_link" href="team.html">Team</a>
-                    <a class="foot_link" href="download.html">Download</a>
-                </div>
-
-                <!--Right foot-->
-                <div class="right_foot">
-                    <img class="foot_link" src="assets/linkedin.svg" alt="LinkedIn" style="height: 16px;">
-                    <img class="foot_link" href="https://github.com/Harmaniacz/Harmaniacz.github.io" target="_blank" src="assets/github.svg" alt="GitHub" style="height: 16px;">
-                </div>
+                <a class="mobile_menu_button">Home</a>
+                <a class="mobile_menu_button">Features</a>
+                <a class="mobile_menu_button">Pricing</a>
+                <a class="mobile_menu_button">Team</a>
+                <a class="mobile_menu_button_2" style="margin: 20px 0 0 0;">Download</a>
 
             </div>
 
