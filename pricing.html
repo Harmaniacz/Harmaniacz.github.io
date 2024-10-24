@@ -208,7 +208,7 @@
                 width:100%;
                 padding: 50px 0px 50px 0px;
                 border-bottom: 1px solid #c3c3c3;
-                background-color: #fff3f3;
+                background-color: #f7f6f6;;
             }
 
             .chip_text {
@@ -329,8 +329,8 @@
 
             .switch_button:hover {
                 cursor: pointer;
-                background-color: whitesmoke;
-                color:black;
+                background-color: #fff6f6;
+                color:#db0e0e;
             }
 
             #enabled_button {
@@ -375,10 +375,6 @@
                 color: var(--text_color);
             }
 
-            tr:hover {
-                background-color: whitesmoke;
-            }
-
             .gold_plan_table_bottom {
                 background-color: black;
                 color:white;
@@ -391,10 +387,15 @@
                 border-bottom: 1px dashed rgb(63, 63, 63);
             }
 
+            /*
+            .gold_plan_row {
+                background-color: #f7f6f6;x
+            }*/
+
             /*Try section*/
             .try_container {
-                width: 100%;
                 border-top: 1px solid #c3c3c3;
+                width: 100%;
             }
 
             .try_content_container {
@@ -592,9 +593,9 @@
                         <!--Free-->
                         <div class="plan_container" id="elevated_container">
                             <div class="plan_heading_container">
-                                <h2>Free</h2>
+                                <h2>Harmony</h2>
                                 <p>For casual users</p>
-                                <p><span style="color: black; font-size: 24px; font-weight: bold;">$0 CAD</span>/month</p>
+                                <p><span style="color: black; font-size: 24px; font-weight: bold;">$0</span>/month</p>
                             </div>
                             <div class="plan_content_container">
                                 <b>Free features:</b>
@@ -614,42 +615,42 @@
                         <div class="plan_container" id="gold_container">
                             <div class="plan_heading_container">
                                 <p class="chip_text">Popular</p>
-                                <h2>Plus</h2>
+                                <h2>Harmony<span style="color: var(--pri_color);">+</span></h2>
                                 <p>For serious users</p>
-                                <p><span style="color: black; font-size: 24px; font-weight: bold;">$3 CAD</span>/month</p>
+                                <p><span style="color: black; font-size: 24px; font-weight: bold;">$3</span>/month</p>
                             </div>
                             <div class="plan_content_container" style="border-top: 1px solid var(--pri_color);">
                                 <b>Enjoy everything in Free, plus:</b>
                                 <ul>
-                                    <li>Benefit</li>
+                                    <li>Plus profile badge</li>
                                     <li>Benefit</li>
                                     <li>Benefit</li>
                                     <li>Benefit</li>
                                     <li>Benefit</li>
                                     <li>Benefit</li>
                                 </ul>
-                                <a class="choose_button">Get started</a>
+                                <a class="choose_button">Get Harmony+</a>
                             </div>
                         </div>
                         
                         <!--Executive-->
                         <div class="plan_container" id="elevated_container">
                             <div class="plan_heading_container">
-                                <h2>Pro</h2>
+                                <h2>Harmony <span style="color: var(--pri_color);">Pro</span></h2>
                                 <p>For businesses and creators</p>
-                                <p><span style="color: black; font-size: 24px; font-weight: bold;">$10 CAD</span>/month</p>
+                                <p><span style="color: black; font-size: 24px; font-weight: bold;">$10</span>/month</p>
                             </div>
                             <div class="plan_content_container">
                                 <b>Get everything in Plus, plus:</b>
                                 <ul>
-                                    <li>Benefit</li>
+                                    <li>Pro profile badge</li>
                                     <li>Benefit</li>
                                     <li>Benefit</li>
                                     <li>Benefit</li>
                                     <li>Benefit</li>
                                     <li>Benefit</li>
                                 </ul>
-                                <a class="choose_button" id="secondary_choose_button">Get started</a>
+                                <a class="choose_button" id="secondary_choose_button">Get Harmony Pro</a>
                             </div>
                         </div>
         
@@ -665,7 +666,7 @@
                 <div class="content_container">
 
                     <div clas="content_heading_container">
-                        <h2>Feature comparison</h2>
+                        <h2>Plans at a glance</h2>
                         <p>Get started for free or upgrade for an enhanced experience.</p>
                     </div>
 
@@ -673,44 +674,44 @@
                     <div class="feature_container">
                         <table>
                             <tr>
-                                <th>Feature</th>
-                                <th>Free</th>
-                                <th style="height: 30px;">Plus</th>
-                                <th>Pro</th>
+                                <th>Features</th>
+                                <th>Harmony</th>
+                                <th style="height: 30px;">Harmony<span style="color: var(--pri_color);">+</span></th>
+                                <th>Harmony <span style="color: var(--pri_color);">Pro</span></th>
                             </tr>
                             <tr>
-                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Match and chat</abbr></td>
                                 <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                                 <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                                 <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
     
                             </tr>
                             <tr>
-                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Listen together</abbr></td>
                                 <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
-                                <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                                <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                                 <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                             </tr>
                             <tr>
-                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Music search</abbr></td>
                                 <td>10 swipes per day</td>
+                                <td class="gold_plan_row">Unlimited</td>
                                 <td>Unlimited</td>
-                                <td>Unlimited</td>
                             </tr>
                             <tr>
-                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Profile badge</abbr></td>
                                 <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
-                                <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                                <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                                 <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                             </tr>
                             <tr>
-                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Ad-free</abbr></td>
                                 <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
-                                <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                                <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                                 <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                             </tr>
                             <tr>
-                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Analytics</abbr></td>
                                 <td>Limited</td>
                                 <td class="gold_plan_row">24/7</td>
                                 <td>24/7</td>
@@ -718,13 +719,13 @@
                             <tr>
                                 <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
                                 <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
-                                <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
+                                <td class="gold_plan_row"><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
                                 <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                             </tr>
                             <tr>
                                 <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
                                 <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
-                                <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
+                                <td class="gold_plan_row"><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
                                 <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                             </tr>
                         </table>
@@ -739,7 +740,7 @@
                 <div class="try_content_container">
                     <h2>Try Harmony for free</h2>
                     <p style="margin-bottom: 40px;">Meet new friends with the language of music.</p>
-                    <a href="#" class="nav_button" id="download_button">Get started for free</a>
+                    <a href="#" class="nav_button" id="download_button">Get started</a>
                 </div>
 
             </div>
