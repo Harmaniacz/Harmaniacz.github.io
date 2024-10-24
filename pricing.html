@@ -21,6 +21,11 @@
                 --main-color:black;
                 --secondary_color:rgb(196, 196, 196);
                 --tertiary_color:rgb(66, 66, 66);
+
+                --pri_color: #F31010;
+                --sec_color: #f59b9b;
+                --text_color: #646464;
+                --pri_fade_color: #f59b9b
             }
         
              /*Body content*/
@@ -28,6 +33,10 @@
                 font-family: Nunito, Arial, Helvetica, sans-serif;
                 padding:0px;
                 margin:0px;
+            }
+
+            p {
+                color: var(--text_color);
             }
 
             .main_container {
@@ -48,13 +57,13 @@
                 margin:auto;
                 display: flex;
                 align-items: center;
-                padding: 15px 0px 15px 0;
             }
 
             .nav_left {
-                width:10%;
+                width:14%;
                 align-content: center;
                 font-size:larger;
+                padding: 20px 0px 20px 0;
             }
 
             .nav_middle {
@@ -69,41 +78,49 @@
 
             .nav_button {
                 padding: 10px 20px 10px 20px;
-                background-color: white;
-                color:black;
+                color:var(--text_color);
                 border:none;
                 font-weight: bold;
             }
 
             .nav_button:hover {
-                border-bottom: 1px solid white;
                 cursor: pointer;
-                position:relative;
+                color: black;
             }
 
             .harmony_logo {
-                color: black;
-                text-decoration: none;
-                font-weight: bold;
-                font-size: 20px;
+                top: 4px;
+                position: relative;
             }
 
             #download_button {
-                background-color: black;
+                background-color: #F31010;
                 color:white;
                 border-radius: 100px;
                 font-weight: bold;
             }
 
             #download_button:hover {
-                background-color: var(--tertiary_color);
                 cursor: pointer;
+                background-color: #db0e0e;
             }
 
             #login_button {
-                color:black;
+                color:var(--pri_color);
                 border-radius: 100px;
                 border: #c3c3c3 1px solid;
+            }
+
+            #login_button:hover {
+                background-color: #fff6f6;
+                border: var(--pri_color) 1px solid;
+            }
+
+            #selected_page {
+                color: black;
+                border-bottom: 1px solid var(--pri_color);
+                padding: 26px 10px 26px 10px;
+                border-bottom: 2px solid var(--pri_color);
             }
 
             .nav_container_mobile {
@@ -152,7 +169,7 @@
 
             .mobile_page_download_container {
                 padding: 20px 20px 20px 0px;
-                background-color: black;
+                background-color: var(--pri_color);
                 color:white;
                 border-radius:4px
             }
@@ -173,9 +190,9 @@
 
             .mobile_menu_button_2 {
                 width: 100%;
-                background-color: black;
+                background-color: var(--pri_color);
                 color: white;
-                border-radius: 100px;
+                border-radius: 100px;   
                 text-align: center;
                 padding: 20px;
                 font-weight: bold;
@@ -191,7 +208,18 @@
                 width:100%;
                 padding: 50px 0px 50px 0px;
                 border-bottom: 1px solid #c3c3c3;
+                background-color: #fff3f3;
             }
+
+            .chip_text {
+                font-size: smaller;
+                background-color: var(--pri_color);
+                width: fit-content;
+                padding: 5px 10px 5px 10px;
+                color: white;
+                border-radius: 100px;
+                margin: auto;
+            }   
 
             .pricing_container {
                 width:100%;
@@ -202,13 +230,13 @@
             .plan_container {
                 width:32%;
                 background-color: white;
-                border-radius: 20px;
+                border-radius: 10px;
                 overflow: hidden;
                 border: 1px solid #c3c3c3;
             }
 
             .plan_content_container {
-                padding: 30px;
+                padding: 25px;
                 border-top: 1px solid #c3c3c3;
                 border-radius: 0px 0px 20px 20px;
             }
@@ -219,24 +247,30 @@
             }
 
             #gold_container {
-                border: 1px solid black;
+                border: 1px solid var(--pri_color);
+            }
+
+            #elevated_container {
+                top: 28px;
+                position: relative;
+                height: fit-content;
             }
 
             .choose_button {
                 width:100%;
-                background-color: black;
+                background-color: var(--pri_color);
                 color:white;
                 padding:10px 0px 10px 0px;
                 display: block;
                 text-align: center;
-                border: 1px black solid;
+                border: 1px var(--pri_color) solid;
                 border-radius: 100px;
                 font-weight: bold;
             }
 
             .choose_button:hover {
                 cursor: pointer;
-                background-color: var(--tertiary_color);
+                background-color: #db0e0e;
             }
 
             .plan_heading_container {
@@ -248,11 +282,12 @@
             #secondary_choose_button {
                 background-color: white;
                 border: 1px solid #c3c3c3;
-                color:black;
+                color:var(--pri_color);
             }
 
             #secondary_choose_button:hover {
-                background-color: whitesmoke;
+                background-color: #fff6f6;
+                border: var(--pri_color) 1px solid;
             }
 
             #tertiary_choose_button {
@@ -267,6 +302,7 @@
 
             li {
                 padding: 5px 0px 5px 0px;
+                color: var(--text_color);
             }
 
             a {
@@ -288,26 +324,22 @@
                 border-radius: 4px;
                 border-radius: 100px;
                 font-weight: bold;
+                color:var(--text_color)
             }
 
             .switch_button:hover {
                 cursor: pointer;
                 background-color: whitesmoke;
+                color:black;
             }
 
             #enabled_button {
-                background-color: black;
+                background-color: var(--pri_color);
                 color:white;
             }
 
-            .chip_text {
-                font-size: smaller;
-                background-color: black;
-                width: fit-content;
-                padding: 5px 10px 5px 10px;
-                color: white;
-                border-radius: 100px;
-                margin: auto;
+            #enabled_button:hover {
+                background-color: #db0e0e;
             }
 
             /*Comparison section*/
@@ -331,11 +363,16 @@
 
             .table_feature {
                 font-weight: bold;
+                color: black;
             }
             
             td, th {
                 border-bottom: 1px solid var(--secondary_color);
                 padding: 20px;
+            }
+
+            td {
+                color: var(--text_color);
             }
 
             tr:hover {
@@ -425,9 +462,12 @@
                 }
 
                 .plan_container {
-                    width: 95%;
+                    width: 90%;
                     margin: auto;
                     margin-bottom: 20px;
+                }
+                #elevated_container {
+                    position: static;
                 }
                 .feature_container {
                     padding: 20px;
@@ -488,14 +528,14 @@
 
                 <!--Left navigation-->
                 <div class="nav_left">
-                    <a class="harmony_logo" href="index.html">Harmony</a>
+                    <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
                 </div>
 
                 <!--Middle navigation-->
                 <div class="nav_middle">
                     <a class="nav_button" href="home.html">Home</a>
                     <a class="nav_button" href="features.html">Features</a>
-                    <a class="nav_button" href="pricing.html">Pricing</a>
+                    <a class="nav_button" href="pricing.html" id="selected_page">Pricing</a>
                     <a class="nav_button" href="team.html">Team</a>
                 </div>
     
@@ -511,7 +551,7 @@
             <div class="nav_container_mobile">
 
                 <div class="nav_left_mobile">
-                    <a class="harmony_logo" href="index.html" style="font-size: larger;">Harmony</a>
+                    <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
                 </div>
 
                 <div class="nav_right_mobile">
@@ -550,12 +590,11 @@
                     <div class="pricing_container">
         
                         <!--Free-->
-                        <div class="plan_container">
+                        <div class="plan_container" id="elevated_container">
                             <div class="plan_heading_container">
-                                <h3>Free</h3>
-                                <p><span style="font-size: 30px; font-weight: bold;">$0 CAD</span>/month</p>
-                                <p class="chip_text">For casual users</p>
-                                <p style="font-size: smaller;color: var(--tertiary_color);">Free forever</p>
+                                <h2>Free</h2>
+                                <p>For casual users</p>
+                                <p><span style="color: black; font-size: 24px; font-weight: bold;">$0 CAD</span>/month</p>
                             </div>
                             <div class="plan_content_container">
                                 <b>Free features:</b>
@@ -574,12 +613,12 @@
                         <!--Gold-->
                         <div class="plan_container" id="gold_container">
                             <div class="plan_heading_container">
-                                <h3>Plus</h3>
-                                <p><span style="font-size: 30px; font-weight: bold;">$3 CAD</span>/month</p>
-                                <p class="chip_text">For serious users</p>
-                                <p style="font-size: smaller;color: var(--tertiary_color);">Cancel anytime</p>
+                                <p class="chip_text">Popular</p>
+                                <h2>Plus</h2>
+                                <p>For serious users</p>
+                                <p><span style="color: black; font-size: 24px; font-weight: bold;">$3 CAD</span>/month</p>
                             </div>
-                            <div class="plan_content_container" style="border-top: 1px solid black;">
+                            <div class="plan_content_container" style="border-top: 1px solid var(--pri_color);">
                                 <b>Enjoy everything in Free, plus:</b>
                                 <ul>
                                     <li>Benefit</li>
@@ -594,12 +633,11 @@
                         </div>
                         
                         <!--Executive-->
-                        <div class="plan_container">
+                        <div class="plan_container" id="elevated_container">
                             <div class="plan_heading_container">
-                                <h3>Pro</h3>
-                                <p><span style="font-size: 30px; font-weight: bold;">$10 CAD</span>/month</p>
-                                <p class="chip_text">For businesses and creators</p>
-                                <p style="font-size: smaller;color: var(--tertiary_color);">Cancel anytime</p>
+                                <h2>Pro</h2>
+                                <p>For businesses and creators</p>
+                                <p><span style="color: black; font-size: 24px; font-weight: bold;">$10 CAD</span>/month</p>
                             </div>
                             <div class="plan_content_container">
                                 <b>Get everything in Plus, plus:</b>
