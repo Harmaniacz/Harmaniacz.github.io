@@ -162,7 +162,7 @@
             }
 
             .mobile_navigation_list {
-                padding: 20px;
+                padding: 25px;
                 display: flex;
                 flex-wrap: wrap;
             }
@@ -175,17 +175,17 @@
             }
 
             .mobile_menu_button {
-                border-bottom: 1px solid var(--tertiary_color);
+                border-bottom: 1px solid #c3c3c3;
                 width: 100%;
                 text-align: center;
                 padding: 20px;
-                color:black;
+                color:var(--text_color);
                 font-weight: bold;
             }
 
             .mobile_menu_button:hover {
                 cursor: pointer;
-                background-color: var(--secondary_color);
+                color:black;
             }
 
             .mobile_menu_button_2 {
@@ -236,8 +236,7 @@
             }
 
             .plan_content_container {
-                padding: 25px;
-                border-top: 1px solid #c3c3c3;
+                padding: 0px 25px 25px 25px;
                 border-radius: 0px 0px 20px 20px;
             }
 
@@ -276,7 +275,7 @@
             .plan_heading_container {
                 width:100%;
                 text-align: center;
-                padding: 20px 0 20px 0;
+                padding: 25px 0 10px 0;
             }
 
             #secondary_choose_button {
@@ -312,7 +311,6 @@
             .switch_container {
                 background-color: white;
                 padding: 15px 5px 15px 5px;
-                border-radius: 4px;
                 width: fit-content;
                 margin: auto;
                 border: 1px solid #c3c3c3;
@@ -321,7 +319,6 @@
 
             .switch_button {
                 padding: 10px 20px 10px 20px;
-                border-radius: 4px;
                 border-radius: 100px;
                 font-weight: bold;
                 color:var(--text_color)
@@ -366,8 +363,11 @@
             }
             
             td, th {
-                border-bottom: 1px solid var(--secondary_color);
                 padding: 20px;
+            }
+
+            tr {
+                border-bottom: 1px solid var(--secondary_color);
             }
 
             td {
@@ -437,11 +437,12 @@
             .foot_link {
                 padding: 10px 20px 10px 20px;
                 text-decoration: none;
-                color:black;
+                color:var(--text_color);
             }
 
             .foot_link:hover {
                 cursor: pointer;
+                color:black;
             }
 
             /*Mobile display*/
@@ -449,14 +450,17 @@
                 .navigation_container, .nav_container, .hero_container, .main_container, .heading_container, .content_container, .main_content_container, .footer_container, .footer_content_container, table, .try_container, .try_content_container{
                     width: 100%;
                 }
+
                 .nav_container {
                     visibility: hidden;
 					display: none;
                 }
+
                 .nav_container_mobile {
                     visibility: visible;
                     display: flex;
                 }
+
                 .pricing_container {
                     flex-direction: column;
                 }
@@ -466,11 +470,18 @@
                     margin: auto;
                     margin-bottom: 20px;
                 }
+
                 #elevated_container {
                     position: static;
                 }
+
                 .feature_container {
                     padding: 20px;
+                }
+                
+                .table_choose {
+                    display: none;
+                    visibility: hidden;
                 }
             }
 
@@ -481,6 +492,7 @@
 
             let menu_press = true
 
+            //Navigation Button
             function navigation_button() {
                 const web_element = document.getElementsByClassName("web_page_content");
                 const mobile_element = document.getElementsByClassName("mobile_page_content");
@@ -512,6 +524,48 @@
                     menu_press = true;
                 }
 
+            }
+
+            //Monthly plan
+            function monthly_plan_button() {
+                //Price change
+                document.getElementById("gold_cost").innerText = "$10";
+                document.getElementById("executive_cost").innerText = "$30";
+
+                const rate_element = document.querySelectorAll("#rate_plan");
+                for (var i = 0; i < rate_element.length; i = i + 1) {
+                        rate_element[i].textContent = "/month"
+                }
+            }
+
+            //Yearly plan
+            function yearly_plan_button() {
+                //Price change
+                document.getElementById("gold_cost").innerText = "$100";
+                document.getElementById("executive_cost").innerText = "$300";
+
+                const rate_element = document.querySelectorAll("#rate_plan");
+                for (var i = 0; i < rate_element.length; i = i + 1) {
+                        rate_element[i].textContent = "/year"
+                }
+
+                //Button change
+                /*const button_switch = document.querySelectorAll("#disabled_button");
+                for (var i; i < button_switch.length; i++) {
+                    document.getElementById(enabled_button).id = "disabled_button"
+                }*/
+            }
+
+            //Lifetime plan
+            function lifetime_plan_button() {
+                //Price change
+                document.getElementById("gold_cost").innerText = "$500";
+                document.getElementById("executive_cost").innerText = "$1200";
+                
+                const rate_element = document.querySelectorAll("#rate_plan");
+                for (var i = 0; i < rate_element.length; i = i + 1) {
+                        rate_element[i].textContent = "/account"
+                }
             }
 
         </script>
@@ -577,9 +631,9 @@
         
                         <!--Monthly/yearly/lifetime pricing options-->
                         <div class="switch_container">
-                            <a class="switch_button" id="enabled_button">Monthly</a>
-                            <a class="switch_button" id="disabled_button">Yearly</a>
-                            <a class="switch_button" id="disabled_button">Lifetime</a>
+                            <a class="switch_button" id="enabled_button" onclick="monthly_plan_button()">Monthly</a>
+                            <a class="switch_button" id="disabled_button" onclick="yearly_plan_button()">Yearly</a>
+                            <a class="switch_button" id="disabled_button" onclick="lifetime_plan_button()">Lifetime</a>
                         </div>
         
                         <p>Save 20% with yearly</p>
@@ -594,7 +648,7 @@
                             <div class="plan_heading_container">
                                 <h2>Harmony</h2>
                                 <p>For casual users</p>
-                                <p><span style="color: black; font-size: 24px; font-weight: bold;">$0</span>/month</p>
+                                <p><span style="color: black; font-size: 24px; font-weight: bold;">$0</span><span id="rate_plan">/month</span></p>
                             </div>
                             <div class="plan_content_container">
                                 <b>Free features:</b>
@@ -616,9 +670,9 @@
                                 <p class="chip_text">Popular</p>
                                 <h2>Harmony<span style="color: var(--pri_color);">+</span></h2>
                                 <p>For serious users</p>
-                                <p><span style="color: black; font-size: 24px; font-weight: bold;">$3</span>/month</p>
+                                <p><span id="gold_cost" style="color: black; font-size: 24px; font-weight: bold;">$10</span><span id="rate_plan">/month</span></p>
                             </div>
-                            <div class="plan_content_container" style="border-top: 1px solid var(--pri_color);">
+                            <div class="plan_content_container">
                                 <b>Enjoy everything in Free, plus:</b>
                                 <ul>
                                     <li>Plus profile badge</li>
@@ -637,7 +691,7 @@
                             <div class="plan_heading_container">
                                 <h2>Harmony <span style="color: var(--pri_color);">Pro</span></h2>
                                 <p>For businesses and creators</p>
-                                <p><span style="color: black; font-size: 24px; font-weight: bold;">$10</span>/month</p>
+                                <p><span id="executive_cost" style="color: black; font-size: 24px; font-weight: bold;">$30</span><span id="rate_plan">/month</span></p>
                             </div>
                             <div class="plan_content_container">
                                 <b>Get everything in Plus, plus:</b>
@@ -727,6 +781,12 @@
                                 <td class="gold_plan_row"><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
                                 <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                             </tr>
+                            <tr class="table_choose" style="border: 0;">
+                                <td></td>
+                                <td><a class="choose_button" id="secondary_choose_button">Get started for free</a></td>
+                                <td><a class="choose_button">Get Harmony+</a></td>
+                                <td><a class="choose_button" id="secondary_choose_button">Get Harmony Pro</a></td>
+                            </tr>
                         </table>
                     </div>
 
@@ -737,6 +797,7 @@
             <div class="try_container">
 
                 <div class="try_content_container">
+                    <a class="harmony_logo"><img src="assets/harmony_logo_2.svg" height="40px"></a>
                     <h2>Try Harmony for free</h2>
                     <p style="margin-bottom: 40px;">Meet new friends with the language of music.</p>
                     <a href="#" class="nav_button" id="download_button">Get started</a>
@@ -751,7 +812,7 @@
 
                     <!--Left footer-->
                     <div class="left_foot">
-                    <b>Harmony</b>
+                        <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
                     </div>
 
                     <!--Middle footer-->
@@ -781,7 +842,7 @@
             <div class="mobile_navigation_list">
                 <a class="mobile_menu_button" href="home.html">Home</a>
                 <a class="mobile_menu_button" href="features.html">Features</a>
-                <a class="mobile_menu_button" href="pricing.html">Pricing</a>
+                <a class="mobile_menu_button" href="pricing.html" style="color:black; border-bottom: 1px solid var(--pri_color);">Pricing</a>
                 <a class="mobile_menu_button" href="team.html">Team</a>
                 <a class="mobile_menu_button_2" href="download.html" style="margin: 20px 0 0 0;">Download</a>
             </div>
