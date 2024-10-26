@@ -1,189 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding:0px;
-    margin:0px;
-}
-
-h1 {
-    margin: auto;
-    width:fit-content;
-    border-bottom: 1px solid black;
-}
-
-.navigation_container {
-    width: 100%;
-    background-color: black;
-    color:white;
-    height:50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.left_nav {
-    width:50%;
-    text-align: left;
-    align-content: center;
-}
-
-.right_nav {
-    align-items:center;
-    justify-content: right;
-    display:flex;
-    width:50%; 
-    text-align: right;
+    background-color: #e5dacf;
+    font-family: Nunito, Arial, Helvetica, sans-serif;
+    color:#2C2C2C;
 }
 
 .nav_container {
-    width: 800px;
-    display:flex;   
+    background-color: #FFF8F2;
+    border-style: solid;
+    border-color:#FF5252;
+    border-radius: 5px;
+    width: 100%;
+    height:65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+.nav_left {
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
-.heading_container {
-    background-color: #cfcfcf;
-    padding: 100px 0px 100px 0px;
-    text-align: center;
+.nav_middle {
+    /* temporary solution for the alignment */
+    padding-right: 400px;
 }
 
-.heading_container h1 h3 p {
-    display: inline-block;
-    vertical-align: middle;
-    animation-timing-function: ease-in;
-    animation: slide_animation 3s;    
+.nav_right {
+    padding-right: 15px;
 }
 
-.heading_container button {
-    animation-name: rainbow_animation;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
-
-.check_container {
-    outline: solid 2px #cfcfcf;
-    width: 500px;
-    margin: auto;
-    padding:25px;
-    text-align: left;
-}
-
-.border_container {
-    width:500px;
-    margin:auto;    
-    padding:25px;
-    outline: solid 2px #cfcfcf;
-    text-align:left;
-}
-
-button {
-    background-color: black;
-    border: none;
-    color: white;
+.nav_button {
+    background-color: #FFF8F2;
+    color:#2C2C2C;
+    font-weight: bold;
+    font-size:large;
+    text-decoration: none;
     padding: 10px 25px 10px 25px;
 }
 
-button:hover {
-    cursor: pointer;
-    background-color: grey;
+.nav_button:hover {
+    color: #E5737E
 }
 
-@media only screen and (max-width: 620px) {
-    .check_container, .border_container, .closing_container {
-        width: 100%;
-        padding:0;
-    }
+.nav_button:link {
+    color:#2C2C2C
 }
 
-@keyframes rainbow_animation {
-    0% {
-        background-color: red;
-    }
-    10% {
-        background-color: orange;
-    }
-    20% {
-        background-color: yellow;
-    }
-    30% {
-        background-color: green;
-    }
-    40% {
-        background-color: cyan;
-    }
-    50% {
-        background-color: blue;
-    }
-    60% {
-        background-color: azure;
-    }
-    70% {
-        background-color: violet;
-    }
-    80% {
-        background-color: purple;
-    }
-    90% {
-        background-color: magenta;
-    }
-    100% {
-        background: red;
-    }
+
+#login_button {
+    color:#2C2C2C;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #E5737E;
+    margin-right: 5px;
 }
 
-@keyframes button_fade_animation {
-    0% {
-        background-color: white;
-        color:black;
-    }
-    100% {
-        background-color: grey;
-        color: black;
-    }
+#login_button:hover {
+    background-color: #E5737E
 }
 
-.closing_container {
-    margin:auto;
-    padding: 25px 0px 50px 0px;
-    margin: 25px 0px 0px 0px;
-    background-color:black;
-    color: white
+#download_button {
+    color:#2C2C2C;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #E5737E;
 }
 
-.roadmap_container {
-    margin-top:25px;
+#download_button:hover {
+    background-color: #E5737E
 }
 
-.navigation_container button {
-    background-color: white;
-    color: black;
-    margin-left: 5px;
-}
-
-.navigation_container button:hover {
-    background-color: grey;
-    color: black;
-    animation-name: button_fade_animation;
-    animation-duration: 0.5s;
-}
-
-.closing_container button {
-    background-color: white;
-    color: black;
-    align-content: center;
-}
-
-.closing_container button:hover {
-    background-color: grey;
-    color: black;
-    animation-name: button_fade_animation;
-    animation-duration: 0.5s;
-}
-
-a {
-    color: #585858;
-    text-decoration: none;
-}
-
-a:hover {
-    border-bottom: 1px solid;
+#selected_page {
+    border-bottom: solid;
+    border-color: #2C2C2C;
 }

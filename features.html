@@ -1,11 +1,13 @@
 <html>
   <head>
+    <link rel="stylesheet" href="style.css">
     <title>Features | Harmony</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/harmony_favicon.png" type="image/icon type">
   </head>  
-  <style>
+
+  <!-- <style>
     body {
         font-family:Arial;
         background-color: rgba(147, 142, 142, 0.776);
@@ -50,7 +52,7 @@
         color:black;
         border-style:solid;
         border-width: 2px;
-    }
+  } 
     
     .joinButton:hover {background-color:gray;}
     
@@ -64,17 +66,38 @@
     font-weight: bold;
     }
     
-  </style>
-  <body>
-    <div class="navbar">
-            <b class="nomNavbar">Harmony</b>
-            <a href="home.html" class="boutonNavbar">Home</a>
-            <a href="features.html" class="boutonNavbar">Features</a>
-            <a href="pricing.html" class="boutonNavbar">Pricing</a>
-            <a href="team.html" class="boutonNavbar">Team</a>
-            <a href="download.html" class="boutonNavbar">Download</a>
-    </div>
+  </style> -->
 
+  <body>
+
+    <!--Navigation bar-->
+    <div class="navigation_container">
+
+      <!--Web navigation-->
+      <div class="nav_container">
+
+          <!--Left navigation-->
+          <div class="nav_left">
+              <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
+          </div>
+
+          <!--Middle navigation-->
+          <div class="nav_middle">
+              <a class="nav_button" href="home.html">Home</a>
+              <a class="nav_button" href="features.html" id="selected_page">Features</a>
+              <a class="nav_button" href="pricing.html">Pricing</a>
+              <a class="nav_button" href="team.html">Team</a>
+          </div>
+        
+          <!--Right navigation-->
+          <div class="nav_right">
+              <a class="nav_button" id="login_button" href="#">Log in</a>
+              <a class="nav_button" id="download_button" href="download.html">Download</a>
+          </div>
+      </div>
+
+    </div>
+    
     <div class="FeaturesGeneral">
         <h2>Meet new friends</h2>
         <img src="assets/meet_new_friends.png">
