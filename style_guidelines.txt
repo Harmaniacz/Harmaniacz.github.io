@@ -1,0 +1,32 @@
+Overall Look and Feel of Harmony
+-------------------------------------
+The website should have a friendly, chill and fun feel.  We want it to be soft and we will go for round buttons and borders. We want to avoid creating a website that is too corporate. 
+
+Colours
+-------------------------------------
+For Harmony, we want colours that are neither too extreme nor too boring. We want the website to be inviting to all kind of users.
+
+Colour swatches:
+
+-#E57373
+-#FF5252
+-#FFC1A6
+-#2C2C2C
+-#FF7043
+-#FFF8F2
+
+Iconography
+-------------------------------------
+Harmony's icons feature soft shapes and clean lines,creating a lively, warm, and music-inspired feel.
+
+Typography
+-------------------------------------
+We will be using Nunito from Google Fonts.
+
+Links
+-------------------------------------
+Links will not be underlined. They will look similar to buttons. There will be a soft color shift when a user hovers over it.
+
+Buttons
+-------------------------------------
+Buttons will be round and colorful.
