@@ -6,6 +6,7 @@ body {
     background-color: #e5dacf;
     font-family: Nunito, Arial, Helvetica, sans-serif;
     color:#2C2C2C;
+    margin: 0;
 }
 a {
     text-decoration: none;
@@ -104,8 +105,16 @@ img {
 }
 
 /* features page */
+.pink_navigation {
+    background-color: #e5737e45;
+    width: 100%;
+}
 .pink_features {
     display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     justify-content: space-between;
     background-color: #e5737e45;
     border-top: solid;
