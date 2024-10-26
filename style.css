@@ -11,6 +11,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    border-radius: 10px
+}
+
 /* navigation bar */
 
 .nav_container {
@@ -82,13 +86,9 @@ a {
     background-color: #e95664;
 }
 
-/* Features page */
+/* join button */
 
-#join_div_features {
-    display: flex;
-    justify-content: center;
-}
-#join_button {
+.join_button {
     font-size: large;
     font-weight: bold;
     color:#FFF8F2;
@@ -99,6 +99,105 @@ a {
     padding: 10px 25px 10px 25px;
 }
 
-#join_button:hover {
+.join_button:hover {
     background-color: #e95664;
 }
+
+/* features page */
+.pink_features {
+    display: flex;
+    justify-content: space-between;
+    background-color: #e5737e45;
+    border-top: solid;
+    border-bottom: solid;
+    border-top-color:#E5737E;
+    border-bottom-color: #E5737E;
+}
+
+#meet_friends_h1 {
+    text-align: left;
+    font-size: 70px;
+    padding: 20px 0px 0px 80px;
+    margin: 40px 0 0 0;
+}
+
+#meet_friends_h2 {
+    text-align: left;
+    font-size: 50px;
+    padding: 0px 0px 20px 80px;
+    margin: 0
+
+}
+
+#meet_friends_button {
+    text-align: left;
+    margin: 80px;
+
+}
+
+#meet_friends_img {
+    margin: 20px 80px 20px 0px;
+    max-width:500px;  
+    height: 400px;
+}
+
+.no_color_features {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features_text_right {
+    padding-right: 50px;
+    padding-left: 50px;
+    font-stretch: condensed;
+    text-align: left;
+    margin: 40px
+}
+
+#music_people_h2 {
+    text-align: left;
+    font-size: 40px;
+    margin: 20px 80px 20px 0px;
+}
+
+#music_people_img {
+    max-width:300px;  
+    height: 200px;
+    margin: 0px 0px 20px 80px;
+}
+#how_it_works_h2 {
+    text-align: left;
+    font-size: 40px;
+}
+
+#how_it_works_img {
+    margin: 20px 80px 20px 0px;
+    max-width:400px;  
+    height: 300px;
+}
+
+#music_around_you_h2 {
+    font-size: 40px;
+    text-align: left;
+    padding: 80px;
+
+}
+
+#music_around_you_img {
+    margin: 20px 0px 20px 80px;
+    max-width:400px;  
+    height: 300px;
+}
+
+.features_text_left {
+    padding-right: 50px;
+    padding-left: 80px;
+    font-stretch: condensed;
+    text-align: left;
+}
+
+#join_div_features {
+    display: flex;
+    justify-content: center;
+}
+
