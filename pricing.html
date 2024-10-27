@@ -32,6 +32,7 @@
                 --pri_fade_color: #f59b9b;
                 --border_outline_color:#c3c3c3;
                 --pri_hover_color: #fff8f8;
+                --bg_color: rgb(248, 248, 248);
             }
         
              /*Body content*/
@@ -114,7 +115,7 @@
             #login_button {
                 color:var(--pri_color);
                 border-radius: 15px;
-                border: var(--border_outline_color) 1px solid;
+                border: 1px solid var(--pri_color);
             }
 
             #login_button:hover {
@@ -233,10 +234,9 @@
 
             .plan_container {
                 width:32%;
-                background-color: white;
+                background-color: var(--bg_color);
                 border-radius: 15px;
                 overflow: hidden;
-                border: 1px solid var(--border_outline_color);
             }
 
             .plan_content_container {
@@ -250,7 +250,7 @@
             }
 
             #gold_container {
-                border: 2px solid var(--pri_color);
+                background-color: var(--pri_hover_color);
             }
 
             #elevated_container {
@@ -266,7 +266,6 @@
                 padding:10px 0px 10px 0px;
                 display: block;
                 text-align: center;
-                border: 1px var(--pri_color) solid;
                 border-radius: 15px;
                 font-weight: bold;
             }
@@ -284,7 +283,7 @@
 
             #secondary_choose_button {
                 background-color: white;
-                border: 1px solid var(--border_outline_color);
+                border: 1px solid var(--pri_color);
                 color:var(--pri_color);
             }
 
@@ -317,7 +316,6 @@
                 padding: 15px 5px 15px 5px;
                 width: fit-content;
                 margin: auto;
-                border: 1px solid var(--border_outline_color);
                 border-radius: 15px;
             }
 
@@ -325,7 +323,7 @@
                 padding: 10px 20px 10px 20px;
                 border-radius: 15px;
                 font-weight: bold;
-                color:var(--text_color)
+                color:var(--pri_color)
             }
 
             .switch_button:hover {
@@ -382,11 +380,6 @@
                 text-decoration: none;
                 border-bottom: 1px dashed var(--pri_color);
             }
-
-            /*
-            .gold_plan_row {
-                background-color: #f7f6f6;x
-            }*/
 
             /*Try section*/
             .try_container {
@@ -479,6 +472,35 @@
                 .table_choose {
                     display: none;
                     visibility: hidden;
+                }
+
+                .table_last {
+                    border-bottom: 0;
+                }
+
+                #table_gold_last {
+                    background-color: var(--pri_hover_color);
+                    border-radius: 0 0 15px 15px;
+                }
+
+                .left_foot {
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .middle_foot {
+                    width: 100%;
+                    text-align: center;
+                    padding: 20px;
+                }
+
+                .right_foot { 
+                    width: 100%;
+                    text-align: center;
+                }
+
+                .footer_content_container {
+                    flex-direction: column;
                 }
             }
 
@@ -656,12 +678,12 @@
                             <div class="plan_content_container">
                                 <b>Free features:</b>
                                 <ul>
-                                    <li>Benefit</li>
-                                    <li>Benefit</li>
-                                    <li>Benefit</li>
-                                    <li>Benefit</li>
-                                    <li>Benefit</li>
-                                    <li>Benefit</li>
+                                    <li>Full customizable profile</li>
+                                    <li>Find friends with Contacts</li>
+                                    <li>Post stories</li>
+                                    <li>Listen along with friends</li>
+                                    <li>Find upcoming concerts</li>
+                                    <li>See songs played around you</li>
                                 </ul>
                                 <a class="choose_button" id="secondary_choose_button">Get started for free</a>
                             </div>
@@ -729,65 +751,83 @@
                     <!--Table for features chart-->
                     <div class="feature_container">
                         <table>
+                            <colgroup>
+                                <col>
+                                <col>
+                                <col style="background-color: var(--pri_hover_color);">
+                                <col>
+                            </colgroup>
                             <tr>
                                 <th>Features</th>
                                 <th>Harmony</th>
-                                <th style="height: 30px;">Harmony<span style="color: var(--pri_color);">+</span></th>
+                                <th style="height: 30px; background-color: var(--pri_hover_color); border-radius: 15px 15px 0 0;">Harmony<span style="color: var(--pri_color);">+</span></th>
                                 <th>Harmony <span style="color: var(--pri_color);">Pro</span></th>
                             </tr>
                             <tr>
-                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Match and chat</abbr></td>
+                                <td class="table_feature"><abbr title="Customize profile icon, banner, theme, privacy, username, preferences, and other account options">Customizable profile</abbr></td>
                                 <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                                 <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                                 <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
     
                             </tr>
                             <tr>
-                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Listen together</abbr></td>
+                                <td class="table_feature"><abbr title="Connect your contact lists and enable data sharing to automatically populate your profile with your friends and family">Find your friends</abbr></td>
                                 <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                                 <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                                 <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                             </tr>
                             <tr>
-                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Music search</abbr></td>
-                                <td>10 swipes per day</td>
-                                <td class="gold_plan_row">Unlimited</td>
-                                <td>Unlimited</td>
+                                <td class="table_feature"><abbr title="Post various types of public or private posts">Post stories</abbr></td>
+                                <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                                <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                                <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                             </tr>
                             <tr>
-                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Profile badge</abbr></td>
+                                <td class="table_feature"><abbr title="Listen to the same songs your friends are listening at the same time">Listen along with friends</abbr></td>
+                                <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                                <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                                <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="table_feature"><abbr title="Search for local concerts, festivals, and other music events in your area">Find upcoming concerts</abbr></td>
+                                <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                                <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                                <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                            </tr>
+                            <tr>
+                                <td class="table_feature"><abbr title="Enjoy your experience without any interuptions">Ad-free experience</abbr></td>
                                 <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
                                 <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                                 <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                             </tr>
                             <tr>
-                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Ad-free</abbr></td>
+                                <td class="table_feature"><abbr title="Access an exlusive map of the world where you can visually and geographically browse regional songs">Sound-of posting</abbr></td>
                                 <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
                                 <td class="gold_plan_row"><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                                 <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                             </tr>
                             <tr>
-                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Analytics</abbr></td>
-                                <td>Limited</td>
-                                <td class="gold_plan_row">24/7</td>
-                                <td>24/7</td>
-                            </tr>
-                            <tr>
-                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
+                                <td class="table_feature"><abbr title="Boost your account presence and allow more users to listen and view your profile">Sound-of profile and promotion</abbr></td>
                                 <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
                                 <td class="gold_plan_row"><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
                                 <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
                             </tr>
                             <tr>
-                                <td class="table_feature"><abbr title="Chat with yourself, or old and new friends">Chat</abbr></td>
-                                <td><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
-                                <td class="gold_plan_row"><span><img src="assets/close.svg" alt="Close" style="fill: black;"></span></td>
-                                <td><span><img src="assets/check.svg" alt="Check" style="fill: black;"></span></td>
+                                <td class="table_feature"><abbr title="Expand your network reach">Harmony radius</abbr></td>
+                                <td>5km</td>
+                                <td class="gold_plan_row">20km</td>
+                                <td>Custom</td>
+                            </tr>
+                            <tr class="table_last">
+                                <td class="table_feature"><abbr title="Explore what songs people are listening to around you">Vibe map</abbr></td>
+                                <td>Friends only</td>
+                                <td class="gold_plan_row" id="table_gold_last">Anyone within 20m</td>
+                                <td>Anyone within 100m</td>
                             </tr>
                             <tr class="table_choose" style="border: 0;">
                                 <td></td>
                                 <td><a class="choose_button" id="secondary_choose_button">Get started for free</a></td>
-                                <td><a class="choose_button">Get Harmony+</a></td>
+                                <td style="background-color: var(--pri_hover_color); border-radius: 0 0 15px 15px;"><a class="choose_button">Get Harmony+</a></td>
                                 <td><a class="choose_button" id="secondary_choose_button">Get Harmony Pro</a></td>
                             </tr>
                         </table>

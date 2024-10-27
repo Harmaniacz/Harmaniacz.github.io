@@ -1,7 +1,11 @@
+// index.html
+
 function github() {
     window.open('https://github.com/Harmaniacz');
     console.log("The Harmaniacz were here!")
 }
+
+// home.html
 
 function home() {
     window.open('home.html');
