@@ -32,7 +32,7 @@
                 --pri_fade_color: #f59b9b;
                 --border_outline_color:#c3c3c3;
                 --pri_hover_color: #fff8f8;
-                --bg_color: rgb(248, 248, 248);
+                --bg_color: #fafafa;
             }
         
              /*Body content*/
@@ -222,7 +222,7 @@
                 width: fit-content;
                 padding: 5px 10px 5px 10px;
                 color: white;
-                border-radius: 15px;
+                border-radius: 10px;
                 margin: auto;
             }   
 
@@ -240,8 +240,19 @@
             }
 
             .plan_content_container {
+                padding: 0px 25px 0px 25px;
+            }
+
+            .button_container {
                 padding: 0px 25px 25px 25px;
-                border-radius: 0px 0px 15px 15px;
+            }
+
+            #button_container_1 {
+                padding-top: 94px;
+            }
+
+            #button_container_2 {
+                padding-top: 34px;
             }
 
             .heading_container {
@@ -254,9 +265,7 @@
             }
 
             #elevated_container {
-                top: 28px;
-                position: relative;
-                height: fit-content;
+                padding-top:29px;
             }
 
             .choose_button {
@@ -276,9 +285,8 @@
             }
 
             .plan_heading_container {
-                width:100%;
                 text-align: center;
-                padding: 25px 0 10px 0;
+                padding: 25px 0 0 0;
             }
 
             #secondary_choose_button {
@@ -383,8 +391,9 @@
 
             /*Try section*/
             .try_container {
-                border-top: 1px solid var(--border_outline_color);
                 width: 100%;
+                border-top: 1px solid var(--border_outline_color);
+                padding-top: 50px;
             }
 
             .try_content_container {
@@ -392,6 +401,9 @@
                 width:1000px;
                 margin: auto;
                 text-align: center;
+                background-color: var(--bg_color);
+                border-radius: 15px;
+                margin-bottom: 50px;
             }
 
             /*Footer section*/
@@ -399,7 +411,7 @@
                 width:100%;
                 padding:50px 0px 50px 0px;
                 text-align: center;
-                background-color: #E5737E;
+                background-color: var(--pri_color);
             }
 
             .footer_content_container {
@@ -436,10 +448,12 @@
 
             /*Mobile display*/
             @media only screen and (max-width: 1000px) {
+                /*Main*/
                 .navigation_container, .nav_container, .hero_container, .main_container, .heading_container, .content_container, .main_content_container, .footer_container, .footer_content_container, table, .try_container, .try_content_container{
                     width: 100%;
                 }
 
+                /*Navigation bar*/
                 .nav_container {    
                     visibility: hidden;
 					display: none;
@@ -450,6 +464,7 @@
                     display: flex;
                 }
 
+                /*Pricing plans*/
                 .pricing_container {
                     flex-direction: column;
                 }
@@ -460,14 +475,20 @@
                     margin-bottom: 20px;
                 }
 
-                #elevated_container {
-                    position: static;
+                #button_container_1 {
+                    padding-top: 0;
                 }
 
-                .feature_container {
-                    padding: 20px;
+                #button_container_2 {
+                    padding-top: 0;
                 }
-                
+
+                #elevated_container {
+                    padding-top: 20px;
+                }
+
+                /*Comparison section*/
+
                 .table_choose {
                     display: none;
                     visibility: hidden;
@@ -481,7 +502,19 @@
                     background-color: var(--pri_hover_color);
                     border-radius: 0 0 15px 15px;
                 }
+                
+                /*Try section*/
+                .try_content_container {
+                    border-radius: 0;
+                    margin-bottom: 0;
+                }
 
+                .try_container {
+                    padding-top: 0;
+                    border: 0;
+                }
+
+                /*Footer section*/
                 .left_foot {
                     width: 100%;
                     text-align: center;
@@ -553,7 +586,7 @@
 
                 const rate_element = document.querySelectorAll("#rate_plan");
                 for (var i = 0; i < rate_element.length; i = i + 1) {
-                        rate_element[i].textContent = "/month"
+                    rate_element[i].textContent = "/month"
                 }
             }
 
@@ -565,19 +598,19 @@
 
                 const rate_element = document.querySelectorAll("#rate_plan");
                 for (var i = 0; i < rate_element.length; i = i + 1) {
-                        rate_element[i].textContent = "/year"
+                    rate_element[i].textContent = "/year"
                 }
                 
-                for (var i = 0; i < disabled_element.length; i = i + 1) {
-                    document.getElementById("enabled_button").id = "disabled_button";
-                    document.getElementById("disabled_button").id = "disabled_button";
-                }
                 
                 //Button change
-                /*const button_switch = document.querySelectorAll("#disabled_button");
-                for (var i; i < button_switch.length; i++) {
-                    document.getElementById(enabled_button).id = "disabled_button"
-                }*/
+                var button_disabled = document.querySelectorAll("#disabled_button");
+                var button_enabled = document.querySelectorAll("#enabled_button");
+
+                var enabled_element = document.getElementById("enabled_button");
+                var disabled_element = document.getElementById("disabled_button");
+
+                console.log(button_disabled)
+                console.log(button_enabled)
             }
 
             //Lifetime plan
@@ -588,7 +621,7 @@
                 
                 const rate_element = document.querySelectorAll("#rate_plan");
                 for (var i = 0; i < rate_element.length; i = i + 1) {
-                        rate_element[i].textContent = "/account"
+                    rate_element[i].textContent = "/account"
                 }
             }
 
@@ -655,9 +688,9 @@
         
                         <!--Monthly/yearly/lifetime pricing options-->
                         <div class="switch_container">
-                            <a class="switch_button" id="enabled_button" onclick="monthly_plan_button()">Monthly</a>
-                            <a class="switch_button" id="disabled_button" onclick="yearly_plan_button()">Yearly</a>
-                            <a class="switch_button" id="disabled_button" onclick="lifetime_plan_button()">Lifetime</a>
+                            <a class="switch_button" value="option_1" id="enabled_button" onclick="monthly_plan_button()">Monthly</a>
+                            <a class="switch_button" value="option_2" id="disabled_button" onclick="yearly_plan_button()">Yearly</a>
+                            <a class="switch_button" value="option_3" id="disabled_button" onclick="lifetime_plan_button()">Lifetime</a>
                         </div>
         
                         <p>Save 20% with yearly</p>
@@ -675,15 +708,17 @@
                                 <p><span style="color: black; font-size: 24px; font-weight: bold;">$0</span><span id="rate_plan">/month</span></p>
                             </div>
                             <div class="plan_content_container">
-                                <b>Free features:</b>
                                 <ul>
-                                    <li>Full customizable profile</li>
-                                    <li>Find friends with Contacts</li>
+                                    <li>Customizable profile</li>
+                                    <li>Find your friends</li>
                                     <li>Post stories</li>
                                     <li>Listen along with friends</li>
                                     <li>Find upcoming concerts</li>
-                                    <li>See songs played around you</li>
+                                    <li>Harmony radius of 5km</li>
+                                    <li>Tune into songs with friends</li>
                                 </ul>
+                            </div>
+                            <div class="button_container" id="button_container_1">
                                 <a class="choose_button" id="secondary_choose_button">Get started for free</a>
                             </div>
                         </div>
@@ -697,15 +732,19 @@
                                 <p><span id="gold_cost" style="color: black; font-size: 24px; font-weight: bold;">$10</span><span id="rate_plan">/month</span></p>
                             </div>
                             <div class="plan_content_container">
-                                <b>Enjoy everything in Free, plus:</b>
                                 <ul>
-                                    <li>Plus profile badge</li>
-                                    <li>Benefit</li>
-                                    <li>Benefit</li>
-                                    <li>Benefit</li>
-                                    <li>Benefit</li>
-                                    <li>Benefit</li>
+                                    <li>Customizable profile</li>
+                                    <li>Find your friends</li>
+                                    <li>Post stories</li>
+                                    <li>Listen along with friends</li>
+                                    <li>Find upcoming concerts</li>
+                                    <li>Ad-free experience</li>
+                                    <li>Sound-of posting</li>
+                                    <li>Harmony radius of 20km</li>
+                                    <li>Vibe map within 20m</li>
                                 </ul>
+                            </div>
+                            <div class="button_container" id="button_container_2">
                                 <a class="choose_button">Get Harmony+</a>
                             </div>
                         </div>
@@ -718,15 +757,20 @@
                                 <p><span id="executive_cost" style="color: black; font-size: 24px; font-weight: bold;">$30</span><span id="rate_plan">/month</span></p>
                             </div>
                             <div class="plan_content_container">
-                                <b>Get everything in Plus, plus:</b>
                                 <ul>
-                                    <li>Pro profile badge</li>
-                                    <li>Benefit</li>
-                                    <li>Benefit</li>
-                                    <li>Benefit</li>
-                                    <li>Benefit</li>
-                                    <li>Benefit</li>
+                                    <li>Customizable profile</li>
+                                    <li>Find your friends</li>
+                                    <li>Post stories</li>
+                                    <li>Listen along with friends</li>
+                                    <li>Find upcoming concerts</li>
+                                    <li>Ad-free experience</li>
+                                    <li>Sound-of posting</li>
+                                    <li>Sound-of profile and promotion</li>
+                                    <li>Harmony radius of custom</li>
+                                    <li>Vibe map within 100m</li>
                                 </ul>
+                            </div>
+                            <div class="button_container">
                                 <a class="choose_button" id="secondary_choose_button">Get Harmony Pro</a>
                             </div>
                         </div>
