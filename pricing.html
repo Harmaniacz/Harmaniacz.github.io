@@ -25,12 +25,13 @@
                 --secondary_color:rgb(196, 196, 196);
                 --tertiary_color:rgb(66, 66, 66);
 
-                --pri_color: #F31010;
+                --pri_color: #E5737E;
                 --sec_color: #f59b9b;
                 --text_color: #646464;
-                --pri_button_hover: #db0e0e; 
+                --pri_button_hover: #c86c75; 
                 --pri_fade_color: #f59b9b;
                 --border_outline_color:#c3c3c3;
+                --pri_hover_color: #fff8f8;
             }
         
              /*Body content*/
@@ -94,14 +95,14 @@
             }
 
             .harmony_logo {
-                top: 4px;
+                top: 5px;
                 position: relative;
             }
 
             #download_button {
                 background-color: var(--pri_color);
                 color:white;
-                border-radius: 100px;
+                border-radius: 15px;
                 font-weight: bold;
             }
 
@@ -112,18 +113,17 @@
 
             #login_button {
                 color:var(--pri_color);
-                border-radius: 100px;
+                border-radius: 15px;
                 border: var(--border_outline_color) 1px solid;
             }
 
             #login_button:hover {
-                background-color: #fff6f6;
+                background-color: var(--pri_hover_color);
                 border: var(--pri_color) 1px solid;
             }
 
             #selected_page {
                 color: black;
-                border-bottom: 1px solid var(--pri_color);
                 padding: 26px 10px 26px 10px;
                 border-bottom: 2px solid var(--pri_color);
             }
@@ -176,7 +176,7 @@
                 padding: 20px 20px 20px 0px;
                 background-color: var(--pri_color);
                 color:white;
-                border-radius:4px
+                border-radius:15px;
             }
 
             .mobile_menu_button {
@@ -190,14 +190,14 @@
 
             .mobile_menu_button:hover {
                 cursor: pointer;
-                color:black;
+                background-color: var(--pri_hover_color);
             }
 
             .mobile_menu_button_2 {
                 width: 100%;
                 background-color: var(--pri_color);
                 color: white;
-                border-radius: 100px;   
+                border-radius: 15px;   
                 text-align: center;
                 padding: 20px;
                 font-weight: bold;
@@ -213,7 +213,6 @@
                 width:100%;
                 padding: 50px 0px 50px 0px;
                 border-bottom: 1px solid var(--border_outline_color);
-                background-color: #f7f6f6;;
             }
 
             .chip_text {
@@ -222,7 +221,7 @@
                 width: fit-content;
                 padding: 5px 10px 5px 10px;
                 color: white;
-                border-radius: 100px;
+                border-radius: 15px;
                 margin: auto;
             }   
 
@@ -235,14 +234,14 @@
             .plan_container {
                 width:32%;
                 background-color: white;
-                border-radius: 10px;
+                border-radius: 15px;
                 overflow: hidden;
                 border: 1px solid var(--border_outline_color);
             }
 
             .plan_content_container {
                 padding: 0px 25px 25px 25px;
-                border-radius: 0px 0px 20px 20px;
+                border-radius: 0px 0px 15px 15px;
             }
 
             .heading_container {
@@ -268,7 +267,7 @@
                 display: block;
                 text-align: center;
                 border: 1px var(--pri_color) solid;
-                border-radius: 100px;
+                border-radius: 15px;
                 font-weight: bold;
             }
 
@@ -290,7 +289,7 @@
             }
 
             #secondary_choose_button:hover {
-                background-color: #fff6f6;
+                background-color: var(--pri_hover_color);
                 border: var(--pri_color) 1px solid;
             }
 
@@ -319,19 +318,19 @@
                 width: fit-content;
                 margin: auto;
                 border: 1px solid var(--border_outline_color);
-                border-radius: 100px;
+                border-radius: 15px;
             }
 
             .switch_button {
                 padding: 10px 20px 10px 20px;
-                border-radius: 100px;
+                border-radius: 15px;
                 font-weight: bold;
                 color:var(--text_color)
             }
 
             .switch_button:hover {
                 cursor: pointer;
-                background-color: #fff6f6;
+                background-color: var(--pri_hover_color);
                 color:var(--pri_color);
             }
 
@@ -379,16 +378,9 @@
                 color: var(--text_color);
             }
 
-            .gold_plan_table_bottom {
-                background-color: black;
-                color:white;
-                border-radius: 0 0 20px 20px;
-                border-top: 1px solid black;
-            }
-
             abbr {
                 text-decoration: none;
-                border-bottom: 1px dashed rgb(63, 63, 63);
+                border-bottom: 1px dashed var(--pri_color);
             }
 
             /*
