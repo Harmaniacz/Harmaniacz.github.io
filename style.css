@@ -146,8 +146,8 @@ img {
 
 #meet_friends_img {
     margin: 20px 80px 20px 0px;
-    max-width:500px;  
-    height: 400px;
+    width:500px;  
+    height: 450px;
 }
 
 .no_color_features {
@@ -170,9 +170,9 @@ img {
 }
 
 #music_people_img {
-    max-width:300px;  
+    width:300px;  
     height: 200px;
-    margin: 0px 0px 20px 80px;
+    margin: 20px 0px 20px 80px;
 }
 #how_it_works_h2 {
     text-align: left;
@@ -181,7 +181,7 @@ img {
 
 #how_it_works_img {
     margin: 20px 80px 20px 0px;
-    max-width:400px;  
+    width:400px;  
     height: 300px;
 }
 
@@ -194,8 +194,84 @@ img {
 
 #music_around_you_img {
     margin: 20px 0px 20px 80px;
-    max-width:400px;  
+    width: 400px;  
     height: 300px;
+}
+#pink_features_no_flex {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e5737e45;
+    border-top: solid;
+    border-bottom: solid;
+    border-top-color:#E5737E;
+    border-bottom-color: #E5737E;
+}
+#make_new_friends_h2 {
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 40px;
+}
+
+#make_new_friends_img {
+    width:700px;  
+    height: 300px;
+    display: block;
+    margin: 20px auto 20px auto;
+}
+
+#up_to_date_h2 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#up_to_date_img {
+    width: 900px;
+    height: 500px;
+    display: block;
+    margin: 20px auto 20px auto;
+}
+#pink_features_table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #e5737e45;
+    border-top: solid;
+    border-bottom: solid;
+    border-top-color:#E5737E;
+    border-bottom-color: #E5737E;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#profile_and_customize_h2_text {
+    text-align: left;
+    padding-left: 40px;
+    margin: 0;
+}
+#profile_and_customize_h2 {
+    font-size: 40px;
+}
+
+#profile_and_customize_img {
+    width: 400px;
+    height: 800px;
+    padding: 20px 100px 20px 80px;
+    margin-right: 0
+
+}
+#profile_and_customize_h3_text {
+    padding: 400px 20px 0 0;
+    margin-left: 0
+}
+
+#profile_and_customize_h3 {
+    font-size: 30px;
+}
+#thanks {
+    text-align: center;
 }
 
 .features_text_left {
