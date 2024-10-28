@@ -1,161 +1,112 @@
 <!DOCTYPE html>
-<html>
-
-    <head>
-
-    <title>Meet the Team! | Harmony</title>
+<html lang="en-US">
+<head>
+    <title>Meet the Team | Harmony</title>
+    <link rel="stylesheet" href="samplestyling.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="assets/harmony_favicon.png" type="image/icon type">
-        <link rel="stylesheet" href="rikiStyle.css">
+</head>
+<body>
+
+   
+    <div class="navigation_container">
+        <div class="nav_container">
+            <div class="nav_left">
+                <a class="harmony_logo" href="index.html"><img src="assets/harmony_logo_2.svg" height="30px"></a>
+            </div>
+            <div class="nav_middle">
+                <a class="nav_button" href="home.html">Home</a>
+                <a class="nav_button" href="features.html">Features</a>
+                <a class="nav_button" href="pricing.html">Pricing</a>
+                <a class="nav_button" href="team.html" id="selected_page">Team</a>
+            </div>
+            <div class="nav_right">
+                <a class="nav_button" id="login_button" href="#">Log in</a>
+                <a class="nav_button" id="download_button" href="download.html">Download</a>
+            </div>
+        </div>
+    </div>
+
     
-        <style>
-
-        /*Global colour variables*/
-        :root {
-            --main-color:black;
-            --secondary_color:rgb(196, 196, 196);
-            --tertiary_color:rgb(66, 66, 66);
-        }
-
-        /*Body content*/
-        body {
-                font-family: Arial, Helvetica, sans-serif;
-                padding:0px;
-                margin:0px;
-            }
-
-            .main_container {
-                width: 1000px;
-                margin: auto;
-            }
-
-            /*Navigation bar*/
-            .navigation_container {
-                background-color: var(--main-color);
-                color:white;
-            }
-
-            .nav_container {
-                width:1000px;
-                margin:auto;
-                display: flex;
-                height:70px;
-                align-items: center;
-            }
-
-            .nav_left {
-                width:30%;
-                align-content: center;
-                font-size:larger;
-            }
-
-            .nav_right {
-                width:70%;
-                text-align: end;
-                align-content: center;
-            }
+    <div class="web_page_content">
+        <div class="main_container">
+            <h1 style="text-align: center;">Meet the Team</h1>
+            <p style="text-align: center; color: var(--text_color);">Our talented team of professionals dedicated to bringing you the best experience.</p>
             
-
-            .harmony-clickable {
-                color: white;
-                text-decoration: none;
-                font-weight: bold;
-            }
-            
-        </style>
-    </head>
-
-    <body style="background-color: var(--secondary_color)">
-        <div class="navigation_container">
-            <div class="nav_container">
-                <div class="nav_left">
-                    <a class="harmony-clickable" href="index.html">Harmony</a>
+            <div class="team_container" style="display: flex; justify-content: space-evenly; align-items: stretch; flex-wrap: wrap; padding: 20px;">
+                
+                <div class="plan_container" style="width: 180px; margin: 10px;">
+                    <div class="plan_heading_container">
+                        <h2>Aiden Lam</h2>
+                        <p>Position: Software Architect</p>
+                    </div>
+                    <div class="plan_content_container">
+                        <p>Aiden designs the structure of our software systems so that you can have the best experience possible.</p>
+                    </div>
                 </div>
-                <div class="nav_right">
-                    <a class="nav_button" href="home.html">Home</a>
-                    <a class="nav_button" href="features.html">Features</a>
-                    <a class="nav_button" href="pricing.html">Pricing</a>
-                    <a class="nav_button" href="team.html">Team</a>
-                    <a class="nav_button" id="download_button" href="download.html">Download</a>
+
+                <div class="plan_container" style="width: 180px; margin: 10px;">
+                    <div class="plan_heading_container">
+                        <h2>Najib Elmi</h2>
+                        <p>Position: UX Designer</p>
+                    </div>
+                    <div class="plan_content_container">
+                        <p>Najib focuses on creating intuitive user experiences with a keen eye for design.</p>
+                    </div>
+                </div>
+
+                <div class="plan_container" style="width: 180px; margin: 10px;">
+                    <div class="plan_heading_container">
+                        <h2>Riki Mcalear</h2>
+                        <p>Position: Frontend Developer</p>
+                    </div>
+                    <div class="plan_content_container">
+                        <p>Riki excels at crafting seamless interfaces, ensuring that the app feels just as great as it looks.</p>
+                    </div>
+                </div>
+
+                <div class="plan_container" style="width: 180px; margin: 10px;">
+                    <div class="plan_heading_container">
+                        <h2>Samuel Leone-Ganado</h2>
+                        <p>Position: Product Manager</p>
+                    </div>
+                    <div class="plan_content_container">
+                        <p>Samuel drives our product vision, making sure every feature aligns with our users' needs.</p>
+                    </div>
+                </div>
+
+                <div class="plan_container" style="width: 180px; margin: 10px;">
+                    <div class="plan_heading_container">
+                        <h2>Yassmine Senouci</h2>
+                        <p>Position: Marketing Specialist</p>
+                    </div>
+                    <div class="plan_content_container">
+                        <p>Yassmine leads our marketing efforts, ensuring our message reaches our audience effectively.</p>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Meet the Team</title>
-            <style>
-                body {
-                    font-family: Arial, sans-serif;
-                    background-color: #f4f4f4;
-                    margin: 0;
-                    padding: 0;
-                }
-                h1 {
-                    text-align: center;
-                    color: #333;
-                }
-                .team {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    margin: 20px 0;
-                }
-                .member {
-                    background: #fff;
-                    border: 1px solid #ddd;
-                    border-radius: 5px;
-                    margin: 10px;
-                    padding: 15px;
-                    width: 200px;
-                    text-align: center;
-                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-                }
-                .member img {
-                    border-radius: 50%;
-                    width: 100px;
-                    height: 100px;
-                }
-                .member h3 {
-                    margin: 10px 0 5px;
-                }
-                .member p {
-                    color: #555;
-                }
-            </style>
-        </head>
-        <body>
-        
-            <h1>Meet the Team!</h1>
-            <div class="team">
-                <div class="member">
-                    <img src="assets/default_avatar.png" alt="default_avatar" style="background-color: var(--tertiary_color);">
-                    <h3>Aiden Lam</h3>
-                    <p>Role</p>
-                </div>
-                <div class="member">
-                    <img src="assets/default_avatar.png" alt="default_avatar" style="background-color: var(--tertiary_color);">
-                    <h3>Najib Elmi</h3>
-                    <p>Role</p>
-                </div>
-                <div class="member">
-                    <img src="assets/default_avatar.png" alt="default_avatar" style="background-color: var(--tertiary_color);">
-                    <h3>Riki Mcalear</h3>
-                    <p>Role</p>
-                </div>
-                <div class="member">
-                    <img src="assets/default_avatar.png" alt="default_avatar" style="background-color: var(--tertiary_color);">
-                    <h3>Samuel Leone-Ganado</h3>
-                    <p>Role</p>
-                </div>
-                <div class="member">
-                    <img src="assets/default_avatar.png" alt="default_avatar" style="background-color: var(--tertiary_color);">
-                    <h3>Yassmine Senouci</h3>
-                    <p>Role</p>
-                </div>
-            </div>
-        
-        </body>
     
+    <div class="footer_container">
+        <div class="footer_content_container">
+            <div class="left_foot">
+                <a class="harmony_logo" href="index.html"><img src="assets/harmony_logo_1.svg" height="30px"></a>
+            </div>
+            <div class="middle_foot">
+                <a class="foot_link" href="home.html">Home</a>
+                <a class="foot_link" href="features.html">Features</a>
+                <a class="foot_link" href="pricing.html">Pricing</a>
+                <a class="foot_link" href="team.html">Team</a>
+                <a class="foot_link" href="download.html">Download</a>
+            </div>
+            <div class="right_foot">
+                <img class="foot_link" src="assets/linkedin.svg" alt="LinkedIn" style="height: 16px;">
+                <img class="foot_link" href="https://github.com/Harmaniacz/Harmaniacz.github.io" target="_blank" src="assets/github.svg" alt="GitHub" style="height: 16px;">
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>
