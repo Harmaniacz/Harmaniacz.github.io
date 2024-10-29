@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 /*Global colour variables*/
 :root {
     --main-color:black;
@@ -14,7 +16,7 @@
     --bg_color: #fafafa;
 }
 
-    /*Body content*/
+ /*Body content*/
 body {
     font-family: Nunito, Arial, Helvetica, sans-serif;
     padding:0px;
@@ -28,6 +30,7 @@ p {
 .main_container {
     width: 1000px;
     margin: auto;
+    padding: 50px 0 50px 0;
 }
 
 /*Navigation bar*/
@@ -104,7 +107,7 @@ p {
 
 #selected_page {
     color: black;
-    padding: 26px 10px 26px 10px;
+    padding: 26px 20px 26px 20px;
     border-bottom: 2px solid var(--pri_color);
 }
 
