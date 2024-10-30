@@ -63,11 +63,14 @@ function yearly_plan_button() {
     var button_disabled = document.querySelectorAll("#disabled_button");
     var button_enabled = document.querySelectorAll("#enabled_button");
 
-    var enabled_element = document.getElementById("enabled_button");
-    var disabled_element = document.getElementById("disabled_button");
+    var element_disabled = document.getElementById("disabled_button");
+    var element_enabled = document.getElementById("enabled_button");
 
-    console.log(button_disabled)
-    console.log(button_enabled)
+    for (var i = 0; i < button_enabled.length; i = i + 1) {
+        button_enabled[i].id = element_disabled.id;
+    }
+
+    var button_disabled = document.querySelectorAll("#disabled_button");
 }
 
 //Lifetime plan

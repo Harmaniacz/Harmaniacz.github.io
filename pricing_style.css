@@ -160,7 +160,6 @@ p {
 }
 
 .mobile_menu_button {
-    border-bottom: 1px solid var(--border_outline_color);
     width: 100%;
     text-align: center;
     padding: 20px;
@@ -319,6 +318,7 @@ a {
     color:var(--pri_color);
 }
 
+
 #enabled_button {
     background-color: var(--pri_color);
     color:white;
@@ -326,6 +326,19 @@ a {
 
 #enabled_button:hover {
     background-color: var(--pri_button_hover);
+}
+
+#disabled_button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    color:var(--pri_color);
+}
+
+#disabled_button:hover {
+    cursor: pointer;
+    background-color: var(--pri_hover_color);
+    color:var(--pri_color);
 }
 
 /*Comparison section*/
