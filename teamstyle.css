@@ -31,6 +31,7 @@ p {
     width: 1000px;
     margin: auto;
     padding: 50px 0 50px 0;
+    padding-top: 120px;
 }
 
 /*Navigation bar*/
@@ -38,7 +39,7 @@ p {
     background-color: white;
     color:black;
     width:100%;
-    border-bottom: 1px solid var(--border_outline_color);
+    position: fixed;
 }
 
 .nav_container {

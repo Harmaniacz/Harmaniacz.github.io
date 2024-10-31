@@ -6,7 +6,7 @@ function navigation_button() {
     const web_element = document.getElementsByClassName("web_page_content");
     const mobile_element = document.getElementsByClassName("mobile_page_content");
     const image_element = document.getElementById("menu_hamburger");
-    
+
     if (menu_press == true) {
 
         for (var i = 0; i < web_element.length; i = i + 1) {
@@ -17,6 +17,7 @@ function navigation_button() {
             mobile_element[i].style.visibility = "visible";
 
             image_element.src = "assets/close_menu.svg";
+            document.body.style.backgroundColor = "white";
         }
         menu_press = false;
 
@@ -29,6 +30,7 @@ function navigation_button() {
             mobile_element[i].style.visibility = "hidden";
 
             image_element.src = "assets/hamburger_menu.svg";
+            document.body.style.backgroundColor = "var(--bg_color)";
         }
         menu_press = true;
     }
@@ -38,8 +40,8 @@ function navigation_button() {
 //Monthly plan
 function monthly_plan_button() {
     //Price change
-    document.getElementById("gold_cost").innerText = "$10";
-    document.getElementById("executive_cost").innerText = "$30";
+    document.getElementById("gold_cost").innerText = "$3";
+    document.getElementById("executive_cost").innerText = "$9";
 
     const rate_element = document.querySelectorAll("#rate_plan");
     for (var i = 0; i < rate_element.length; i = i + 1) {
@@ -50,8 +52,8 @@ function monthly_plan_button() {
 //Yearly plan
 function yearly_plan_button() {
     //Price change
-    document.getElementById("gold_cost").innerText = "$100";
-    document.getElementById("executive_cost").innerText = "$300";
+    document.getElementById("gold_cost").innerText = "$39";
+    document.getElementById("executive_cost").innerText = "$99";
 
     const rate_element = document.querySelectorAll("#rate_plan");
     for (var i = 0; i < rate_element.length; i = i + 1) {
@@ -76,8 +78,8 @@ function yearly_plan_button() {
 //Lifetime plan
 function lifetime_plan_button() {
     //Price change
-    document.getElementById("gold_cost").innerText = "$500";
-    document.getElementById("executive_cost").innerText = "$1200";
+    document.getElementById("gold_cost").innerText = "$99";
+    document.getElementById("executive_cost").innerText = "$249";
     
     const rate_element = document.querySelectorAll("#rate_plan");
     for (var i = 0; i < rate_element.length; i = i + 1) {
