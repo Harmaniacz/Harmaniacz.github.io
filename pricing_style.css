@@ -34,6 +34,7 @@ h3 {
 .main_container {
     width: 1000px;
     margin: auto;
+    animation: fade_in_animation;
 }
 
 /*Navigation bar*/
@@ -178,6 +179,7 @@ h3 {
 .mobile_menu_button:hover {
     cursor: pointer;
     background-color: var(--pri_hover_color);
+    border-radius: 15px;
 }
 
 .mobile_menu_button_2 {
@@ -540,5 +542,14 @@ abbr {
 
     .footer_content_container {
         flex-direction: column;
+    }
+}
+
+@keyframes fade_in_animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
     }
 }
