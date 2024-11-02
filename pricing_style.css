@@ -9,6 +9,7 @@
     --text_color: #646464;
     --pri_button_hover: #c86c75; 
     --pri_fade_color: #f59b9b;
+    --button_outline_color: #e5737e7f;
     --border_outline_color:#c3c3c3;
     --pri_hover_color: #fff8f8;
     --bg_color: #f2f0ef;
@@ -44,6 +45,7 @@ h3 {
     width:100%;
     position: fixed;
     border-radius: 0 0 15px 15px;
+    z-index: 1;
 }
 
 .nav_container {
@@ -71,7 +73,7 @@ h3 {
 }
 
 .nav_button {
-    padding: 10px 20px 10px 20px;
+    padding: 15px 20px 15px 20px;
     color:var(--text_color);
     border:none;
     font-weight: bold;
@@ -102,7 +104,7 @@ h3 {
 #login_button {
     color:var(--pri_color);
     border-radius: 15px;
-    border: 1px solid var(--pri_color);
+    border: 1px solid var(--button_outline_color);
 }
 
 #login_button:hover {
@@ -209,7 +211,7 @@ h3 {
     width: fit-content;
     padding: 5px 10px 5px 10px;
     color: white;
-    border-radius: 10px;
+    border-radius: 15px;
     margin: auto;
 }   
 
@@ -252,14 +254,16 @@ h3 {
 }
 
 #elevated_container {
-    padding-top:29px;
+    position: relative;
+    top: 28px;
+    height: fit-content;
 }
 
 .choose_button {
     width:100%;
     background-color: var(--pri_color);
     color:white;
-    padding:10px 0px 10px 0px;
+    padding:15px 0px 15px 0px;
     display: block;
     text-align: center;
     border-radius: 15px;
@@ -278,7 +282,7 @@ h3 {
 
 #secondary_choose_button {
     background-color: white;
-    border: 1px solid var(--pri_color);
+    border: 1px solid var(--button_outline_color);
     color:var(--pri_color);
 }
 
@@ -308,14 +312,14 @@ a {
 
 .switch_container {
     background-color: white;
-    padding: 15px 5px 15px 5px;
+    padding: 20px 5px 20px 5px;
     width: fit-content;
     margin: auto;
     border-radius: 15px;
 }
 
 .switch_button {
-    padding: 10px 20px 10px 20px;
+    padding: 15px 20px 15px 20px;
     border-radius: 15px;
     font-weight: bold;
     color:var(--pri_color)
@@ -338,7 +342,7 @@ a {
 }
 
 #disabled_button {
-    padding: 10px 20px 10px 20px;
+    padding: 15px 20px 15px 20px;
     border-radius: 15px;
     font-weight: bold;
     color:var(--pri_color);
@@ -395,7 +399,7 @@ td {
 
 abbr {
     text-decoration: none;
-    border-bottom: 1px dashed var(--pri_color);
+    border-bottom: 1px dotted var(--pri_color);
 }
 
 /*Try section*/
@@ -466,6 +470,7 @@ abbr {
     .nav_container {    
         visibility: hidden;
         display: none;
+        z-index: 1;
     }
 
     .nav_container_mobile {
@@ -494,6 +499,9 @@ abbr {
 
     #elevated_container {
         padding-top: 20px;
+        position: static;
+        top: 0;
+        height: fit-content;
     }
 
     /*Comparison section*/
