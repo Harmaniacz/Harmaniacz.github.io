@@ -12,7 +12,7 @@
     --button_outline_color: #e5737e7f;
     --border_outline_color:#c3c3c3;
     --pri_hover_color: #fff8f8;
-    --bg_color: #f2f0ef;
+    --bg_color: #f4f4f4;
 }
 
 /*Body content*/
@@ -27,15 +27,20 @@ p {
     color: var(--text_color);
 }
 
+h1 {
+    font-size: 2rem;
+}
+
 h3 {
     font-weight: normal;
     color: var(--text_color);
+    font-size: 1.5rem;
 }
 
 .main_container {
     width: 1000px;
     margin: auto;
-    animation: fade_in_animation;
+    animation: fade_up_animation 0.5s;
 }
 
 /*Navigation bar*/
@@ -82,6 +87,7 @@ h3 {
 .nav_button:hover {
     cursor: pointer;
     color: black;
+    transition: 0.15s;
 }
 
 .harmony_logo {
@@ -94,6 +100,7 @@ h3 {
     color:white;
     border-radius: 15px;
     font-weight: bold;
+    transition: 0.15s;
 }
 
 #download_button:hover {
@@ -104,12 +111,11 @@ h3 {
 #login_button {
     color:var(--pri_color);
     border-radius: 15px;
-    border: 1px solid var(--button_outline_color);
+    transition: 0.15s;
 }
 
 #login_button:hover {
     background-color: var(--pri_hover_color);
-    border: var(--pri_color) 1px solid;
 }
 
 #selected_page {
@@ -144,6 +150,7 @@ h3 {
     border: none;
     padding: 0 0 0 30px;
     font-weight: bold;
+    transition: 0.15s;
 }
 
 .mobile_nav_button:hover {
@@ -155,6 +162,7 @@ h3 {
 .mobile_page_content {
     width: 100%;
     background-color: white;
+    animation: fade_up_animation 0.5s;
 }
 
 .mobile_navigation_list {
@@ -182,6 +190,7 @@ h3 {
     cursor: pointer;
     background-color: var(--pri_hover_color);
     border-radius: 15px;
+    transition: 0.15s;
 }
 
 .mobile_menu_button_2 {
@@ -192,6 +201,7 @@ h3 {
     text-align: center;
     padding: 20px;
     font-weight: bold;
+    transition: 0.15s;
 }
 
 .mobile_menu_button_2:hover {
@@ -250,7 +260,7 @@ h3 {
 }
 
 #gold_container {
-    background-color: var(--pri_hover_color);
+    border: 2px solid var(--pri_color);
 }
 
 #elevated_container {
@@ -268,6 +278,7 @@ h3 {
     text-align: center;
     border-radius: 15px;
     font-weight: bold;
+    transition: 0.15s;
 }
 
 .choose_button:hover {
@@ -284,6 +295,7 @@ h3 {
     background-color: white;
     border: 1px solid var(--button_outline_color);
     color:var(--pri_color);
+    transition: 0.15s;
 }
 
 #secondary_choose_button:hover {
@@ -295,6 +307,7 @@ h3 {
     background-color: white;
     color:black;
     border:none;
+    transition: 0.15s;
 }
 
 #tertiary_choose_button:hover {
@@ -322,7 +335,8 @@ a {
     padding: 15px 20px 15px 20px;
     border-radius: 15px;
     font-weight: bold;
-    color:var(--pri_color)
+    color:var(--pri_color);
+    transition: 0.15s;
 }
 
 .switch_button:hover {
@@ -335,6 +349,7 @@ a {
 #enabled_button {
     background-color: var(--pri_color);
     color:white;
+    transition: 0.15s;
 }
 
 #enabled_button:hover {
@@ -346,6 +361,7 @@ a {
     border-radius: 15px;
     font-weight: bold;
     color:var(--pri_color);
+    transition: 0.15s;
 }
 
 #disabled_button:hover {
@@ -423,7 +439,7 @@ abbr {
     width:100%;
     padding:50px 0px 50px 0px;
     text-align: center;
-    background-color: #2C2C2C;
+    background-color: black;
     border-radius: 15px 15px 0 0;
 }
 
@@ -452,6 +468,7 @@ abbr {
     padding: 10px 20px 10px 20px;
     text-decoration: none;
     color:white;
+    transition: 0.15s;
 }
 
 .foot_link:hover {
@@ -553,11 +570,34 @@ abbr {
     }
 }
 
-@keyframes fade_in_animation {
+/*Key frames*/
+
+@keyframes fade_up_animation {
     0% {
         opacity: 0;
+        transform: translateY(30px) scale(0.9);
+        filter: blur(1px);
     }
     100% {
-        opacity: 100%;
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+        filter: blur(0);
+    }
+}
+
+@keyframes fade_down_animation {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .nav_button, .button_switch, .choose_button, .foot_link {
+        transition: none;
     }
 }
