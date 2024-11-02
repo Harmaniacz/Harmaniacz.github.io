@@ -23,7 +23,7 @@ body {
     background-color:  #f2f0ef;
     font-family: Nunito, Arial, Helvetica, sans-serif;
     color:#2C2C2C;
-    margin: 0;
+    margin: 0px
 }
 a {
     text-decoration: none;
@@ -219,8 +219,7 @@ img {
 }
 
 /* features page */
-.features_general {
-    margin: 0 50px 0 50xp;
+.FeaturesGeneral {
 }
 
 .pink_navigation {
@@ -244,7 +243,7 @@ img {
 #meet_friends_h1 {
     text-align: left;
     font-size: 70px;
-    padding: 20px 0px 0px 80px;
+    padding: 40px 0px 0px 80px;
     margin: 40px 0 0 0;
 }
 
@@ -263,7 +262,7 @@ img {
 }
 
 #meet_friends_img {
-    margin: 20px 80px 20px 0px;
+    margin: 80px 80px 20px 0px;
     width:500px;  
     height: 450px;
 }
@@ -409,3 +408,23 @@ img {
     cursor: pointer;
     color:rgb(209, 209, 209);
 }
+
+/*Mobile display*/
+@media only screen and (max-width: 1000px) {
+    /*Main*/
+    .navigation_container, .nav_container, .hero_container, .main_container, .heading_container, .content_container, .main_content_container, .footer_container, .footer_content_container, table, .try_container, .try_content_container{
+        width: 100%;
+    }
+
+    /*Navigation bar*/
+    .nav_container {    
+        visibility: hidden;
+        display: none;
+        z-index: 1;
+    }
+
+    .nav_container_mobile {
+        visibility: visible;
+        display: flex;
+    }
+
