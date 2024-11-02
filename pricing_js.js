@@ -52,8 +52,8 @@ function monthly_plan_button() {
 //Yearly plan
 function yearly_plan_button() {
     //Price change
-    document.getElementById("gold_cost").innerText = "$39";
-    document.getElementById("executive_cost").innerText = "$99";
+    document.getElementById("gold_cost").innerText = "$20";
+    document.getElementById("executive_cost").innerText = "$90";
 
     const rate_element = document.querySelectorAll("#rate_plan");
     for (var i = 0; i < rate_element.length; i = i + 1) {
@@ -78,8 +78,8 @@ function yearly_plan_button() {
 //Lifetime plan
 function lifetime_plan_button() {
     //Price change
-    document.getElementById("gold_cost").innerText = "$99";
-    document.getElementById("executive_cost").innerText = "$249";
+    document.getElementById("gold_cost").innerText = "$100";
+    document.getElementById("executive_cost").innerText = "$250";
     
     const rate_element = document.querySelectorAll("#rate_plan");
     for (var i = 0; i < rate_element.length; i = i + 1) {
