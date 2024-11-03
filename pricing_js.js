@@ -91,15 +91,3 @@ function lifetime_plan_button() {
         rate_element[i].textContent = "/account"
     }
 }
-
-const detailsElements = document.querySelectorAll('details')
-
-detailsElements.forEach((detail) => {
-  detail.addEventListener('toggle', () => {
-    if (detail.open) {
-      detail.style.borderColor = "red";
-    } else {
-      detail.style.borderColor = "#777777";
-    }
-  })
-})
