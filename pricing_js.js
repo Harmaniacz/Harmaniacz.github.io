@@ -6,10 +6,13 @@ function navigation_button() {
     const web_element = document.getElementsByClassName("web_page_content");
     const mobile_element = document.getElementsByClassName("mobile_page_content");
     const image_element = document.getElementById("menu_hamburger");
+    const top_element = document.getElementById("top_button");
 
     if (menu_press == true) {
 
         for (var i = 0; i < web_element.length; i = i + 1) {
+            top_element.style.display = "none";
+
             web_element[i].style.display = "none";
             web_element[i].style.visibility = "hidden";
 
@@ -23,6 +26,8 @@ function navigation_button() {
 
     } else {
         for (var i = 0; i < web_element.length; i = i + 1) {
+            top_element.style.display = "block";
+
             web_element[i].style.display = "";
             web_element[i].style.visibility = "visible";
 
@@ -86,3 +91,15 @@ function lifetime_plan_button() {
         rate_element[i].textContent = "/account"
     }
 }
+
+const detailsElements = document.querySelectorAll('details')
+
+detailsElements.forEach((detail) => {
+  detail.addEventListener('toggle', () => {
+    if (detail.open) {
+      detail.style.borderColor = "red";
+    } else {
+      detail.style.borderColor = "#777777";
+    }
+  })
+})
