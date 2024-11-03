@@ -471,7 +471,7 @@ abbr {
 .faq_list {
     display: flex;
     width: 100%;
-    column-gap: 15px;
+    column-gap: 7px;
 }
 
 .faq_left {
@@ -530,7 +530,7 @@ details[open] summary:after {
 }
 
 details[open] {
-    background-color: var(--pri_hover_color);
+    background-color: white;
 }
 
 details[open] p {
