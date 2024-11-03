@@ -683,10 +683,12 @@ details[open] p {
     /*Comparison section*/ 
     .main_content_container {
         padding: 0;
+        border: none;
     }
 
     .popout_container {
         border-radius: 15px;
+        border: 0;
     }
 
     .table_choose {
@@ -710,7 +712,7 @@ details[open] p {
     }
     
     .faq_right {
-        padding-top: 10px;
+        padding-top: 7px;
         margin: auto;
         width: 90%;
     }
@@ -724,12 +726,14 @@ details[open] p {
     .try_content_container {
         border-radius: 15px 15px 0 0;
         margin-bottom: 0;
+        border: 0;
     }
 
     .try_container {
         padding: 0;
         border: 0;
         background: none;
+        border: 0;
     }
 
     /*Footer section*/
