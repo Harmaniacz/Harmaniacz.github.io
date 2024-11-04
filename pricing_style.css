@@ -692,10 +692,11 @@ details[open] p {
     .main_content_container {
         padding: 0;
         border: none;
+        background:none;
     }
 
     .popout_container {
-        border-radius: 15px;
+        border-radius: 15px 15px 0 0;
         border: 0;
     }
 
@@ -708,26 +709,16 @@ details[open] p {
         border-bottom: 0;
     }
 
-    #table_gold_last {
-        background-color: var(--pri_hover_color);
-        border-radius: 0 0 15px 15px;
-    }
-
     /*FAQ section*/
     .faq_list {
         flex-direction: column;
         width: 100%;
     }
     
-    .faq_right {
+    .faq_list_content {
         padding-top: 20px;
         margin: auto;
         width: 90%;
-    }
-
-    .faq_left {
-        width: 90%;
-        margin: auto;
     }
 
     .additional_questions {
