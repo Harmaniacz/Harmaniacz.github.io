@@ -88,13 +88,12 @@
                         <p style="text-align: center; color:var(--pri_color);margin-bottom: -30px;">Plans & pricing</p>
                         <h1 style="text-align: center; font-size: 3rem;">Choose your plan</h1>
             
-                        <h3>There's something for eveone</h3>
+                        <h3>There's something for everyone</h3>
         
                         <!--Monthly/yearly/lifetime pricing options-->
                         <div class="switch_container">
-                            <a class="switch_button" id="enabled_button" onclick="monthly_plan_button()">Monthly</a>
-                            <a class="switch_button" id="disabled_button" onclick="yearly_plan_button()">Yearly</a>
-                            <a class="switch_button" id="disabled_button" onclick="lifetime_plan_button()">Lifetime</a>
+                            <a class="switch_button" id="enabled_button_1" onclick="monthly_plan_button()">Monthly</a>
+                            <a class="switch_button" id="disabled_button_2" onclick="yearly_plan_button()">Yearly</a>
                         </div>
         
                         <p style="padding-bottom: 15px;">Save 20% with yearly</p>
@@ -200,17 +199,17 @@
                                 <colgroup>
                                     <col>
                                     <col>
-                                    <col style="background-color: var(--pri_hover_color);">
+                                    <col>
                                     <col>
                                 </colgroup>
-                                <tr>
-                                    <th style="padding-top:74px">Features</th>
-                                    <th style="padding-top:74px">Harmony</th>
-                                    <th style="height: 30px; background-color: var(--pri_hover_color); border-radius: 15px 15px 0 0;">
-                                        <p><span class="chip_text" style="margin-bottom: 10px; font-weight: normal;">Popular</span></p>
+                                <tr style="font-size: 1.25rem;">
+                                    <th style="padding-top:37px">Features</th>
+                                    <th style="padding-top:37px">Harmony</th>
+                                    <th style="padding-top:0px;">
+                                        <p style="margin-bottom: 10px; margin-top: 0;"><span class="chip_text" style="font-weight: normal; font-size: 13px;">Popular</span></p>
                                         Harmony<span style="color: var(--pri_color);">+</span>
                                     </th>
-                                    <th style="padding-top:74px">Harmony <span style="color: var(--pri_color);">Pro</span></th>
+                                    <th style="padding-top:37px">Harmony <span style="color: var(--pri_color);">Pro</span></th>
                                 </tr>
                                 <tr>
                                     <td class="table_feature"><abbr title="Customize profile icon, banner, theme, privacy, username, preferences, and other account options">Customizable profile</abbr></td>
@@ -276,7 +275,7 @@
                                 <tr class="table_choose" style="border: 0;">
                                     <td></td>
                                     <td><a class="choose_button" id="secondary_choose_button">Get started for free</a></td>
-                                    <td style="background-color: var(--pri_hover_color); border-radius: 0 0 15px 15px;"><a class="choose_button">Get Harmony+</a></td>
+                                    <td><a class="choose_button">Get Harmony+</a></td>
                                     <td><a class="choose_button" id="secondary_choose_button">Get Harmony Pro</a></td>
                                 </tr>
                             </table>
@@ -293,11 +292,11 @@
 
                 <div class="faq_content_container">
                     
-                    <h1>Get more details</h1>
+                    <h1>Frequently asked questions</h1>
                     <h3>You got questions, we got answers.</h3>
 
                     <div class="faq_list">
-                        <div class="faq_left">
+                        <div class="faq_list_content">
                             <details class="faq_box" onclick="faq_button()">
                                 <summary>What payment methods do you accept?</summary>
                                 <p>We accept all major credit cards, PayPal, and bank transfers.</p>
@@ -310,10 +309,6 @@
                                 <summary>Is there a free trial available?</summary>
                                 <p>No, we don't offer a free trial for all our plans. Sorry.</p>
                             </details>
-               
-                        </div>
-
-                        <div class="faq_right">
                             <details class="faq_box">
                                 <summary>Can I cancel my subscription at any time?</span></summary>
                                 <p>Yes, you can cancel your subscription at any time through your account settings. Your access will continue until the end of your billing cycle.</p>
@@ -322,18 +317,17 @@
                                 <summary>Can I switch plans at any time?</summary>
                                 <p>Absolutely! You can upgrade or downgrade your plan at any time through your account settings.</p>
                             </details>
-                            <details class="faq_box">
+                            <!--<details class="faq_box">
                                 <summary>Do you offer any special rates for students?</summary>
                                 <p>Yes, we offer a 50% discount for students. Please contact our support team for more details.</p>
-                            </details>
-
+                            </details>-->
                         </div>
                     </div>
 
                     <div class="additional_questions">
-                        <h2>Still have questions?</h2>
-                        <p style="margin-top: -10px; margin-bottom: 35px;">Contact our customer support team. We're here to help.</p>
-                        <a href="download.html" class="nav_button" id="download_button">Contact us</a>
+                        <h2>Have more questions?</h2>
+                        <p style="margin-top: -10px; margin-bottom: 35px;">We're happy to help with any questions you may have about our pricing and plans.</p>
+                        <a href="download.html" class="secondary_button">Contact support</a>
                     </div>
 
                 </div>
@@ -347,7 +341,7 @@
                     <a class="harmony_logo"><img src="assets/harmony_logo_2.svg" height="40px"></a>
                     <h1>Find your musical match</h1>
                     <h3 style="margin-bottom: 40px">Meet new friends through the language of music.</h3>
-                    <a href="download.html" class="nav_button" id="download_button">Try free</a>
+                    <a href="download.html" class="nav_button" id="download_button">Try Harmony free</a>
                     <div class="ratings_container">
                         <div class="ratings_content"><p class="rating_text" style="margin-right: 10px;">4.8/5.0</p></div>
                         <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
