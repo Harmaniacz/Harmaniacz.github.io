@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <!--Title-->
+        <title>Contact us | Harmony</title>
+
+        <!--Links-->
+        <link rel="stylesheet" href="contact_style.css">
+
+        <!--SEO info-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/harmony_favicon.png" type="image/icon type">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="robots" content="noindex">
+        <meta name="description" content="Harmony is a social app that helps you make new friends through the language of music. It is developed by Harmaniacz, a team of 5 Software Engineering students at uOttawa. The website and prototype was developed as part of the SEG 2900 course. We are group 8.">
+        <meta name="url" content="https://harmaniacz.github.io/pricing.html">
+        <meta name="thumbnail" content="https://raw.githubusercontent.com/Harmaniacz/Harmaniacz.github.io/refs/heads/master/assets/heading.png"/>
+        
+
+         <!--Nunito font import from Google Fonts-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+        <script>
+            //Mobile navigation dropdown
+            let menu_press = true
+
+            //Navigation Button
+            function navigation_button() {
+                const web_element = document.getElementsByClassName("web_page_content");
+                const mobile_element = document.getElementsByClassName("mobile_page_content");
+                const image_element = document.getElementById("menu_hamburger");
+
+                if (menu_press == true) {
+
+                    for (var i = 0; i < web_element.length; i = i + 1) {
+                        web_element[i].style.display = "none";
+                        web_element[i].style.visibility = "hidden";
+
+                        mobile_element[i].style.display = "";
+                        mobile_element[i].style.visibility = "visible";
+
+                        image_element.src = "assets/close_menu.svg";
+                        document.body.style.backgroundColor = "white";
+                    }
+                    menu_press = false;
+
+                } else {
+                    for (var i = 0; i < web_element.length; i = i + 1) {
+                        web_element[i].style.display = "";
+                        web_element[i].style.visibility = "visible";
+
+                        mobile_element[i].style.display = "none";
+                        mobile_element[i].style.visibility = "hidden";
+
+                        image_element.src = "assets/hamburger_menu.svg";
+                        document.body.style.backgroundColor = "var(--bg_color)";
+                    }
+                    menu_press = true;
+                }
+
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <!--Navigation bar-->
+        <div class="navigation_container">
+
+            <!--Web navigation-->
+            <div class="nav_container">
+
+                <!--Left navigation-->
+                <div class="nav_left">  
+                    <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
+                </div>
+
+                <!--Middle navigation-->
+                <div class="nav_middle">
+                    <a class="nav_button" href="home.html">Home</a>
+                    <a class="nav_button" href="features.html">Features</a>
+                    <a class="nav_button" href="pricing.html">Pricing</a>
+                    <a class="nav_button" href="team.html">Team</a>
+                </div>
+    
+                <!--Right navigation-->
+                <div class="nav_right">
+                    <a class="nav_button" id="login_button" href="#">Log in</a>
+                    <a class="nav_button" id="download_button" href="download.html">Download</a>
+                </div>
+
+            </div>
+
+            <!--Mobile navigation-->
+            <div class="nav_container_mobile">
+
+                <div class="nav_left_mobile">
+                    <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
+                </div>
+
+                <div class="nav_right_mobile">
+                    <button class="mobile_nav_button" onclick="navigation_button()"><img id ="menu_hamburger" src="assets/hamburger_menu.svg"></button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Web display-->
+        <div class="web_page_content">
+
+            <!--Hero section-->
+            <div class="hero_container">
+
+                <div class="hero_content_container">
+
+                    <div class="heading_container">
+                        <p style="color:var(--pri_color);margin-bottom: -30px;">Contact us</p>
+                        <h1 style="font-size: 3rem;">How can we help you?</h1>
+                        <h3 style="margin-top: -25px;">We're more than happy to help.</h3>
+                    </div>
+
+                    <div class="contact_method_container">
+
+                        <div class="method_container">
+                            <h2>Email</h2>
+                            <p>Get in touch with a real person. We’ll get back to you as quickly as possible.</p>
+                            <a class="secondary_button">Email us</a>
+                        </div>
+
+                        <div class="method_container">
+                            <h2>FAQs</h2>
+                            <p>Explore our frequently asked questions section to quickly uncover the answers you need.</p>
+                            <a class="secondary_button">Visit FAQ</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--Form section-->
+            <div class="form_container">
+
+                <div class="form_content_container">
+                    
+                    <div class="popout_container">
+                        
+                        <h1>Message us</h1>
+                        <h3>We'll get back to you within 24 hours.</h3>
+
+                        <div class="form_box">
+
+                            <div class="names_container">
+                                <input class="input_container" type="text" placeholder="First name">
+                                <input class="input_container" type="text" placeholder="Last name">
+                            </div>
+                            <input class="input_container" type="text" placeholder="Email">
+                            <textarea class="input_container" type="text" placeholder="How can we help?" style="height:250px"></textarea>
+                            <a class="form_button">Submit</a>
+
+                        </div>
+
+                    </div>
+    
+                </div>
+
+            </div>
+
+             <!--Footer section-->
+             <div class="footer_container">
+
+                <div class="footer_content_container">
+
+                    <!--Left footer-->
+                    <div class="left_foot">
+                        <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_1.svg" height="30px"></a>
+                    </div>
+
+                    <!--Middle footer-->
+                    <div class="middle_foot">
+                        <a class="foot_link" href="home.html">Home</a>
+                        <a class="foot_link" href="features.html">Features</a>
+                        <a class="foot_link" href="pricing.html">Pricing</a>
+                        <a class="foot_link" href="team.html">Team</a>
+                        <a class="foot_link" href="download.html">Download</a>
+                    </div>
+
+                    <!--Right foot-->
+                    <div class="right_foot">
+                        <a><img class="foot_link" src="assets/linkedin.svg" alt="LinkedIn" style="height: 14px;"></a>
+                        <a href="https://github.com/Harmaniacz/Harmaniacz.github.io" target="_blank"><img class="foot_link" target="_blank" src="assets/github.svg" alt="GitHub" style="height: 14px;"></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--Mobile navigation menu-->
+        <div class="mobile_page_content" style="display: none; visibility: hidden;"> 
+            <div class="mobile_navigation_list">
+                <a class="mobile_menu_button" href="home.html">Home</a>
+                <a class="mobile_menu_button" href="features.html">Features</a>
+                <a class="mobile_menu_button" href="pricing.html">Pricing</a>
+                <a class="mobile_menu_button" href="team.html">Team</a>
+                <a class="mobile_menu_button_2" href="download.html">Download</a>
+            </div>
+        </div>
+
+    </body>
+    
+</html>

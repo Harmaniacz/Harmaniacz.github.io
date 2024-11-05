@@ -39,6 +39,10 @@ h3 {
     margin-top: -15px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .secondary_button {
     color:var(--pri_color);
     transition: 0.15s;
@@ -48,7 +52,7 @@ h3 {
 }
 
 .secondary_button:hover {
-    background-color: var(--pri_hover_color);
+    color: var(--pri_button_hover);
 }
 
 /*back to top button*/
@@ -298,10 +302,6 @@ h3 {
     margin-bottom: 25px;
 }
 
-#gold_container {
-    /*border: 1px solid var(--pri_color);*/
-}
-
 #elevated_container {
     position: relative;
     top: 27px;
@@ -350,10 +350,6 @@ h3 {
 
 #tertiary_choose_button:hover {
     background-color: var(--tertiary_color);
-}
-
-a {
-    text-decoration: none;
 }
 
 .switch_container {
@@ -459,10 +455,6 @@ tr {
     transition: 0.15s;
 }
 
-tr:hover {
-    background-color: #f8f8f8;
-}
-
 td {
     color: var(--text_color);
 }
@@ -496,7 +488,7 @@ abbr {
     display: flex;
     flex-direction: column;
     width: 100%;
-    row-gap: 20px;
+    row-gap: 10px;
 }
 
 .faq_box {
@@ -505,10 +497,6 @@ abbr {
     border: 1px solid var(--border_outline_color);
     text-align: left;
     transition: 0.15s
-}
-
-.faq_box:hover {
-    background-color: var(--pri_hover_color);
 }
 
 summary {
@@ -520,6 +508,11 @@ summary {
     justify-content: space-between;  
     display: flex;
     align-items: center;
+}
+
+summary:hover {
+    color: var(--pri_color);
+    transition: 0.15s;
 }
 
 summary:after {
