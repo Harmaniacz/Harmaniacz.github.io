@@ -20,7 +20,7 @@
 /* general */
 
 body {
-    background-color:  #f2f0ef;
+    background-color:  #FFF8F2;
     font-family: Nunito, Arial, Helvetica, sans-serif;
     color:#2C2C2C;
     margin: 0px
@@ -29,9 +29,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    border-radius: 10px
-}
 
 /* navigation bar */
 .navigation_container {
@@ -219,154 +216,40 @@ img {
 }
 
 /* features page */
-.FeaturesGeneral {
-}
-
-.pink_navigation {
-    background-color: #e5737e45;
-    width: 100%;
-}
-.pink_features {
-    display: flex;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    justify-content: space-between;
-    background-color: #e5737e45;
-    border-top: solid;
-    border-bottom: solid;
-    border-top-color:#E5737E;
-    border-bottom-color: #E5737E;
-}
-
-#meet_friends_h1 {
-    text-align: left;
-    font-size: 70px;
-    padding: 40px 0px 0px 80px;
-    margin: 40px 0 0 0;
-}
-
-#meet_friends_h2 {
-    text-align: left;
-    font-size: 50px;
-    padding: 0px 0px 20px 80px;
-    margin: 0
-
-}
-
-#meet_friends_button {
-    text-align: left;
-    margin: 80px;
-
-}
-
-#meet_friends_img {
-    margin: 80px 80px 20px 0px;
-    width:500px;  
-    height: 450px;
-}
-
-.no_color_features {
-    display: flex;
-    justify-content: space-between;
-}
-
-.features_text_right {
-    padding-right: 50px;
-    padding-left: 50px;
-    font-stretch: condensed;
-    text-align: left;
-    margin: 40px
-}
-
-#music_people_h2 {
-    text-align: left;
-    font-size: 40px;
-    margin: 20px 80px 20px 0px;
-}
-
-#music_people_img {
-    width:300px;  
-    height: 200px;
-    margin: 20px 0px 20px 80px;
-}
-#how_it_works_h2 {
-    text-align: left;
-    font-size: 40px;
-}
-
-#how_it_works_img {
-    margin: 20px 80px 20px 0px;
-    width:400px;  
-    height: 300px;
-}
-
-#music_around_you_h2 {
-    font-size: 40px;
-    text-align: left;
-    padding: 80px;
-
-}
-
-#music_around_you_img {
-    margin: 20px 0px 20px 80px;
-    width: 400px;  
-    height: 300px;
-}
-#pink_features_no_flex {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #e5737e45;
-    border-top: solid;
-    border-bottom: solid;
-    border-top-color:#E5737E;
-    border-bottom-color: #E5737E;
-}
-#make_new_friends_h2 {
-    text-align: center;
-    margin-bottom: 0px;
-    font-size: 40px;
-}
-
-#make_new_friends_img {
-    width:700px;  
-    height: 300px;
-    display: block;
-    margin: 20px auto 20px auto;
-}
-
-#up_to_date_h2 {
-    text-align: center;
-    font-size: 40px;
-}
-
-#up_to_date_img {
-    width: 900px;
+#features_header_back{
+    position: relative;
     height: 500px;
-    display: block;
-    margin: 20px auto 20px auto;
+    max-width: 100%;
+    z-index: -3;
+    background-color: #c86c75;
 }
 
+.features_img {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7
+}
 
-#thanks {
+#features_header_text_container {
+    color: white;
+    font-size: 30px;
     text-align: center;
+    font-weight: bolder;
+    text-decoration-line: underline;
+    margin: 0 90px 0 90px;
+    border-radius: 40px;
+    padding: 50px;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
-.features_text_left {
-    padding-right: 50px;
-    padding-left: 80px;
-    font-stretch: condensed;
-    text-align: left;
-}
-
-#join_div_features {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 10px
-}
 
 /*Footer section*/
 .footer_container {

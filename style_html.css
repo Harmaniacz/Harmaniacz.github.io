@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding:0px;
+    margin:0px;
+}
+
+h1 {
+    margin: auto;
+    width:fit-content;
+    border-bottom: 1px solid black;
+}
+
+.navigation_container {
+    width: 100%;
+    background-color: black;
+    color:white;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_nav {
+    width:50%;
+    text-align: left;
+    align-content: center;
+}
+
+.right_nav {
+    align-items:center;
+    justify-content: right;
+    display:flex;
+    width:50%; 
+    text-align: right;
+}
+
+.nav_container {
+    width: 800px;
+    display:flex;   
+}
+
+.heading_container {
+    background-color: #cfcfcf;
+    padding: 100px 0px 100px 0px;
+    text-align: center;
+}
+
+.heading_container h1 h3 p {
+    display: inline-block;
+    vertical-align: middle;
+    animation-timing-function: ease-in;
+    animation: slide_animation 3s;    
+}
+
+.heading_container button {
+    animation-name: rainbow_animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.check_container {
+    outline: solid 2px #cfcfcf;
+    width: 500px;
+    margin: auto;
+    padding:25px;
+    text-align: left;
+}
+
+.border_container {
+    width:500px;
+    margin:auto;    
+    padding:25px;
+    outline: solid 2px #cfcfcf;
+    text-align:left;
+}
+
+button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 25px 10px 25px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: grey;
+}
+
+@media only screen and (max-width: 620px) {
+    .check_container, .border_container, .closing_container {
+        width: 100%;
+        padding:0;
+    }
+}
+
+@keyframes rainbow_animation {
+    0% {
+        background-color: red;
+    }
+    10% {
+        background-color: orange;
+    }
+    20% {
+        background-color: yellow;
+    }
+    30% {
+        background-color: green;
+    }
+    40% {
+        background-color: cyan;
+    }
+    50% {
+        background-color: blue;
+    }
+    60% {
+        background-color: azure;
+    }
+    70% {
+        background-color: violet;
+    }
+    80% {
+        background-color: purple;
+    }
+    90% {
+        background-color: magenta;
+    }
+    100% {
+        background: red;
+    }
+}
+
+@keyframes button_fade_animation {
+    0% {
+        background-color: white;
+        color:black;
+    }
+    100% {
+        background-color: grey;
+        color: black;
+    }
+}
+
+.closing_container {
+    margin:auto;
+    padding: 25px 0px 50px 0px;
+    margin: 25px 0px 0px 0px;
+    background-color:black;
+    color: white
+}
+
+.roadmap_container {
+    margin-top:25px;
+}
+
+.navigation_container button {
+    background-color: white;
+    color: black;
+    margin-left: 5px;
+}
+
+.navigation_container button:hover {
+    background-color: grey;
+    color: black;
+    animation-name: button_fade_animation;
+    animation-duration: 0.5s;
+}
+
+.closing_container button {
+    background-color: white;
+    color: black;
+    align-content: center;
+}
+
+.closing_container button:hover {
+    background-color: grey;
+    color: black;
+    animation-name: button_fade_animation;
+    animation-duration: 0.5s;
+}
+
+a {
+    color: #585858;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+}
