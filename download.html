@@ -1,13 +1,22 @@
+<!--
 <!DOCTYPE html>
 <html>
 
 <head>
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Download | Harmony</title>
+    <title>Download | Harmony</title>    
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/harmony_favicon.png" type="image/icon type">
+    <link rel="stylesheet" href="pricing_style.css">
+    <script src="pricing_js.js" type="text/javascript"></script>-->
+    <!--Nunito font import from Google Fonts-->
+    <!--
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
     <style>
       
         .hero-image {
@@ -69,26 +78,78 @@
             object-fit: cover;
         }
 
+        .phone {
+                align-content: center;
+                overflow:visible;
+                margin-top: 60px;
+                font-size: 55px;
+        }
+
+        .left_text {
+                overflow:visible;
+                font-size: 60px;
+                text-align: center;
+                display: flex;
+        }
+
+        .left_symbols {
+                overflow:visible;
+                margin-top: 30px;
+                font-size: 60px;
+                text-align: center;
+                line-height: 1.2;
+                display: flex;
+        }
+
+        .harmony-clickable {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
     </style>
 
 </head>
 
 <body>
-
+-->
+    <!--Navigation bar-->
+    <!--
     <div class="navigation_container">
 
+        
         <div class="nav_container">
 
+            
             <div class="nav_left">
-                <a class="harmony-clickable" href="index.html">Harmony</a>
+                <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
             </div>
 
-            <div class="nav_right">
-                <a class="nav_button" href="home.html">Home</a>
+            
+            <div class="nav_middle">
+                <a class="nav_button" href="home.html" id="selected_page">Home</a>
                 <a class="nav_button" href="features.html">Features</a>
-                <a class="nav_button" href="pricing.html">Pricing</a>
+                <a class="nav_button" href="pricing.html" >Pricing</a>
                 <a class="nav_button" href="team.html">Team</a>
+            </div>
+
+            
+            <div class="nav_right">
+                <a class="nav_button" id="login_button" href="#">Log in</a>
                 <a class="nav_button" id="download_button" href="download.html">Download</a>
+            </div>
+
+        </div>
+
+        
+        <div class="nav_container_mobile">
+
+            <div class="nav_left_mobile">
+                <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
+            </div>
+
+            <div class="nav_right_mobile">
+                <button class="mobile_nav_button" onclick="navigation_button()"><img id ="menu_hamburger" src="assets/hamburger_menu.svg"></button>
             </div>
 
         </div>
@@ -112,6 +173,222 @@
         
     </div>
 
+    <div>
+        
+            <div class="main_container" style="background-color: white;" >
+                <div style="margin-left: min(5%);display:flex;flex-direction: column;align-items: start;width:50%">
+                    <p style="font-size: min(8.1vw,80px);margin:min(12vw,120px) 0 0 0; color:var(--tertiary_color)"><span style="text-decoration: underline;">Harmony</span> </p>
+                    <p style="font-size: min(3.3vw,35px);margin:0px;color:var(--tertiary_color)">Connecting people through the language of <span style="color:var(--pri_button_hover)">Music</span></p>
+                    <p style="font-size: min(3.3vw,35px);margin:0px 0px 0px 0px;">Download now: </p>
+                    <img src="assets/app_store.svg" width="30%">
+                </div>
+            </div>
+        
+            <div style="background-color:var(--sec_color)">
+                <svg width="100%" height="70%" viewBox="0 0 110 20" preserveAspectRatio="none">
+                    <path id="wavepath" d="M 0 0 Q 5 10, 55 10 Q 105 10, 110 0 T 0 0" fill="white"></path>
+                </svg>
+        
+                <div class="main_container">
+                <img src="assets/phone.png" alt="Phone" width="" >
+                </div>
+            </div>
+    </div>
+
 </body>
+
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Download | Harmony</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/harmony_favicon.png" type="image/icon type">
+        <link rel="stylesheet" href="pricing_style.css">
+        <script src="pricing_js.js" type="text/javascript"></script>
+
+        <!-- Nunito font import from Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        
+        <style>
+
+            *, *::before, *::after {
+                box-sizing: border-box; /* Apply border-box model */
+            }
+            body{
+                margin: 0;
+            }
+            h1, p {
+                margin: 0; /* Remove margins from headings and paragraphs */
+            }
+            .main_container {
+                padding: 60px 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            div[style*="background-color: #e0e0e0"] {
+                margin-top: -10px; /* Adjust the value as needed */
+            }
+
+            .box-container {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .navigation_container {
+                margin: 0; /* Remove margin */
+                padding: 0; /* Remove padding */
+            }
+
+            .download-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-color: #f0f0f0;
+                border-radius: 15px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                text-align: center;
+                padding: 20px;
+                aspect-ratio: 1;
+                height: 250px; 
+                flex: 1; 
+                text-decoration: none;
+            }
+
+            .download-box h2 {
+                margin: 10px 0;
+                color: #333;
+            }
+
+            .download-box p {
+                color: #555;
+                font-size: 16px;
+                padding: 0 10px;
+            }
+        </style>
+    </head> 
+    
+    <body>
+        <!-- Navigation bar -->
+        <div class="navigation_container">
+            <!-- Web navigation -->
+            <div class="nav_container">
+                <!-- Left navigation -->
+                <div class="nav_left">
+                    <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
+                </div>
+                <!-- Middle navigation -->
+                <div class="nav_middle">
+                    <a class="nav_button" href="home.html">Home</a>
+                    <a class="nav_button" href="features.html">Features</a>
+                    <a class="nav_button" href="pricing.html" >Pricing</a>
+                    <a class="nav_button" href="team.html">Team</a>
+                </div>
+                <!-- Right navigation -->
+                <div class="nav_right">
+                    <a class="nav_button" id="login_button" href="#">Log in</a>
+                    <a class="nav_button" id="download_button" href="download.html">Download</a>
+                </div>
+            </div>
+            <!-- Mobile navigation -->
+            <div class="nav_container_mobile">
+                <div class="nav_left_mobile">
+                    <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
+                </div>
+                <div class="nav_right_mobile">
+                    <button class="mobile_nav_button" onclick="navigation_button()"><img id="menu_hamburger" src="assets/hamburger_menu.svg"></button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main content area -->
+            <div style="background-color: #e0e0e0; padding: 60px 0 40px; padding-top: 80px;">
+                <!-- New Heading with Background and Subtext -->
+                <div style="background-color: #e0e0e0; padding: 20px; text-align: center; margin: 0 0 40px; width: 100%;">
+                    <h1 style="font-family: 'Nunito', sans-serif; font-size: 48px; color: #333; margin: 0;">
+                        Harmonize with the world around you
+                    </h1>
+                    <p style="font-family: 'Nunito', sans-serif; font-size: 18px; color: #555; margin-top: 10px;">
+                        Discover the perfect blend of music and community.
+                    </p>
+                </div>
+                <div class="main_container" style="margin: 0 auto; display: flex; justify-content: center; gap: 20px; max-width: 90%;">
+                    <!-- iOS Download Option -->
+                    <a href="https://www.apple.com/app-store/" target="_blank" style="text-decoration: none; flex: 1;">
+                        <div style="display: flex; flex-direction: column; align-items: center; padding: 20px; background-color: #f0f0f0; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                            <img src="assets/apple_logo.svg" alt="iOS Logo" width="50">
+                            <h2 style="margin: 10px 0; color: #333;">iOS</h2>
+                            <p style="color: #555; font-size: 16px;">Experience Harmony on iOS and connect with your favorite music communities. Download now to get started on your iPhone or iPad.</p>
+                        </div>
+                    </a>
+            
+                    <!-- Android Download Option -->
+                    <a href="https://play.google.com/store" target="_blank" style="text-decoration: none; flex: 1;">
+                        <div style="display: flex; flex-direction: column; align-items: center; padding: 20px; background-color: #f0f0f0; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+                            <img src="assets/android_logo.svg" alt="Android Logo" width="50">
+                            <h2 style="margin: 10px 0; color: #333;">Android</h2>
+                            <p style="color: #555; font-size: 16px;">Get Harmony on Android and join the community. Download the app for your Android device and start connecting through music.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        <!-- section divide -->
+            <div style="background-color:var(--sec_color)">
+                <svg width="100%" height="70%" viewBox="0 0 110 20" preserveAspectRatio="none">
+                    <path id="wavepath" d="M 0 0 Q 5 10, 55 10 Q 105 10, 110 0 T 0 0" fill="#e0e0e0"></path>
+                </svg>
+        <!-- section 2 - Pink -->
+            <div class="main_container" style="margin: 0 auto; display: flex; justify-content: flex-start; align-items: center; gap: 20px; max-width: 90%;">
+                <img src="assets/phone.png" alt="Phone" style="width: 400px; margin-left: 10px;"> <!-- Adjusted width and added margin -->
+                <div style="max-width: 400px;">
+                    <h2 style="font-family: 'Nunito', sans-serif; font-size: 36px; color: #333;">Join our community and discover new music!</h2>
+                    <p style="font-family: 'Nunito', sans-serif; font-size: 22px; color: #555;">Connect with others, share your favorite tracks, and stay updated with the latest trends. Join now and start your musical journey!</p>
+                </div>
+            </div>
+    </div>
+    <!--Footer-->
+        
+        <svg style="display: block; background-color:var(--sec_color)" width="100%" viewBox="0 0 110 3" preserveAspectRatio="none" >
+            <path id="wavepath" d="M 0 3 Q 10 0 55 0 Q 100 0 110 3 " fill="var(--pri_color)"></path>
+        </svg>
+
+        <div class="footer_container">
+
+            <div class="footer_content_container">
+
+                <!--Left footer-->
+                <div class="left_foot">
+                    <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_1.svg" height="30px"></a>
+                </div>
+
+                <!--Middle footer-->
+                <div class="middle_foot">
+                    <a class="foot_link" href="home.html">Home</a>
+                    <a class="foot_link" href="features.html">Features</a>
+                    <a class="foot_link" href="pricing.html">Pricing</a>
+                    <a class="foot_link" href="team.html">Team</a>
+                    <a class="foot_link" href="download.html">Download</a>
+                </div>
+
+                <!--Right foot-->
+                <div class="right_foot">
+                    <a><img class="foot_link" src="assets/linkedin.svg" alt="LinkedIn" style="height: 16px;"></a>
+                    <a href="https://github.com/Harmaniacz/Harmaniacz.github.io" target="_blank"><img class="foot_link" target="_blank" src="assets/github.svg" alt="GitHub" style="height: 16px;"></a>
+                </div>
+
+            </div>
+
+        </div>
+    </body>
 
 </html>
