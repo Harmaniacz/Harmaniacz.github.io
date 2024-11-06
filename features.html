@@ -1,103 +1,56 @@
 <html>
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="features_style.css">
     <title>Features | Harmony</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/harmony_favicon.png" type="image/icon type">
   </head>  
 
-  <!-- <style>
-    body {
-        font-family:Arial;
-        background-color: rgba(147, 142, 142, 0.776);
-        margin:0;
-    }
-
-    .navbar {
-        background-color:black;
-        padding:10px;
-        color:white;
-        display:flex;
-    }
-
-    .boutonNavbar {
-        padding:10px;
-        background-color:white;
-        color: black;
-        text-align: right;
-        text-decoration:none;
-        border-style:solid;
-        border-left-width:1px;
-    }
-
-    .boutonNavbar:hover {background-color:gray;}
-
-    .nomNavbar {
-        margin-right: auto;
-        padding:10px;
-        font-size:20px
-    }
-
-    .join {
-        display:flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .joinButton {
-        background-color: white;
-        padding:10px;
-        text-decoration:none;
-        color:black;
-        border-style:solid;
-        border-width: 2px;
-  } 
-    
-    .joinButton:hover {background-color:gray;}
-    
-    .FeaturesRight {text-align:right;}
-    
-    .thanks {text-align:center;}
-
-    .harmony-clickable {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    }
-    
-  </style> -->
-
   <body>
 
-    <!--Navigation bar-->
-    <div class="pink_navigation">
+   <!--Navigation bar-->
+   <div class="navigation_container">
 
-      <!--Web navigation-->
-      <div class="nav_container">
+    <!--Web navigation-->
+    <div class="nav_container">
 
-          <!--Left navigation-->
-          <div class="nav_left">
-              <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
-          </div>
+        <!--Left navigation-->
+        <div class="nav_left">
+            <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
+        </div>
 
-          <!--Middle navigation-->
-          <div class="nav_middle">
-              <a class="nav_button" href="home.html">Home</a>
-              <a class="nav_button" href="features.html" id="selected_page">Features</a>
-              <a class="nav_button" href="pricing.html">Pricing</a>
-              <a class="nav_button" href="team.html">Team</a>
-          </div>
-        
-          <!--Right navigation-->
-          <div class="nav_right">
-              <a class="nav_button" id="login_button" href="#">Log in</a>
-              <a class="nav_button" id="download_button" href="download.html">Download</a>
-          </div>
-      </div>
+        <!--Middle navigation-->
+        <div class="nav_middle">
+            <a class="nav_button" href="home.html">Home</a>
+            <a class="nav_button" href="features.html"  id="selected_page">Features</a>
+            <a class="nav_button" href="pricing.html" >Pricing</a>
+            <a class="nav_button" href="team.html">Team</a>
+        </div>
+
+        <!--Right navigation-->
+        <div class="nav_right">
+            <a class="nav_button" id="login_button" href="#">Log in</a>
+            <a class="nav_button" id="download_button" href="download.html">Download</a>
+        </div>
 
     </div>
-    
+
+    <!--Mobile navigation-->
+    <div class="nav_container_mobile">
+
+        <div class="nav_left_mobile">
+            <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
+        </div>
+
+        <div class="nav_right_mobile">
+            <button class="mobile_nav_button" onclick="navigation_button()"><img id ="menu_hamburger" src="assets/hamburger_menu.svg"></button>
+        </div>
+
+    </div>
+
+   </div>
+
     <div class="FeaturesGeneral">
       <div class="pink_features" style="border-top:none;">
         <div class="meet_friends_text">
@@ -177,8 +130,8 @@
 
           <div class="mobile_navigation_list">
               <a class="mobile_menu_button" href="home.html">Home</a>
-              <a class="mobile_menu_button" href="features.html">Features</a>
-              <a class="mobile_menu_button" href="pricing.html" style="color:black; ">Pricing</a>
+              <a class="mobile_menu_button" href="features.html" style="color:black; ">Features</a>
+              <a class="mobile_menu_button" href="pricing.html" >Pricing</a>
               <a class="mobile_menu_button" href="team.html">Team</a>
               <a class="mobile_menu_button_2" href="download.html">Download</a>
           </div>
@@ -186,5 +139,43 @@
       </div>
 
   </body>
-</html>
 
+  <script>
+    let menu_press = true
+
+    function navigation_button() {
+      const web_element = document.getElementsByClassName("web_page_content");
+      const mobile_element = document.getElementsByClassName("mobile_page_content");
+      const image_element = document.getElementById("menu_hamburger");
+
+      if (menu_press == true) {
+
+          for (var i = 0; i < web_element.length; i = i + 1) {
+              web_element[i].style.display = "none";
+              web_element[i].style.visibility = "hidden";
+
+              mobile_element[i].style.display = "";
+              mobile_element[i].style.visibility = "visible";
+
+              image_element.src = "assets/close_menu.svg";
+              document.body.style.backgroundColor = "white";
+          }
+          menu_press = false;
+
+      } else {
+          for (var i = 0; i < web_element.length; i = i + 1) {
+              web_element[i].style.display = "";
+              web_element[i].style.visibility = "visible";
+
+              mobile_element[i].style.display = "none";
+              mobile_element[i].style.visibility = "hidden";
+
+              image_element.src = "assets/hamburger_menu.svg";
+              document.body.style.backgroundColor = "var(--bg_color)";
+          }
+          menu_press = true;
+      }
+
+    }
+  </script>
+</html>

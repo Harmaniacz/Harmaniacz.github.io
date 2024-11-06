@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- c:\dev\web_projects\my_first_website\Harmaniacz.github.io -->
 <html>
     <head>
         <title>Home | Harmony</title>
@@ -12,36 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-         <style>
-            .left_text {
-                overflow:visible;
-                font-size: 60px;
-                text-align: center;
-                display: flex;
-            }
 
-            .left_symbols {
-                overflow:visible;
-                margin-top: 30px;
-                font-size: 60px;
-                text-align: center;
-                line-height: 1.2;
-                display: flex;
-            }
-
-            .phone {
-                align-content: center;
-                overflow:visible;
-                margin-top: 60px;
-                font-size: 55px;
-            }
-
-            .harmony-clickable {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            }
-        </style>
     </head> 
     
     <body>
@@ -89,30 +60,152 @@
     
     <div>
         <!-- section 1 - White -->
-            <div class="main_container" style="background-color: white;" >
+            <div class="main_container" style="display:flex;flex-direction: row;">
                 <div style="margin-left: min(5%);display:flex;flex-direction: column;align-items: start;width:50%">
+                    <div style="background-color: rgb(247 228 228);height:60px"></div>
                     <p style="font-size: min(8.1vw,80px);margin:min(12vw,120px) 0 0 0; color:var(--tertiary_color)"><span style="text-decoration: underline;">Harmony</span> </p>
                     <p style="font-size: min(3.3vw,35px);margin:0px;color:var(--tertiary_color)">Connecting people through the language of <span style="color:var(--pri_button_hover)">Music</span></p>
                     <p style="font-size: min(3.3vw,35px);margin:0px 0px 0px 0px;">Download now: </p>
-                    <img src="assets/app_store.svg" width="30%">
+                    
+                    <img style="margin-bottom: 12%;" src="assets/DownloadIcons.png" width="50%">
+                </div>
+                <div >
+                    <div style="background-color: rgb(247 228 228);height:60px"></div>
+                    <img style="clip-path: rect(0% 100% 100% 0% round 10%);margin-bottom: 12%;margin-top: min(12vw,120px);margin-left: min(10vw,100px)" src="assets/MusicListeners.jpg" width="80%">
+                </div>
+            </div>
+            <div>
+                <img style="position:absolute;margin: 1.6vw 0 0px 3%;width:min(5%)" src="assets/SpotifyLogo2.png" >
+                <img style="position:absolute;margin: 3.8vw 0 0px 10%;width:min(5%)" src="assets/YoutubeMLogo2.png" >
+                <img style="position:absolute;margin: 5.0vw 0 0px 17.3%;width:min(5%)" src="assets/AppleMLogo2.png" >
+            </div>
+
+        <!-- section divide -->
+            <div style="background-color:var(--sec_color);">
+                <svg width="100%" viewBox="0 0 110 15" preserveAspectRatio="none">
+                    <path id="wavepath" d="M 0 0 Q 5 10, 55 10 Q 105 10, 110 0 T 0 0" fill="var(--bg_color)"></path>
+                </svg>
+        <!-- section 2 - Pink -->
+                <div class="main_container" style="display:flex;flex-direction: row;">
+                    <img src="assets/Map.jpg" alt="Connecting People" width="70%" style="clip-path: rect(0% 78% 100% 20% round 10%);margin-left:-8%;">
+                    <div style="display:flex;flex-direction: column;width:35%;padding-top:10%" >
+                        <p style="font-size: min(5.1vw,50px);margin:min(1vw,120px) 0 0 -20%; color:var(--tertiary_color);text-decoration: underline;">Connecting You</p>
+                        <p style="font-size: min(3.3vw,35px);margin:min(1vw,120px) 0 0 -20%; color:var(--tertiary_color);">
+                            The goal of Harmony is to help people connect to one another locally. <br>
+                            <br> To do this, we had to find something to connect people over,
+                        </p>
+                    </div>
                 </div>
             </div>
         <!-- section divide -->
-            <div style="background-color:var(--sec_color)">
-                <svg width="100%" height="70%" viewBox="0 0 110 20" preserveAspectRatio="none">
-                    <path id="wavepath" d="M 0 0 Q 5 10, 55 10 Q 105 10, 110 0 T 0 0" fill="white"></path>
+            <div style="background-color:#974049">
+                <svg width="100%" viewBox="0 0 110 15" preserveAspectRatio="none">
+                    <path id="wavepath" d="M 0 0 Q 5 10, 55 10 Q 105 10, 110 0 T 0 0" fill="var(--sec_color)"></path>
                 </svg>
-        <!-- section 2 - Pink -->
-                <div class="main_container">
-                <img src="assets/phone.png" alt="Phone" width="" >
+        <!-- Section 3 - Music-->
+                <div class="main_container" style="display:flex;flex-direction: row;">
+                    <div style="display:flex;flex-direction: column;width:50%;margin-left: 6%;margin-bottom:5%;margin-top:5%">
+                        <p style="font-size: min(5.1vw,50px);margin:min(1vw,120px) 0 0 -5%; color:white;text-decoration: underline;text-align: center;">Music</p>
+                        <p style="font-size: min(3.1vw,32px);margin:min(1vw,120px) 0 0 0; color:#e1dbdb">
+                            Everybody enjoys music, and people who share even a little music taste 
+                            have a lot to talk about.<br>
+                            <br> Harmony uses shared music taste to connect people with each other,
+                             giving them their first talking point before they have even met.
+                        </p>
+                    </div>
+                    <div style="width:50%;margin-top:6%">
+                        <!--
+                        <img style="position:absolute;margin: min(2.1vw,60px) 0 0px 5%;width:min(18%,160px)" src="assets/SpotifyLogo.png" >
+                        <img style="position:absolute;margin: min(15.8vw,180px) 0 0px 25%;width:min(18%,160px)" src="assets/YTMLogo.png" >
+                        <img style="position:absolute;margin: min(30.0vw,300px) 0 0px 10.3%;width:min(20%,190px)" src="assets/AppleMusicLogo.png" >
+                    
+                    <svg height="100%" width="100%">
+                        <ellipse rx="min(16vw,150px)" ry="40%" cx="50%" cy="50%" style="fill:rgba(250, 113, 103, 0.336);"/>
+                        <circle r="min(6.8vw,68px)" cx="calc(30% + 0px)" cy="min(10vw,110px)" fill="black"></circle>
+                    </svg>-->
+
+                    <img style="position:absolute;margin: min(2.1vw,60px) 0 0px 5%;width:min(40%,424px)" src="assets/The3Musics.png" >
+                    </div>
+                </div>
+
+            </div>
+    <!-- section divide -->
+            <div style="background-color:var(--bg_color);height:min(80vw,900px)">
+                <svg width="100%" viewBox="0 0 110 15" preserveAspectRatio="none">
+                    <path id="wavepath" d="M 0 0 Q 5 10, 55 10 Q 105 10, 110 0 T 0 0" fill=#974049></path>
+                </svg>
+    <!-- Section 4 - Features-->
+                <div class="main_container" style="display:flex;flex-direction: row;">
+                    <div style="display:flex;flex-direction: column;width:45%;margin-left: 4%;">
+                        <img style="position:absolute;margin: min(2.1vw,60px) 0 0px 5%;width:min(32%,334px)" src="assets/phone.png" >
+                    </div>
+                    <div style="width:45%;">
+                        <p style="font-size: min(5.1vw,50px);margin:min(6vw,220px) 0 0 -5%; color:rgb(56, 49, 49);text-decoration: underline;text-align: center;">Harmonize</p>
+                        <p style="font-size: min(3.1vw,32px);margin:min(1vw,120px) 0 0 0; color:#5f5252">
+                            Harmony is a social media app which connects to your music app of choice to connect 
+                            you with with people in your area<br>
+                        </p>
+                        <div style="display:flex;flex-direction: column;margin: 3% 0px 0px 7%;">
+                            <p style="margin: 1%;font-size: min(2.77vw,28px)">Meet new people </p>
+                            <p style="margin: 1%;font-size: min(2.77vw,28px)">Share the music you love</p>
+                            <p style="margin: 1%;font-size: min(2.77vw,28px)">Show your favorite artists</p>
+                            <p style="margin: 1%;font-size: min(2.77vw,28px)">Talk with friends</p>
+                            <p style="margin: 1%;font-size: min(2.77vw,28px)">Explore new music</p>
+                        </div>
+
+                    </div>
                 </div>
             </div>
+<!-- section divide -->
+    <div style="background-color:#ec5867">
+        <svg width="100%" viewBox="0 0 110 15" preserveAspectRatio="none">
+            <path id="wavepath" d="M 0 0 Q 5 10, 55 10 Q 105 10, 110 0 T 0 0" fill="var(--bg_color)"></path>
+        </svg>
+<!-- Section 3 - Music-->
+        <div class="main_container" style="display:flex;flex-direction: row;">
+            <div style="display:flex;flex-direction: column;width:100%;margin-left: 6%;">
+                <p style="text-align: center;color:white">Download Now<br>Maybe somethiong else idk<br>Download Now<br>Download Now<br>Download Now<br>Download Now<br>Download Now<br>Download Now<br>Download Now<br>Download Now<br>Download Now<br>Download Now<br></p>
+            </div>
+        </div>
+
     </div>
+
+<!-- section divide -->
+    <div style="background-color:rgb(247 228 228)">
+        <svg width="100%" viewBox="0 0 110 15" preserveAspectRatio="none">
+            <path id="wavepath" d="M 0 0 Q 5 10, 55 10 Q 105 10, 110 0 T 0 0" fill="#ec5867"></path>
+        </svg>
+<!-- Section 3 - Music-->
+
+
+
+<!--Try section-->
+        <div>
+
+            <div style="text-align: center;">
+                <a class="harmony_logo"><img src="assets/harmony_logo_2.svg" height="40px"></a>
+                <h1>Find your musical match</h1>
+                <h3 style="margin-bottom: 40px">Meet new friends through the language of music.</h3>
+                <a href="download.html" class="nav_button" id="download_button">Try free</a>
+                <div class="ratings_container">
+                    <div class="ratings_content"><p class="rating_text" style="margin-right: 10px;">4.8/5.0</p></div>
+                    <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
+                    <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
+                    <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
+                    <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
+                    <div class="ratings_content"><img src="assets/star_half.svg" class="star_icon" alt="star"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
     <!--Footer-->
         
-        <svg style="display: block; background-color:var(--sec_color)" width="100%" viewBox="0 0 110 3" preserveAspectRatio="none" >
-            <path id="wavepath" d="M 0 3 Q 10 0 55 0 Q 100 0 110 3 " fill="var(--pri_color)"></path>
-        </svg>
+        <!--<svg style="display: block; background-color:var(--sec_color)" width="100%" viewBox="0 0 110 3" preserveAspectRatio="none" >
+            <path id="wavepath" d="M 2 3 Q 10 0 55 0 Q 100 0 108 3 " fill="#2C2C2C"></path>
+        </svg> -->
 
         <div class="footer_container">
 
@@ -141,6 +234,7 @@
             </div>
 
         </div>
+
     </body>
 
 </html>
