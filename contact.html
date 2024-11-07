@@ -64,6 +64,19 @@
                 }
 
             }
+
+            function form_submission() {
+                var button_element = document.getElementById("form_button");
+                button_element.textContent = "Message sucessfully submitted";
+                button_element.style.backgroundColor = "#646464"
+                
+                const input_element = document.getElementsByClassName("input_container");
+
+                for (var i = 0; i <= input_element.length; i = i + 1) {
+                    input_element[i].disabled = true;
+                }
+            }
+
         </script>
 
     </head>
@@ -163,7 +176,7 @@
                             </div>
                             <input class="input_container" type="text" placeholder="Email">
                             <textarea class="input_container" type="text" placeholder="How can we help?" style="height:250px"></textarea>
-                            <a class="form_button">Submit</a>
+                            <button onclick="form_submission()" id="form_button">Submit</button>
 
                         </div>
 
