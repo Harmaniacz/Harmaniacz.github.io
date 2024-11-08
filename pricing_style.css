@@ -22,7 +22,6 @@ body {
     margin:0px;
     background-color: var(--bg_color);
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 p {
@@ -458,6 +457,7 @@ tr {
 
 td {
     color: var(--text_color);
+    word-wrap: break-word;
 }
 
 abbr {
