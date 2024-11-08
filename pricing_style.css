@@ -289,7 +289,7 @@ a {
 .button_container {
     padding: 25px 25px 25px 25px;
 }
-
+/*
 #button_container_1 {
     padding-top: 151px;
 }
@@ -297,7 +297,7 @@ a {
 #button_container_2 {
     padding-top: 59px;
 }
-
+*/
 .heading_container {
     text-align: center;
     margin-bottom: 25px;
@@ -463,6 +463,16 @@ td {
 abbr {
     text-decoration: none;
     border-bottom: 1px dotted var(--pri_color);
+}
+
+td img {
+    vertical-align: bottom;
+    height: 20px;
+}
+
+.plan_check_list img {
+    vertical-align: bottom;
+    height: 20px;
 }
 
 /*FAQ section*/
@@ -753,6 +763,7 @@ details[open] p {
 
     .footer_content_container {
         flex-direction: column;
+        row-gap: 20px;
     }
 }
 

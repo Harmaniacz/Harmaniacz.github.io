@@ -306,7 +306,7 @@ a {
 .form_container {
     width: 100%;
     border-radius: 15px 15px 0 0;
-    background: linear-gradient(45deg, rgb(111 107 107) 0%, rgb(44 44 44) 100%);
+    background: linear-gradient(225deg, rgb(238 188 193) 0%, rgba(229, 115, 126, 1) 100%);
     padding: 50px 0;
 }
 
@@ -351,10 +351,6 @@ a {
 
 .input_container:focus-visible {
     outline: none;
-}
-
-.input_container:hover {
-    border: 1px solid var(--button_outline_color);
 }
 
 .input_container:focus {
@@ -455,6 +451,10 @@ button {
     }
 
     /*Contact form*/
+    .popout_container {
+        padding: 20px 0 40px 0;
+    }
+
     .names_container {
         flex-direction: column;
     }
