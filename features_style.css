@@ -24,13 +24,14 @@ body {
     font-family: Nunito, Arial, Helvetica, sans-serif;
     color:#2C2C2C;
     margin: 0px;
+    padding: 0px;
 }
 a {
     text-decoration: none;
 }
 
 
-/* navigation bar */
+/*Navigation bar*/
 .navigation_container {
     background-color: white;
     color:black;
@@ -43,6 +44,7 @@ a {
 
 .nav_container {
     width:1000px;
+    height: 77px;
     margin:auto;
     display: flex;
     align-items: center;
@@ -146,7 +148,6 @@ a {
 }
 
 /*Mobile navigation list*/
-
 .mobile_page_content {
     width: 100%;
     background-color: white;

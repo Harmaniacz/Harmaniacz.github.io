@@ -8,47 +8,47 @@
   </head>  
 
   <body>
+     <!--Navigation bar-->
+      <div class="navigation_container">
 
-   <!--Navigation bar-->
-    <div class="navigation_container">
+          <!--Web navigation-->
+          <div class="nav_container">
 
-      <!--Web navigation-->
-      <div class="nav_container">
+              <!--Left navigation-->
+              <div class="nav_left">
+                  <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
+              </div>
 
-          <!--Left navigation-->
-          <div class="nav_left">
-              <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
+              <!--Middle navigation-->
+              <div class="nav_middle">
+                  <a class="nav_button" href="home.html">Home</a>
+                  <a class="nav_button" href="features.html" id="selected_page">Features</a>
+                  <a class="nav_button" href="pricing.html" >Pricing</a>
+                  <a class="nav_button" href="team.html">Team</a>
+              </div>
+  
+              <!--Right navigation-->
+              <div class="nav_right">
+                  <a class="nav_button" id="login_button" href="#">Log in</a>
+                  <a class="nav_button" id="download_button" href="download.html">Download</a>
+              </div>
+
           </div>
 
-          <!--Middle navigation-->
-          <div class="nav_middle">
-              <a class="nav_button" href="home.html">Home</a>
-              <a class="nav_button" href="features.html"  id="selected_page">Features</a>
-              <a class="nav_button" href="pricing.html" >Pricing</a>
-              <a class="nav_button" href="team.html">Team</a>
-          </div>
+          <!--Mobile navigation-->
+          <div class="nav_container_mobile">
 
-          <!--Right navigation-->
-          <div class="nav_right">
-              <a class="nav_button" id="login_button" href="#">Log in</a>
-              <a class="nav_button" id="download_button" href="download.html">Download</a>
+              <div class="nav_left_mobile">
+                  <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
+              </div>
+
+              <div class="nav_right_mobile">
+                  <button class="mobile_nav_button" onclick="navigation_button()"><img id ="menu_hamburger" src="assets/hamburger_menu.svg"></button>
+              </div>
+
           </div>
 
       </div>
-
-      <!--Mobile navigation-->
-      <div class="nav_container_mobile">
-
-          <div class="nav_left_mobile">
-              <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
-          </div>
-
-          <div class="nav_right_mobile">
-              <button class="mobile_nav_button" onclick="navigation_button()"><img id ="menu_hamburger" src="assets/hamburger_menu.svg"></button>
-          </div>
-
-      </div>
-    </div>
 
     <div>
       <header id="features_header_back">
