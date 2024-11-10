@@ -303,24 +303,23 @@ a {
 }
 
 .features-list .features-link .features-h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     transition: 0.2s ease;
 }
 .features-list .features-link:hover .features-h2 {
     color:#c7505c;
-    font-size: 3rem;
 
 }
 
 .features-list .features-link .features-image {
     width: 40%;
-    height: auto;
+    height: 450px;
     aspect-ratio: 5/6;
     border-radius: 10px;
 }
 
 .features-list .features-link .info-item {
-    font-size: 2.1rem;
+    font-size: 2.3rem;
     margin-left: 20px;
     transition: 0.2s ease;
 }
@@ -330,7 +329,7 @@ a {
 }
 .features-list .features-link .info-header {
     list-style: none;
-    font-size: 2.3rem;
+    font-size: 2.7rem;
     font-weight: bold;
     padding-bottom: 15px;
 }
