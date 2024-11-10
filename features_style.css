@@ -313,8 +313,9 @@ a {
 }
 
 .features-list .features-link .features-image {
-    width: 45%;
-    aspect-ratio: 7/9;
+    width: 40%;
+    height: auto;
+    aspect-ratio: 5/6;
     border-radius: 10px;
 }
 
@@ -331,6 +332,7 @@ a {
     list-style: none;
     font-size: 2.3rem;
     font-weight: bold;
+    padding-bottom: 15px;
 }
 
 .features-list .features-link .info-list {
