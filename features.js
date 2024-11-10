@@ -15,4 +15,12 @@ new Swiper('.features-wrapper', {
       prevEl: '.swiper-button-prev',
     },
 
+    breakpoints: {
+      0: {
+        slidesPerView: 1
+      },
+      1040: {
+        slidesPerView: 2
+      },
+    }
   });
