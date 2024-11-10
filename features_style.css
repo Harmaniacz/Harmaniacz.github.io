@@ -38,7 +38,7 @@ a {
     width:100%;
     position: fixed;
     border-radius: 0 0 15px 15px;
-    z-index: 1;
+    z-index: 1000;
     border: 1px solid var(--border_outline_color);
 }
 
@@ -265,12 +265,18 @@ a {
     background: linear-gradient(180deg, rgb(247 228 228) 0%, var(--bg_color) 60%);
 }
 
+.features-wrapper {
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
 .features-list .features-item {
     list-style: none;
 }
 
 .features-list .features-item .features-link {
-    width: 800px;
+    user-select: none;
     display: block;
     background: white;
     padding: 18px;
@@ -279,6 +285,7 @@ a {
     border: 2px solid transparent;
     box-shadow: 0 10px 10px rgba(113, 17, 17, 0.05);
     transition: 0.2s ease;
+    z-index: 1;
 }
 
 .features-list .features-item .features-link:hover {
