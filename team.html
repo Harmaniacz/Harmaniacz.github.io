@@ -11,7 +11,7 @@
 </head>
 <body>
 
-   
+    <!-- Navigation bar -->
     <div class="navigation_container">
         <div class="nav_container">
             <div class="nav_left">
@@ -30,8 +30,29 @@
         </div>
     </div>
 
-    
-    <div class="web_page_content">
+    <!-- Mobile navigation -->
+    <div class="nav_container_mobile">
+        <div class="nav_left_mobile">
+            <a class="harmony_logo" href="index.html"><img src="assets/harmony_logo_2.svg" height="30px"></a>
+        </div>
+        <div class="nav_right_mobile">
+            <button class="mobile_nav_button" onclick="navigation_button()"><img id="menu_hamburger" src="assets/hamburger_menu.svg"></button>
+        </div>
+    </div>
+
+    <!-- Mobile navigation menu -->
+    <div class="mobile_page_content" style="display: none; visibility: hidden;">
+        <div class="mobile_navigation_list">
+            <a class="mobile_menu_button" href="home.html">Home</a>
+            <a class="mobile_menu_button" href="features.html">Features</a>
+            <a class="mobile_menu_button" href="pricing.html">Pricing</a>
+            <a class="mobile_menu_button" href="team.html" style="color:black;">Team</a>
+            <a class="mobile_menu_button_2" href="download.html">Download</a>
+        </div>
+    </div>
+
+    <!-- Main content with gradient background -->
+    <div class="hero_container">
         <div class="main_container">
             <h1 style="text-align: center;">Meet the Team!</h1>
             <p style="text-align: center; color: var(--text_color);">Our talented team of professionals dedicated to bringing you the best experience.</p>
@@ -91,7 +112,25 @@
         </div>
     </div>
 
-    
+    <!-- Footer with gradient background -->
+    <div class="try_container">
+        <div class="try_content_container">
+            <a class="harmony_logo"><img src="assets/harmony_logo_2.svg" height="40px"></a>
+            <h1>Find your musical match</h1>
+            <h3 style="margin-bottom: 40px">Meet new friends through the language of music.</h3>
+            <a href="download.html" class="nav_button" id="download_button">Try Harmony free</a>
+            <div class="ratings_container">
+                <div class="ratings_content"><p class="rating_text" style="margin-right: 10px;">4.8/5.0</p></div>
+                <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
+                <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
+                <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
+                <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
+                <div class="ratings_content"><img src="assets/star_half.svg" class="star_icon" alt="star"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <div class="footer_container">
         <div class="footer_content_container">
             <div class="left_foot">
