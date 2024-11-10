@@ -275,6 +275,14 @@ a {
     background: white;
     padding: 18px;
     border-radius: 12px;
+    color:#2C2C2C; 
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(113, 17, 17, 0.05);
+    transition: 0.2s ease;
+}
+
+.features-list .features-item .features-link:hover {
+    border-color:#E5737E;
 }
 
 .inside-content {
@@ -284,6 +292,7 @@ a {
 
 .features-list .features-link .features-h2 {
     font-size: 3rem;
+
 }
 
 .features-list .features-link .features-image {
@@ -305,6 +314,11 @@ a {
 
 .features-list .features-link .info-list {
     margin-left: 30px;
+    list-style-type: circle;
+    
+}  
+.features-list .features-link .info-list::marker {
+   color:#c86c75; 
 }  
 
 /*Footer section*/
