@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/harmony_favicon.png" type="image/icon type">
+    <!-- Linking SwiperJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   </head>  
 
   <body>
@@ -58,14 +60,15 @@
           <h1 id="features_header_text">Discover Harmony’s Core Features</h1>
         </div>
       </header>
-    </div>
+    </div> 
 
     <!-- Main features -->
+    
     <section class="slider">
-      <div class="main_container">
+      <div class="main_container swiper">
         <div class="features-wrapper">
-          <ul class="features-list">
-            <li class="features-item">
+          <ul class="features-list swiper-wrapper">
+            <li class="features-item swiper-slide">
               <a href="#" class="features-link">
                 <h2 class="features-h2">Profile</h2>
                 <div class="inside-content">
@@ -82,7 +85,7 @@
                 </div>
               </a>
             </li>
-            <li class="features-item">
+            <li class="features-item swiper-slide">
               <a href="#" class="features-link">
                 <h2 class="features-h2">Messaging</h2>
                 <div class="inside-content">
@@ -99,11 +102,11 @@
                 </div>
               </a>
             </li>
-            <li class="features-item">
+            <li class="features-item swiper-slide">
               <a href="#" class="features-link">
                 <h2 class="features-h2">Map</h2>
                 <div class="inside-content">
-                  <img src="assets/features_map.png" alt="finger pointing on a map" class="features-image">
+                  <img src="assets/features_map.png" alt="finger pointing at a map" class="features-image">
                   <div class="info-item">
                     <ul>
                       <li class="info-header">Discover music around you and stay connected with friends</li>
@@ -116,11 +119,11 @@
                 </div>
               </a>
             </li>
-            <li class="features-item">
+            <li class="features-item swiper-slide">
               <a href="#" class="features-link">
                 <h2 class="features-h2">Explore</h2>
                 <div class="inside-content">
-                  <img src="assets/features_explore.jpg" alt="photo of girl putting on lipstick + guitar" class="features-image">
+                  <img src="assets/features_explore.jpg" alt="3 people looking for music" class="features-image">
                   <div class="info-item">
                     <ul>
                       <li class="info-header">Find new friends and trending music</li>
@@ -132,24 +135,26 @@
                   </div>
                 </div>
               </a>
-            </li>
+            </li> 
           </ul>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
       
-    </section>
-  
-    <!--
+    </section> 
 
-      <div>
-        <h2>Explore</h2>
-        <ul>
-          <li>Get friend recommendations</li>
-          <li>See what's most popular to listen to currently</li>
-        </ul>
-      </div>
-    </div>
     
+    <!-- Linking SwiperJS script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> 
+
+    <!-- Linking custom swiper script-->
+    <script src="features.js"></script>  
+
+  
+    <!---
+
     <div>
       <h1>More amazing features</h1>
       <ul>
