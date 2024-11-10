@@ -118,7 +118,84 @@ a {
     border-bottom: 2px solid var(--pri_color);
 }
 
-/* Team Section */
+/* Mobile navigation bar */
+.nav_container_mobile {
+    visibility: collapse;
+    display: none;
+    align-content: center;
+    padding: 20px;
+}
+
+.nav_left_mobile {
+    width: 50%;
+}
+
+.nav_right_mobile {
+    width: 50%;
+    text-align: right;
+}
+
+.mobile_nav_button {
+    background-color: inherit;
+    border: none;
+    padding: 0 0 0 30px;
+    font-weight: bold;
+}
+
+.mobile_nav_button:hover {
+    cursor: pointer;
+}
+
+/* Mobile navigation menu */
+.mobile_page_content {
+    width: 100%;
+    background-color: white;
+    animation: fade_up_animation 0.5s;
+}
+
+.mobile_navigation_list {
+    padding: 102px 25px 25px 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mobile_menu_button {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: var(--text_color);
+    font-weight: bold;
+    transition: 0.15s;
+}
+
+.mobile_menu_button:hover {
+    cursor: pointer;
+    background-color: var(--pri_hover_color);
+    border-radius: 15px;
+}
+
+.mobile_menu_button_2 {
+    width: 100%;
+    background-color: var(--pri_color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.mobile_menu_button_2:hover {
+    background-color: var(--pri_button_hover);
+}
+
+/* Team Section (Hero Container) */
+.hero_container {
+    width: 100%;
+    padding: 50px 0;
+    background: linear-gradient(180deg, rgb(247, 228, 228) 0%, var(--bg_color) 60%);
+}
+
+/* Team Member Cards */
 .team_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -129,17 +206,16 @@ a {
 
 .team_member_box {
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
     background-color: white;
     border-radius: 15px;
     padding: 20px;
-    border: 2px solid var(--border_outline_color);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border_outline_color);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    transition: transform 0.2s;
 }
 
 .team_member_box h2 {
@@ -154,24 +230,94 @@ a {
 
 .team_member_box:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
-    border-color: var(--pri_color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.profile_picture {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-    border: 2px solid var(--border_outline_color);
+.plan_container {
+    width: 180px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid var(--border_outline_color);
 }
 
-/* Gradient Background */
-.hero_container {
+.plan_heading_container {
+    text-align: center;
+    padding: 25px 0 0 0;
+}
+
+.plan_content_container {
+    padding: 0px 25px;
+}
+
+.choose_button {
+    background-color: var(--pri_color);
+    color: white;
+    padding: 10px 0;
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.choose_button:hover {
+    background-color: var(--pri_button_hover);
+}
+
+/* Footer Section with Gradient Background */
+.try_container {
     width: 100%;
     padding: 50px 0;
-    background: linear-gradient(180deg, rgb(247, 228, 228) 0%, var(--bg_color) 60%);
+    background: linear-gradient(45deg, rgb(111, 107, 107) 0%, rgb(44, 44, 44) 100%);
+    border-radius: 15px 15px 0 0;
+}
+
+.try_content_container {
+    padding: 50px 0;
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid var(--border_outline_color);
+}
+
+.ratings_container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.star_icon {
+    height: 24px;
+}
+
+/* Footer Links */
+.footer_container {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #2C2C2C;
+}
+
+.footer_content_container {
+    width: 1000px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.left_foot, .middle_foot, .right_foot {
+    width: 100%;
+    text-align: center;
+}
+
+.foot_link {
+    padding: 10px 20px;
+    color: white;
+}
+
+.foot_link:hover {
+    color: rgb(209, 209, 209);
 }
 
 /* Animations */
@@ -211,11 +357,22 @@ a {
     }
 
     .team_container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
 
-    .team_member_box {
+    .plan_container {
         width: 90%;
         margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .try_content_container {
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+
+    .try_container {
+        padding: 0;
+        border: 0;
     }
 }
