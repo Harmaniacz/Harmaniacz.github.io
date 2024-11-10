@@ -216,7 +216,7 @@ a {
     background-color: #e95664;
 }
 
-/* features page */
+/* Features header */
 #features_header_back{
     position: relative;
     height: 500px;
@@ -250,6 +250,62 @@ a {
     transform: translateY(-50%);
 }
 
+/* Main features slider */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 65vh;
+    background: linear-gradient(180deg, rgb(247 228 228) 0%, var(--bg_color) 60%);
+}
+
+.features-list .features-item {
+    list-style: none;
+}
+
+.features-list .features-item .features-link {
+    width: 800px;
+    display: block;
+    background: white;
+    padding: 18px;
+    border-radius: 12px;
+}
+
+.inside-content {
+    display: flex;
+    justify-content: center;
+}
+
+.features-list .features-link .features-h2 {
+    font-size: 3rem;
+}
+
+.features-list .features-link .features-image {
+    width: 45%;
+    aspect-ratio: 8/9;
+    border-radius: 10px;
+}
+
+.features-list .features-link .info-item {
+    font-size: 2.1rem;
+    margin-left: 20px;
+}
+
+.features-list .features-link .info-header {
+    list-style: none;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.features-list .features-link .info-list {
+    margin-left: 30px;
+}  
 
 /*Footer section*/
 .footer_container {
