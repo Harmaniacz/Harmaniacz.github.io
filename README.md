@@ -29,6 +29,7 @@
 - [Team](https://harmaniacz.github.io/team)
 - [Download](https://harmaniacz.github.io/download)
 - [Contact](https://harmaniacz.github.io/contact)
+- [Log in](https://harmaniacz.github.io/login)
 
 ## Meet the team
 
