@@ -16,10 +16,10 @@ new Swiper('.features-wrapper', {
     },
 
     breakpoints: {
-      1800: {
+      1525: {
         slidesPerView: 1
       },
-      1801: {
+      1526: {
         slidesPerView: 2
       }
     }

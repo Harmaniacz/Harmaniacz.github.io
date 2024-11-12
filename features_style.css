@@ -263,7 +263,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
+    min-height: 800px;
     background: linear-gradient(180deg, rgb(243, 214, 214) 0%, var(--bg_color) 60%);
     
 }
@@ -317,7 +317,7 @@ a {
 .features-list .features-link .features-image {
     width: 40%;
     height: 450px;
-    aspect-ratio: 5/6;
+    aspect-ratio: 5/7;
     border-radius: 10px;
 }
 
@@ -370,6 +370,24 @@ a {
 }
 }
 
+@media screen and (max-width: 1800px) {
+
+    .features-list .features-link .info-header {
+        font-size: 2.3rem;
+    }
+    .features-list .features-link .info-item {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1525px) {
+    .features-list .features-link .info-header {
+        font-size: 3rem;
+    }
+    .features-list .features-link .info-item {
+        font-size: 2.4rem;
+    }
+}
 /*Secondary features*/
 .secondary {
     background: linear-gradient(225deg,rgb(238 188 193) 0%, rgba(229, 115, 126, 1) 100%); 
