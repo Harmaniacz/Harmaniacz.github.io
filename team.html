@@ -11,33 +11,146 @@
 </head>
 <body>
 
-    <!-- Navigation bar -->
+    <!--Back to top button-->
+    <button id="top_button" onclick="topFunction()" title="Go to top"><img src="assets/up_arrow.svg" alt="arrow" style="height: 24px;"></button>
+
+    <!--Navigation bar-->
     <div class="navigation_container">
+
+        <!--Web navigation-->
         <div class="nav_container">
-            <div class="nav_left">
-                <a class="harmony_logo" href="index.html"><img src="assets/harmony_logo_2.svg" height="30px"></a>
+
+            <!--Left navigation-->
+            <div class="nav_left">  
+                <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
             </div>
+
+            <!--Middle navigation-->
             <div class="nav_middle">
                 <a class="nav_button" href="home.html">Home</a>
                 <a class="nav_button" href="features.html">Features</a>
                 <a class="nav_button" href="pricing.html">Pricing</a>
-                <a class="nav_button" href="team.html" id="selected_page">Team</a>
+                <a class="nav_button" href="team.html"  id="selected_page">Team</a>
             </div>
+
+            <!--Right navigation-->
             <div class="nav_right">
                 <a class="nav_button" id="login_button" href="login.html">Log in</a>
                 <a class="nav_button" id="download_button" href="download.html">Download</a>
             </div>
+
         </div>
+
+        <!--Mobile navigation-->
+        <div class="nav_container_mobile">
+
+            <div class="nav_left_mobile">
+                <a class="harmony_logo" href="index.html" ><img src="assets/harmony_logo_2.svg" height="30px"></a>
+            </div>
+
+            <div class="nav_right_mobile">
+                <button class="mobile_nav_button" onclick="navigation_button()"><img id ="menu_hamburger" src="assets/hamburger_menu.svg"></button>
+            </div>
+
+        </div>
+
     </div>
 
-    <!-- Mobile navigation -->
-    <div class="nav_container_mobile">
-        <div class="nav_left_mobile">
-            <a class="harmony_logo" href="index.html"><img src="assets/harmony_logo_2.svg" height="30px"></a>
+    <!--Display content (necessary for moble formatinng)-->
+    <div class="web_page_content">
+
+        <!-- Main content with gradient background -->
+        <div class="hero_container">
+            <div class="main_container">
+                <h1 style="text-align: center;">Meet the Team!</h1>
+                <p style="text-align: center; color: var(--text_color);">Our talented team of professionals dedicated to bringing you the best experience.</p>
+                
+                <!-- Team members in 2 rows, 3 columns -->
+                <div class="team_container">
+                    
+                    <div class="team_member_box">
+                        <img src="assets/Aiden_PFP.png" alt="Aiden Lam Profile Picture" class="profile_picture">
+                        <h2>Aidan Lam</h2>
+                        <p>Software Architect</p>
+                        <p>Aidan designs the structure of our software systems so that you can have the best experience possible.</p>
+                    </div>
+
+                    <div class="team_member_box">
+                        <img src="assets/Najib_PFP.jpg" alt="Najib Elmi Profile Picture" class="profile_picture">
+                        <h2>Najib Elmi</h2>
+                        <p>UX Designer</p>
+                        <p>Najib focuses on creating intuitive user experiences with a keen eye for design.</p>
+                    </div>
+
+                    <div class="team_member_box">
+                        <img src="assets/Riki_PFP.jpg" alt="Riki McAlear Profile Picture" class="profile_picture">
+                        <h2>Riki McAlear</h2>
+                        <p>Frontend Developer</p>
+                        <p>Riki excels at crafting seamless interfaces, ensuring that the app feels just as great as it looks.</p>
+                    </div>
+
+                    <div class="team_member_box">
+                        <img src="assets/Sam_PFP.jpg" alt="Samuel Leone-Ganado Profile Picture" class="profile_picture">
+                        <h2>Samuel Leone-Ganado</h2>
+                        <p>Product Manager</p>
+                        <p>Samuel drives our product vision, making sure every feature aligns with our users' needs.</p>
+                    </div>
+
+                    <div class="team_member_box">
+                        <img src="assets/Yassmine_PFP.jpeg" alt="Yassmine Senouci Profile Picture" class="profile_picture">
+                        <h2>Yassmine Senouci</h2>
+                        <p>Marketing Specialist</p>
+                        <p>Yassmine leads our marketing efforts, ensuring our message reaches our audience effectively.</p>
+                    </div>
+
+                    <div class="team_member_box">
+                        <img src="assets/default_pfp.png" alt="Default Profile Picture" class="profile_picture">
+                        <h2>This Could Be You!</h2>
+                        <p>Join Our Team</p>
+                        <p>We’re always looking for new talents. Reach out if you’re interested in joining our mission!</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="nav_right_mobile">
-            <button class="mobile_nav_button" onclick="navigation_button()"><img id="menu_hamburger" src="assets/hamburger_menu.svg"></button>
+
+        <!-- Footer with gradient background -->
+        <div class="try_container">
+            <div class="try_content_container">
+                <a class="harmony_logo"><img src="assets/harmony_logo_2.svg" height="40px"></a>
+                <h1>Find your musical match</h1>
+                <h3 style="margin-bottom: 40px">Meet new friends through the language of music.</h3>
+                <a href="download.html" class="nav_button" id="download_button">Try Harmony free</a>
+                <div class="ratings_container">
+                    <div class="ratings_content"><p class="rating_text" style="margin-right: 10px;">4.8/5.0</p></div>
+                    <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
+                    <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
+                    <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
+                    <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
+                    <div class="ratings_content"><img src="assets/star_half.svg" class="star_icon" alt="star"></div>
+                </div>
+            </div>
         </div>
+
+        <!-- Footer -->
+        <div class="footer_container">
+            <div class="footer_content_container">
+                <div class="left_foot">
+                    <a class="harmony_logo" href="index.html"><img src="assets/harmony_logo_1.svg" height="30px"></a>
+                </div>
+                <div class="middle_foot">
+                    <a class="foot_link" href="home.html">Home</a>
+                    <a class="foot_link" href="features.html">Features</a>
+                    <a class="foot_link" href="pricing.html">Pricing</a>
+                    <a class="foot_link" href="team.html">Team</a>
+                    <a class="foot_link" href="download.html">Download</a>
+                </div>
+                <div class="right_foot">
+                    <a><img class="foot_link" src="assets/linkedin.svg" alt="LinkedIn" style="height: 16px;"></a>
+                    <a href="https://github.com/Harmaniacz/Harmaniacz.github.io" target="_blank"><img class="foot_link" src="assets/github.svg" alt="GitHub" style="height: 16px;"></a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Mobile navigation menu -->
@@ -48,98 +161,6 @@
             <a class="mobile_menu_button" href="pricing.html">Pricing</a>
             <a class="mobile_menu_button" href="team.html" style="color:black;">Team</a>
             <a class="mobile_menu_button_2" href="download.html">Download</a>
-        </div>
-    </div>
-
-    <!-- Main content with gradient background -->
-    <div class="hero_container">
-        <div class="main_container">
-            <h1 style="text-align: center;">Meet the Team!</h1>
-            <p style="text-align: center; color: var(--text_color);">Our talented team of professionals dedicated to bringing you the best experience.</p>
-            
-            <!-- Team members in 2 rows, 3 columns -->
-            <div class="team_container">
-                
-                <div class="team_member_box">
-                    <img src="assets/Aiden_PFP.png" alt="Aiden Lam Profile Picture" class="profile_picture">
-                    <h2>Aidan Lam</h2>
-                    <p>Software Architect</p>
-                    <p>Aidan designs the structure of our software systems so that you can have the best experience possible.</p>
-                </div>
-
-                <div class="team_member_box">
-                    <img src="assets/Najib_PFP.jpg" alt="Najib Elmi Profile Picture" class="profile_picture">
-                    <h2>Najib Elmi</h2>
-                    <p>UX Designer</p>
-                    <p>Najib focuses on creating intuitive user experiences with a keen eye for design.</p>
-                </div>
-
-                <div class="team_member_box">
-                    <img src="assets/Riki_PFP.jpg" alt="Riki McAlear Profile Picture" class="profile_picture">
-                    <h2>Riki McAlear</h2>
-                    <p>Frontend Developer</p>
-                    <p>Riki excels at crafting seamless interfaces, ensuring that the app feels just as great as it looks.</p>
-                </div>
-
-                <div class="team_member_box">
-                    <img src="assets/Sam_PFP.jpg" alt="Samuel Leone-Ganado Profile Picture" class="profile_picture">
-                    <h2>Samuel Leone-Ganado</h2>
-                    <p>Product Manager</p>
-                    <p>Samuel drives our product vision, making sure every feature aligns with our users' needs.</p>
-                </div>
-
-                <div class="team_member_box">
-                    <img src="assets/Yassmine_PFP.jpeg" alt="Yassmine Senouci Profile Picture" class="profile_picture">
-                    <h2>Yassmine Senouci</h2>
-                    <p>Marketing Specialist</p>
-                    <p>Yassmine leads our marketing efforts, ensuring our message reaches our audience effectively.</p>
-                </div>
-
-                <div class="team_member_box">
-                    <img src="assets/default_pfp.png" alt="Default Profile Picture" class="profile_picture">
-                    <h2>This Could Be You!</h2>
-                    <p>Join Our Team</p>
-                    <p>We’re always looking for new talents. Reach out if you’re interested in joining our mission!</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer with gradient background -->
-    <div class="try_container">
-        <div class="try_content_container">
-            <a class="harmony_logo"><img src="assets/harmony_logo_2.svg" height="40px"></a>
-            <h1>Find your musical match</h1>
-            <h3 style="margin-bottom: 40px">Meet new friends through the language of music.</h3>
-            <a href="download.html" class="nav_button" id="download_button">Try Harmony free</a>
-            <div class="ratings_container">
-                <div class="ratings_content"><p class="rating_text" style="margin-right: 10px;">4.8/5.0</p></div>
-                <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
-                <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
-                <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
-                <div class="ratings_content"><img src="assets/star.svg" class="star_icon" alt="star"></div>
-                <div class="ratings_content"><img src="assets/star_half.svg" class="star_icon" alt="star"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Footer -->
-    <div class="footer_container">
-        <div class="footer_content_container">
-            <div class="left_foot">
-                <a class="harmony_logo" href="index.html"><img src="assets/harmony_logo_1.svg" height="30px"></a>
-            </div>
-            <div class="middle_foot">
-                <a class="foot_link" href="home.html">Home</a>
-                <a class="foot_link" href="features.html">Features</a>
-                <a class="foot_link" href="pricing.html">Pricing</a>
-                <a class="foot_link" href="team.html">Team</a>
-                <a class="foot_link" href="download.html">Download</a>
-            </div>
-            <div class="right_foot">
-                <a><img class="foot_link" src="assets/linkedin.svg" alt="LinkedIn" style="height: 16px;"></a>
-                <a href="https://github.com/Harmaniacz/Harmaniacz.github.io" target="_blank"><img class="foot_link" src="assets/github.svg" alt="GitHub" style="height: 16px;"></a>
-            </div>
         </div>
     </div>
 

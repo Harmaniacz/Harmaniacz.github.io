@@ -41,6 +41,28 @@ a {
     animation: fade_up_animation 0.5s;
 }
 
+/*back to top button*/
+#top_button {
+    position: fixed;
+    z-index: 2;
+    right: 20px;
+    bottom: 20px;
+    background-color: var(--pri_color);
+    border-radius: 15px;
+    transition: 0.15s;
+    align-content: center;
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 50px;
+}
+
+#top_button:hover {
+    background-color: var(--pri_button_hover);
+    cursor: pointer;
+}
+
 /* Navigation bar */
 .navigation_container {
     background-color: white;
@@ -361,8 +383,37 @@ a {
     color: rgb(209, 209, 209);
 }
 
+@media only screen and (max-width: 600px) {
+    .team_container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .team_member_box {
+        max-width: fit-content;
+    }
+}
+
 /* Mobile display adjustments for Try and Footer sections */
 @media only screen and (max-width: 1000px) {
+    /*Main*/
+    .navigation_container, .nav_container, .hero_container, .main_container, .heading_container, .content_container, .main_content_container, .footer_container, .footer_content_container, table, .try_container, .try_content_container, .faq_container, .faq_content_container{
+        width: 100%;
+    }
+
+    /*Navigation bar*/
+    .nav_container {    
+        visibility: hidden;
+        display: none;
+        z-index: 1;
+    }
+
+    .nav_container_mobile {
+        visibility: visible;
+        display: flex;
+    }
+    
+    /*Try section*/
     .try_content_container {
         border-radius: 15px 15px 0 0;
         margin-bottom: 0;
@@ -373,15 +424,24 @@ a {
         padding: 0;
         border: 0;
         background: none;
+        border: 0;
     }
 
-    .left_foot, .middle_foot, .right_foot {
+    /*Footer section*/
+    .left_foot {
         width: 100%;
         text-align: center;
     }
 
     .middle_foot {
+        width: 100%;
+        text-align: center;
         padding: 20px 0 20px 0;
+    }
+
+    .right_foot { 
+        width: 100%;
+        text-align: center;
     }
 
     .footer_content_container {
