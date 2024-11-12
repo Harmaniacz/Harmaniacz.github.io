@@ -306,7 +306,8 @@ a {
 /* Footer Links */
 .footer_container {
     width: 100%;
-    padding: 50px 0;
+    padding: 50px 0px 50px 0px;
+    text-align: center;
     background-color: #2C2C2C;
 }
 
