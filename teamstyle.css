@@ -275,75 +275,108 @@ a {
     background-color: var(--pri_button_hover);
 }
 
-/*Try section*/
-.try_content_container {
-    border-radius: 15px 15px 0 0;
-    margin-bottom: 0;
-    border: 0;
-}
-
+/* Try section */
 .try_container {
-    padding: 0;
-    border: 0;
-    background: none;
-    border: 0;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: linear-gradient(45deg, rgb(111, 107, 107) 0%, rgb(44, 44, 44) 100%);
+    border-radius: 15px 15px 0 0;
 }
 
-/*Footer section*/
-.left_foot {
-    width: 100%;
+.try_content_container {
+    padding: 50px 0;
+    width: 1000px;
+    margin: auto;
     text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid var(--border_outline_color);
 }
 
-.middle_foot {
-    width: 100%;
+.ratings_container {
+    display: flex;
     text-align: center;
-    padding: 20px 0 20px 0;
+    justify-content: center;
+    padding-top: 20px;
 }
 
-.right_foot { 
-    width: 100%;
+.ratings_content {
     text-align: center;
+    align-content: center;
+}
+
+.star_icon {
+    height: 24px;
+}
+
+/* Footer section */
+.footer_container {
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    text-align: center;
+    background-color: #2C2C2C;
 }
 
 .footer_content_container {
-    flex-direction: column;
-    row-gap: 20px;
+    width: 1000px;
+    display: flex;
+    margin: auto;
+    align-items: center;
 }
 
-/*Key frames*/
-
-@keyframes fade_up_animation {
-0% {
-    opacity: 0;
-    transform: translateY(30px) scale(0.9);
-    filter: blur(1px);
-}
-100% {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-    filter: blur(0);
-}
+.left_foot {
+    width: 20%;
+    text-align: left;
 }
 
-@keyframes fade_down_animation {
-0% {
-    opacity: 0;
-    transform: translateY(-30px) scale(0.9);
-}
-100% {
-    opacity: 1;
-    transform: translateY(0px) scale(1);
-}
+.middle_foot {
+    width: 60%;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion) {
-.nav_button, .button_switch, .choose_button, .foot_link, .faq_box {
-    transition: none;
-}
+.right_foot {
+    width: 20%;
+    text-align: right;
 }
 
-@keyframes open_animation {
-0%    {opacity: 0; transform: translateX(-10px)}
-100%  {opacity: 1; transform: translateX(0)}
+.foot_link {
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.15s;
+}
+
+.foot_link:hover {
+    cursor: pointer;
+    color: rgb(209, 209, 209);
+}
+
+/* Mobile display adjustments for Try and Footer sections */
+@media only screen and (max-width: 1000px) {
+    .try_content_container {
+        border-radius: 15px 15px 0 0;
+        margin-bottom: 0;
+        border: 0;
+    }
+
+    .try_container {
+        padding: 0;
+        border: 0;
+        background: none;
+    }
+
+    .left_foot, .middle_foot, .right_foot {
+        width: 100%;
+        text-align: center;
+    }
+
+    .middle_foot {
+        padding: 20px 0 20px 0;
+    }
+
+    .footer_content_container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
 }
