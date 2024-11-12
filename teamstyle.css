@@ -312,15 +312,24 @@ a {
 }
 
 .footer_content_container {
-    width: 1000px;
+    width:1000px;
     display: flex;
     margin: auto;
     align-items: center;
 }
 
-.left_foot, .middle_foot, .right_foot {
-    width: 100%;
-    text-align: center;
+.left_foot {
+    width:20%;
+    text-align: left;
+}
+
+.middle_foot {
+    width:60%;
+}
+
+.right_foot {
+    width: 20%;
+    text-align: right;
 }
 
 .foot_link {
