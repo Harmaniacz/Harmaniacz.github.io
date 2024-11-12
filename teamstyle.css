@@ -275,35 +275,7 @@ a {
     background-color: var(--pri_button_hover);
 }
 
-/* Footer Section with Gradient Background */
-.try_container {
-    width: 100%;
-    padding: 50px 0;
-    background: linear-gradient(45deg, rgb(111, 107, 107) 0%, rgb(44, 44, 44) 100%);
-    border-radius: 15px 15px 0 0;
-}
-
-.try_content_container {
-    padding: 50px 0;
-    width: 1000px;
-    margin: auto;
-    text-align: center;
-    background-color: white;
-    border-radius: 15px;
-    border: 1px solid var(--border_outline_color);
-}
-
-.ratings_container {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-}
-
-.star_icon {
-    height: 24px;
-}
-
-/* Footer Links */
+/* Footer Section */
 .footer_container {
     width: 100%;
     padding: 50px 0px 50px 0px;
@@ -312,19 +284,20 @@ a {
 }
 
 .footer_content_container {
-    width:1000px;
+    width: 1000px;
     display: flex;
     margin: auto;
     align-items: center;
 }
 
 .left_foot {
-    width:20%;
+    width: 20%;
     text-align: left;
 }
 
 .middle_foot {
-    width:60%;
+    width: 60%;
+    text-align: center;
 }
 
 .right_foot {
@@ -332,68 +305,15 @@ a {
     text-align: right;
 }
 
+/* Footer Links */
 .foot_link {
-    padding: 10px 20px;
+    padding: 10px 20px 10px 20px; /* Adjusted padding to match pricing_style.css */
+    text-decoration: none;
     color: white;
+    transition: 0.15s;
 }
 
 .foot_link:hover {
+    cursor: pointer;
     color: rgb(209, 209, 209);
-}
-
-/* Animations */
-@keyframes fade_up_animation {
-    0% {
-        opacity: 0;
-        transform: translateY(30px) scale(0.9);
-        filter: blur(1px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0px) scale(1);
-        filter: blur(0);
-    }
-}
-
-@media (prefers-reduced-motion) {
-    .nav_button, .choose_button, .foot_link {
-        transition: none;
-    }
-}
-
-/* Mobile Display Adjustments */
-@media only screen and (max-width: 1000px) {
-    .navigation_container, .nav_container, .hero_container, .main_container, .footer_container, .footer_content_container, .try_container, .try_content_container {
-        width: 100%;
-    }
-
-    .nav_container {    
-        visibility: hidden;
-        display: none;
-    }
-
-    .nav_container_mobile {
-        visibility: visible;
-        display: flex;
-    }
-
-    .team_container {
-        flex-direction: column;
-    }
-
-    .plan_container {
-        width: 90%;
-        margin: auto;
-        margin-bottom: 20px;
-    }
-
-    .try_content_container {
-        border-radius: 0;
-        margin-bottom: 0;
-    }
-
-    .try_container {
-        padding: 0;
-        border: 0;
-    }
 }
