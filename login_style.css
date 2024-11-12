@@ -40,6 +40,7 @@ a {
     width: 27vw;
     background: white;
     border-radius: 15px;
+    box-shadow: 0 10px 10px rgba(113, 17, 17, 0.05);
 }
 
 .center h1 {
@@ -132,7 +133,7 @@ input[type="submit"] {
 }
 
 input[type="Submit"]:hover{
-    background: #dc838c;
+    background: #E5737E;
     color: #f8e9ea;
     transition: 0.4s;
   }
