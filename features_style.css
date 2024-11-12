@@ -317,6 +317,7 @@ a {
 .features-list .features-link .features-image {
     width: 40%;
     height: 450px;
+    object-fit: cover;
     aspect-ratio: 5/7;
     border-radius: 10px;
 }
@@ -395,6 +396,13 @@ a {
 }
 .secondary-features {
     padding: 20px;
+}
+.icons {
+    padding: 5px 0;
+}
+
+td {
+    text-align: center;
 }
 
 .table-main {
