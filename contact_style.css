@@ -221,6 +221,28 @@ a {
     background-color: var(--pri_button_hover);
 }
 
+/*back to top button*/
+#top_button {
+    position: fixed;
+    z-index: 2;
+    right: 20px;
+    bottom: 20px;
+    background-color: var(--pri_color);
+    border-radius: 15px;
+    transition: 0.15s;
+    align-content: center;
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 50px;
+}
+
+#top_button:hover {
+    background-color: var(--pri_button_hover);
+    cursor: pointer;
+}
+
 /*Hero container*/
 .hero_container {
     width: 100%;

@@ -7,6 +7,8 @@
 
         <!--Links-->
         <link rel="stylesheet" href="contact_style.css">
+        <script src="pricing_js.js" type="text/javascript"></script>
+        <script src="animations.js" type="text/javascript"></script>
 
         <!--SEO info-->
         <meta charset="utf-8">
@@ -26,44 +28,6 @@
          <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
 
         <script>
-            //Mobile navigation dropdown
-            let menu_press = true
-
-            //Navigation Button
-            function navigation_button() {
-                const web_element = document.getElementsByClassName("web_page_content");
-                const mobile_element = document.getElementsByClassName("mobile_page_content");
-                const image_element = document.getElementById("menu_hamburger");
-
-                if (menu_press == true) {
-
-                    for (var i = 0; i < web_element.length; i = i + 1) {
-                        web_element[i].style.display = "none";
-                        web_element[i].style.visibility = "hidden";
-
-                        mobile_element[i].style.display = "";
-                        mobile_element[i].style.visibility = "visible";
-
-                        image_element.src = "assets/close_menu.svg";
-                        document.body.style.backgroundColor = "white";
-                    }
-                    menu_press = false;
-
-                } else {
-                    for (var i = 0; i < web_element.length; i = i + 1) {
-                        web_element[i].style.display = "";
-                        web_element[i].style.visibility = "visible";
-
-                        mobile_element[i].style.display = "none";
-                        mobile_element[i].style.visibility = "hidden";
-
-                        image_element.src = "assets/hamburger_menu.svg";
-                        document.body.style.backgroundColor = "var(--bg_color)";
-                    }
-                    menu_press = true;
-                }
-
-            }
             
             //Form submission process
             function form_submission() {
@@ -85,6 +49,10 @@
     </head>
 
     <body>
+
+        <!--Back to top button-->
+        <button id="top_button" onclick="topFunction()" title="Go to top"><img src="assets/up_arrow.svg" alt="arrow" style="height: 24px;"></button>
+
         <!--Navigation bar-->
         <div class="navigation_container">
 
@@ -174,11 +142,11 @@
                         <div class="form_box">
 
                             <div class="names_container">
-                                <input class="input_container" type="text" placeholder="First name">
-                                <input class="input_container" type="text" placeholder="Last name">
+                                <input class="input_container" type="text" placeholder="First name" required>
+                                <input class="input_container" type="text" placeholder="Last name" required>
                             </div>
-                            <input class="input_container" type="text" placeholder="Email">
-                            <textarea class="input_container" type="text" placeholder="How can we help?" style="height:250px"></textarea>
+                            <input class="input_container" type="text" placeholder="Email" required>
+                            <textarea class="input_container" type="text" placeholder="How can we help?" style="height:250px" required></textarea>
                             <button onclick="form_submission()" id="form_button">Submit</button>
 
                         </div>
