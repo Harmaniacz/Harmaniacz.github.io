@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
-        <!--Title-->
-        <title>Contact us | Harmony</title>
+        <!--Web page title-->
+        <title>Page not found | Harmony</title>
 
         <!--Links-->
-        <link rel="stylesheet" href="contact_style.css">
-        <script src="pricing_js.js" type="text/javascript"></script>
-        <script src="animations.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="pricing_style.css">
 
         <!--SEO info-->
         <meta charset="utf-8">
@@ -21,37 +18,56 @@
         <meta name="url" content="https://harmaniacz.github.io/pricing.html">
         <meta name="thumbnail" content="https://raw.githubusercontent.com/Harmaniacz/Harmaniacz.github.io/refs/heads/master/assets/heading.png"/>
         
-
-         <!--Nunito font import from Google Fonts-->
-         <link rel="preconnect" href="https://fonts.googleapis.com">
-         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-
+        <!--Nunito font import from Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        
         <script>
-            
-            //Form submission process
-            function form_submission() {
-                var button_element = document.getElementById("form_button");
-                var validation_element = document.forms
 
-                button_element.textContent = "Message sucessfully submitted";
-                button_element.style.backgroundColor = "#646464"
-                
-                const input_element = document.getElementsByClassName("input_container");
+            //Mobile navigation dropdown
+            let menu_press = true
 
-                for (var i = 0; i <= input_element.length; i = i + 1) {
-                    input_element[i].disabled = true;
+            //Navigation Button
+            function navigation_button() {
+                const web_element = document.getElementsByClassName("web_page_content");
+                const mobile_element = document.getElementsByClassName("mobile_page_content");
+                const image_element = document.getElementById("menu_hamburger");
+
+                if (menu_press == true) {
+
+                    for (var i = 0; i < web_element.length; i = i + 1) {
+                        web_element[i].style.display = "none";
+                        web_element[i].style.visibility = "hidden";
+
+                        mobile_element[i].style.display = "";
+                        mobile_element[i].style.visibility = "visible";
+
+                        image_element.src = "assets/close_menu.svg";
+                        document.body.style.backgroundColor = "white";
+                    }
+                    menu_press = false;
+
+                } else {
+                    for (var i = 0; i < web_element.length; i = i + 1) {
+                        web_element[i].style.display = "";
+                        web_element[i].style.visibility = "visible";
+
+                        mobile_element[i].style.display = "none";
+                        mobile_element[i].style.visibility = "hidden";
+
+                        image_element.src = "assets/hamburger_menu.svg";
+                        document.body.style.backgroundColor = "var(--bg_color)";
+                    }
+                    menu_press = true;
                 }
+
             }
 
         </script>
-
+        
     </head>
-
     <body>
-
-        <!--Back to top button-->
-        <button id="top_button" onclick="topFunction()" title="Go to top"><img src="assets/up_arrow.svg" alt="arrow" style="height: 24px;"></button>
 
         <!--Navigation bar-->
         <div class="navigation_container">
@@ -74,7 +90,7 @@
     
                 <!--Right navigation-->
                 <div class="nav_right">
-                    <a class="nav_button" id="login_button" href="#">Log in</a>
+                    <a class="nav_button" id="login_button" href="login.html">Log in</a>
                     <a class="nav_button" id="download_button" href="download.html">Download</a>
                 </div>
 
@@ -101,64 +117,23 @@
             <!--Hero section-->
             <div class="hero_container">
 
-                <div class="hero_content_container">
+                <div class="main_container">
 
                     <div class="heading_container">
-                        <p style="color:var(--pri_color);margin-bottom: -30px;">Contact us</p>
-                        <h1 style="font-size: 3rem;">How can we help you?</h1>
-                        <h3 style="margin-top: -25px;">We're more than happy to help.</h3>
-                    </div>
-
-                    <div class="contact_method_container">
-
-                        <div class="method_container">
-                            <h2>Email</h2>
-                            <p>Get in touch with a real person. We’ll get back to you as quickly as possible.</p>
-                            <a class="secondary_button">Email us</a>
-                        </div>
-
-                        <div class="method_container">
-                            <h2>FAQs</h2>
-                            <p>Explore our frequently asked questions section to quickly uncover the answers you need.</p>
-                            <a class="secondary_button">Visit FAQ</a>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!--Form section-->
-            <div class="form_container">
-
-                <div class="form_content_container">
-                    
-                    <div class="popout_container">
                         
-                        <h1>Message us</h1>
-                        <h3>We'll get back to you within 24 hours.</h3>
-
-                        <div class="form_box">
-
-                            <div class="names_container">
-                                <input class="input_container" type="text" placeholder="First name" required>
-                                <input class="input_container" type="text" placeholder="Last name" required>
-                            </div>
-                            <input class="input_container" type="text" placeholder="Email" inputmode="email"required>
-                            <textarea class="input_container" type="text" placeholder="How can we help?" style="height:250px" required></textarea>
-                            <button onclick="form_submission()" id="form_button">Submit</button>
-
-                        </div>
+                        <p style="text-align: center; color:var(--pri_color);margin-bottom: -30px;">Error 404</p>
+                        <h1 style="text-align: center; font-size: 2rem; font-size: 2rem; margin-top: 30px;">Oops! Page not found</h1>
+                        <p style="margin-top:-15px; margin-bottom:25px;">It looks like the page you're looking for might have been moved, deleted, or perhaps it never existed at all.</p>
+                        <a href="contact.html" class="secondary_button">Return to the homepage</a>
 
                     </div>
-    
-                </div>
+
+                </div>  
 
             </div>
 
-             <!--Footer section-->
-             <div class="footer_container">
+            <!--Footer-->
+            <div class="footer_container" style="position: absolute; bottom: 0;">
 
                 <div class="footer_content_container">
 
@@ -186,7 +161,7 @@
                 </div>
 
             </div>
-
+        
         </div>
 
         <!--Mobile navigation menu-->
@@ -201,5 +176,4 @@
         </div>
 
     </body>
-    
 </html>
