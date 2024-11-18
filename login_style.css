@@ -212,6 +212,7 @@ a {
     box-shadow: 0 10px 10px rgba(113, 17, 17, 0.05);
 }
 
+
 .center h1 {
     text-align: center;
     padding-bottom: 20px;
@@ -293,8 +294,9 @@ input[type="submit"] {
     width: 100%;
     height: 50px;
     border: 1px solid #c86c75;
-    background-color: #f8e9ea;
-    border-radius: 25px;
+    background-color:  #E5737E;
+    color:white;
+    border-radius: 15px;
     font-size: 18px;
     font-weight: 700;
     font-family: Nunito, Arial, Helvetica, sans-serif;
@@ -302,10 +304,9 @@ input[type="submit"] {
 }
 
 input[type="Submit"]:hover{
-    background: #E5737E;
-    color: #f8e9ea;
+    background-color: var(--pri_button_hover);
     transition: 0.4s;
-  }
+}
 
 
   .signup_link {
