@@ -645,6 +645,9 @@ td {
     .table-descriptions {
         font-size: 0.65rem;
     }
+    .features-link {
+        height: 375x;
+    }
 }
 @media screen and (max-width: 320px) {
     #features_header_text_container {
