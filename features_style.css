@@ -400,6 +400,9 @@ a {
     .features-list .features-link .info-item {
         font-size: 2rem;
     }
+    .features-list .features-link .features_image {
+        width: 50%
+    }
 }
 
 @media screen and (max-width: 1525px) {
