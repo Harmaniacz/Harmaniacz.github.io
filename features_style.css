@@ -256,7 +256,7 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.7
+    opacity: 0.7;
 }
 
 #features_header_text_container {
@@ -268,9 +268,11 @@ a {
     border-radius: 40px;
     padding: 50px;
     position: relative;
-    top: 50%;
+    top: 25%;
+    animation: fade_up_animation 0.5s forwards;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+   
 }
 
 /* Main features slider */
@@ -310,6 +312,7 @@ a {
     box-shadow: 0 10px 10px rgba(113, 17, 17, 0.05);
     transition: 0.2s ease;
     z-index: 1;
+    animation: fade_up_animation 0.5s 
 }
 .features-list .features-item .features-link:active{
     cursor:grabbing;
@@ -654,3 +657,40 @@ td {
         font-size: 17px;
     }
 }
+
+/*Key frames*/
+
+@keyframes fade_up_animation {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+        filter: blur(1px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+        filter: blur(0);
+    }
+}
+
+@keyframes fade_down_animation {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@media (prefers-reduced-motion) {
+    .nav_button, .button_switch, .choose_button, .foot_link, .faq_box {
+        transition: none;
+    }
+}
+
+@keyframes open_animation {
+    0%    {opacity: 0; transform: translateX(-10px)}
+    100%  {opacity: 1; transform: translateX(0)}
+  }
