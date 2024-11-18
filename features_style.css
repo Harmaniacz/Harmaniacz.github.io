@@ -389,7 +389,22 @@ a {
 
     .features-wrapper .swiper-slide-button {
         display: none;
-}
+    }
+
+    .features-wrapper .swiper-pagination-bullet {
+        padding-bottom: 10px;
+    }
+    
+    .features-list .features-link .features-image {
+        display: none;
+    }
+
+    .features-list .features-link .info-header {
+        font-size: 1.6rem;
+    }
+    .features-list .features-link .info-item {
+        font-size: 1.5rem;
+    }
 }
 
 @media screen and (max-width: 1800px) {
@@ -399,9 +414,6 @@ a {
     }
     .features-list .features-link .info-item {
         font-size: 2rem;
-    }
-    .features-list .features-link .features_image {
-        width: 50%
     }
 }
 
