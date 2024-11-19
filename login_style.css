@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-/*Global colour variables*/
 html, body {
     overflow-y: auto;
     overflow-x: hidden;
 }
 
+/*Global colour variables*/
 :root {
     --main-color:black;
     --secondary_color:rgb(196, 196, 196);
