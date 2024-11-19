@@ -584,7 +584,39 @@ td {
         font-weight: bolder;
         padding: 0;
     }
-  
+    .slider {
+        min-height: 400px;
+    }
+    .features-list .features-link .features-h2 {
+        font-size: 2.4rem;
+    }
+    .features-list .features-link .info-header {
+        font-size: 2rem;
+    }
+    .features-list .features-link .info-item {
+        font-size: 1.7rem;
+        padding: 0
+    }
+    .features-link {
+        height: 350px;
+    }
+    
+    .features-wrapper {
+        margin: 0 0 35px 0
+    }
+
+    .table-title {
+        font-size: 2.3rem;
+    }
+
+    .table-features {
+        font-size: 1rem;
+    }
+
+    .table-descriptions {
+        font-size: 0.75rem;
+        font-weight: bold;
+    }
 }
 @media screen and (max-width: 425px) {
     .slider {
