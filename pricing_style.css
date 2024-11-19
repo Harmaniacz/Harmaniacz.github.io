@@ -429,9 +429,6 @@ li {
     padding: 25px;
     border-radius: 15px;
     border: 1px solid var(--border_outline_color);
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0;
 }
 
 .content_container {
@@ -485,9 +482,6 @@ td img {
     padding: 50px 0 80px 0;
     width: 100%;
     background: linear-gradient(180deg, rgb(255 241 241) 0%, var(--bg_color) 20%);
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0;
 }
 
 .faq_content_container {
@@ -812,14 +806,3 @@ details[open] p {
     0%    {opacity: 0; transform: translateX(-10px)}
     100%  {opacity: 1; transform: translateX(0)}
   }
-
-@keyframes appear {
-    from {
-        opacity: 0;
-        scale: 0.5;
-    }
-    to {
-        opacity: 1;
-        scale: 1;
-    }
-}
