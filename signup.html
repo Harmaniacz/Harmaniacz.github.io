@@ -1,11 +1,11 @@
 <html>
     <head>
         <link rel="stylesheet" href="login_style.css">
-        <title> Log in | Harmony</title>
+        <title> Sign up | Harmony</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="assets/harmony_favicon.png" type="image/icon type">
-    </head>  
+    </head> 
 
     <body>
         <!--Navigation bar-->
@@ -50,31 +50,22 @@
 
   </div>
 
-        <!-- Log in box -->
         <div class="container">
             <div class="center">
-                <h1>Log in</h1>
+                <h1>Sign up</h1>
                 <form action="action_page.php" method="post">
                     <div class="txt_field">
                         <input type="text" name="uname" required>
                         <span></span>
-                        <label>Email or username</label>
+                        <label>Enter your email</label>
                     </div>
                     <div class="txt_field">
                         <input type="password" name="psw" required>
                         <span></span>
-                        <label>Password</label>
+                        <label>Enter a password</label>
                     </div>
-                        <div class="info">
-                            <label>
-                                <input type="checkbox" checked="checked" name="remember">Remember me
-                            </label>
                         
-                            <div class="pass">
-                                <span class="psw">Forgot <a href="#">password?</a></span>
-                            </div>
-                        </div>
-                        <input name="submit" type="Submit" value="Log in">
+                        <input name="submit" type="Submit" value="Sign up">
 
                         <div id="line"></div>
                     
@@ -83,64 +74,10 @@
                         <a href="https://www.facebook.com/" class="alternative"><img src="assets/facebook_logo.png" alt="facebook logo" class="logo">Continue with Facebook</a>
 
                     <div class="signup_link">
-                        Not a member ? <a href="signup.html">Sign up</a>
+                        Already have an account ? <a href="login.html">Log in</a>
                     </div>
-                 </form>
+                </form>
             </div>
         </div>
-
-    
-
-      <!--Mobile navigation menu-->
-      <div class="mobile_page_content" style="display: none; visibility: hidden;"> 
-
-          <div class="mobile_navigation_list">
-              <a class="mobile_menu_button" href="home.html">Home</a>
-              <a class="mobile_menu_button" href="features.html" style="color:black; ">Features</a>
-              <a class="mobile_menu_button" href="pricing.html" >Pricing</a>
-              <a class="mobile_menu_button" href="team.html">Team</a>
-              <a class="mobile_menu_button_2" href="download.html">Download</a>
-          </div>
-
-      </div>
-
-  </body>
-  <script>
-    let menu_press = true
-
-    function navigation_button() {
-      const web_element = document.getElementsByClassName("web_page_content");
-      const mobile_element = document.getElementsByClassName("mobile_page_content");
-      const image_element = document.getElementById("menu_hamburger");
-
-      if (menu_press == true) {
-
-          for (var i = 0; i < web_element.length; i = i + 1) {
-              web_element[i].style.display = "none";
-              web_element[i].style.visibility = "hidden";
-
-              mobile_element[i].style.display = "";
-              mobile_element[i].style.visibility = "visible";
-
-              image_element.src = "assets/close_menu.svg";
-              document.body.style.backgroundColor = "white";
-          }
-          menu_press = false;
-
-      } else {
-          for (var i = 0; i < web_element.length; i = i + 1) {
-              web_element[i].style.display = "";
-              web_element[i].style.visibility = "visible";
-
-              mobile_element[i].style.display = "none";
-              mobile_element[i].style.visibility = "hidden";
-
-              image_element.src = "assets/hamburger_menu.svg";
-              document.body.style.backgroundColor = "var(--bg_color)";
-          }
-          menu_press = true;
-      }
-
-    }
-  </script>
+    </body>
 </html>
