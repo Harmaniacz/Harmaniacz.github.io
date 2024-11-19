@@ -36,8 +36,6 @@ a {
 .main_container {
     width: 1000px;
     margin: auto;
-    padding: 50px 0;
-    padding-top: 120px;
     animation: fade_up_animation 0.5s;
 }
 
@@ -215,6 +213,7 @@ a {
     width: 100%;
     padding: 50px 0;
     background: linear-gradient(180deg, rgb(247, 228, 228) 0%, var(--bg_color) 60%);
+    animation: fade_up_animation 0.5s;
 }
 
 /* Profile picture styling */
@@ -447,5 +446,18 @@ a {
     .footer_content_container {
         flex-direction: column;
         row-gap: 20px;
+    }
+}
+
+@keyframes fade_up_animation {
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+        filter: blur(1px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+        filter: blur(0);
     }
 }
