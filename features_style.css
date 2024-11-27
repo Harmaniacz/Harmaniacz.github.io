@@ -530,6 +530,25 @@ td {
         visibility: visible;
         display: flex;
     }
+
+    .footer_content_container {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .middle_foot {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right_foot {
+        text-align: center;
+        display: flex;
+    }
+
+    .left_foot {
+        text-align: center;
+    }
 }
 
 
