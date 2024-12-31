@@ -33,10 +33,11 @@
 
 ## Website features
 
-- Responsive web design
-- CSS animations
-- Interactive web elements
-- HTML forms
+- Display responsive web design
+- CSS loading animations
+- Interactive and accessible web elements
+- HTML contact, login, and signup forms
+- Error 404 page
 
 ## Meet the team
 
