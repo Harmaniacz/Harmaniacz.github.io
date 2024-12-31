@@ -29,11 +29,7 @@ A team of five uOttawa students designed and developed this source-controlled, r
 
 ## Languages and tools
 
-- HTML
-- CSS
-- JavaScript
-- Visual Studio Code
-- Figma
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,figma)](https://skillicons.dev)
 
 ## Website features
 
