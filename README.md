@@ -1,6 +1,6 @@
 <div align="center">
 <a href="https://harmaniacz.github.io" target="_blank" align="center">
-    <img src="/assets/harmony_banner.png" alt="Harmony GitHub README banner" width="100%" align="center"></img>
+    <img src="assets/harmony_banner.png" alt="Harmony GitHub README banner" width="100%" align="center"></img>
 </a>
 </div>
 
@@ -30,6 +30,13 @@
 - [Download](https://harmaniacz.github.io/download)
 - [Contact](https://harmaniacz.github.io/contact)
 - [Log in](https://harmaniacz.github.io/login)
+
+## Website features
+
+- Responsive web design
+- CSS animations
+- Interactive web elements
+- HTML forms
 
 ## Meet the team
 
