@@ -29,7 +29,7 @@ A team of five uOttawa students designed and developed this source-controlled, r
 
 ## Languages and tools
 
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,figma)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,figma,git)](https://skillicons.dev)
 
 ## Website features
 
