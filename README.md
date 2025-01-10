@@ -41,13 +41,13 @@ A team of five uOttawa students designed and developed this source-controlled, r
 
 ## Website links
 
-- [Home](https://harmaniacz.github.io/home)
-- [Features](https://harmaniacz.github.io/features)
-- [Pricing](https://harmaniacz.github.io/pricing)
-- [Team](https://harmaniacz.github.io/team)
-- [Download](https://harmaniacz.github.io/download)
-- [Contact](https://harmaniacz.github.io/contact)
-- [Log in](https://harmaniacz.github.io/login)
+- [Home](https://harmaniacz.github.io/home) (Samuel)
+- [Features](https://harmaniacz.github.io/features) (Yassmine)
+- [Pricing](https://harmaniacz.github.io/pricing) (Riki)
+- [Team](https://harmaniacz.github.io/team) (Najib)
+- [Download](https://harmaniacz.github.io/download) (Aidan)
+- [Contact](https://harmaniacz.github.io/contact) (Riki)
+- [Log in](https://harmaniacz.github.io/login) (Yassmine)
 
 ## Meet the team
 
