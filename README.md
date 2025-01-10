@@ -48,6 +48,7 @@ A team of five uOttawa students designed and developed this source-controlled, r
 - [Download](https://harmaniacz.github.io/download) (Aidan)
 - [Contact](https://harmaniacz.github.io/contact) (Riki)
 - [Log in](https://harmaniacz.github.io/login) (Yassmine)
+- [Error 404](https://harmaniacz.github.io/error404.html) (Riki)
 
 ## Meet the team
 
