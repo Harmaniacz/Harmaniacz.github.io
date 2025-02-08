@@ -18,6 +18,10 @@
 A team of five uOttawa students designed and developed this source-controlled, responsive website to market a startup company as part of the SEG 2900 web technologies module.
 
 <a href="https://harmaniacz.github.io/home.html" target="_blank">Open website</a>
+<br>
+<br>
+<a href="https://www.behance.net/gallery/216127593/Harmony-social-media-app" target="_blank">View design project</a>
+
 
 ## Introduction
 
