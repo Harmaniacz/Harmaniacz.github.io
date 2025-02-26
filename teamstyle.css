@@ -210,10 +210,9 @@ a {
 
 /* Team Section (Hero Container) */
 .hero_container {
-    width: 100%;
-    padding: 50px 0;
-    background: linear-gradient(180deg, rgb(247, 228, 228) 0%, var(--bg_color) 60%);
-    animation: fade_up_animation 0.5s;
+    width:100%;
+    padding: 120px 0px 50px 0px;
+    background: linear-gradient(180deg, rgb(247 228 228) 0%, var(--bg_color) 60%);
 }
 
 /* Profile picture styling */
