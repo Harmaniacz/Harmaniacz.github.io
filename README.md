@@ -1,6 +1,6 @@
 <div align="center">
 <a href="https://harmaniacz.github.io" target="_blank" align="center">
-    <img src="/assets/harmony_banner.png" alt="Harmony GitHub README banner" width="100%" align="center"></img>
+    <img src="assets/harmony_banner.png" alt="Harmony GitHub README banner" width="100%" align="center"></img>
 </a>
 </div>
 
@@ -15,21 +15,44 @@
 
 # Harmony
 
+A team of five uOttawa students designed and developed this source-controlled, responsive website to market a startup company as part of the SEG 2900 web technologies module.
+
+<a href="https://harmaniacz.github.io/home.html" target="_blank">Open website</a>
+<br>
+<br>
+<a href="https://www.behance.net/gallery/216127593/Harmony-social-media-app" target="_blank">View design project</a>
+
+
+## Introduction
+
 **Team name:** Harmaniacz
 
 **Product name:** Harmony
 
 **A brief product description:** Harmony is a social media app which uses music preferences from other apps such as spotify and apple music to connect people based on shared enjoyment of artists, individual songs, and genres.
 
+## Languages and tools
+
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,figma,git)](https://skillicons.dev)
+
+## Website features
+
+- Display responsive web design
+- CSS loading animations
+- Interactive and accessible web elements
+- HTML contact, login, and signup forms
+- Error 404 page
+
 ## Website links
 
-- [Home](https://harmaniacz.github.io/home)
-- [Features](https://harmaniacz.github.io/features)
-- [Pricing](https://harmaniacz.github.io/pricing)
-- [Team](https://harmaniacz.github.io/team)
-- [Download](https://harmaniacz.github.io/download)
-- [Contact](https://harmaniacz.github.io/contact)
-- [Log in](https://harmaniacz.github.io/login)
+- [Home](https://harmaniacz.github.io/home) (Samuel)
+- [Features](https://harmaniacz.github.io/features) (Yassmine)
+- [Pricing](https://harmaniacz.github.io/pricing) (Riki)
+- [Team](https://harmaniacz.github.io/team) (Najib)
+- [Download](https://harmaniacz.github.io/download) (Aidan)
+- [Contact](https://harmaniacz.github.io/contact) (Riki)
+- [Log in](https://harmaniacz.github.io/login) (Yassmine)
+- [Error 404](https://harmaniacz.github.io/error404.html) (Riki)
 
 ## Meet the team
 
