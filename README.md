@@ -58,13 +58,11 @@
     <li>🚧 Error 404 page</li>
 </ul>
 
-<h2>Website links</h2>
-
-<div>
 <a href="https://harmaniacz.github.io" target="_blank">
     <img src="assets/pitch.png" alt="Harmony Creation" width="100%">
 </a>
-</div>
+
+<h2>Website links</h2>
 
 <table>
     <tr>
