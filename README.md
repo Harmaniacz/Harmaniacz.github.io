@@ -17,13 +17,7 @@
 <h1>Harmony</h1>
 
 <p>
-    <strong>
     A team of five uOttawa students designed and developed this source-controlled, responsive website to market a startup company as part of the SEG 2900 web technologies module.
-    </strong>
-</p>
-
-<p>
-    Harmony connects people with new friends using the language of music. Created in three months by five Software Engineering students from the University of Ottawa for the SEG 2900 course, it uses HTML, CSS, JavaScript, Figma, and Git to build its website. Weekly team meetings ensured consistent progress. Harmony was one of three teams chosen from 28 groups to pitch their idea to a 200-person audience, including a panel of CEOs, ultimately securing second place in both audience and judges' categories.
 </p>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -53,6 +47,10 @@
         <td>Harmony is a social media app which uses music preferences from other apps such as Spotify and Apple Music to connect people based on shared enjoyment of artists, individual songs, and genres.</td>
     </tr>
 </table>
+
+<p>
+    Harmony connects people with new friends using the language of music. Created in three months by five Software Engineering students from the University of Ottawa for the SEG 2900 course, it uses HTML, CSS, JavaScript, Figma, and Git to build its website. Weekly team meetings ensured consistent progress. Harmony was one of three teams chosen from 28 groups to pitch their idea to a 200-person audience, including a panel of CEOs, ultimately securing second place in both audience and judges' categories.
+</p>
 
 <h2>Languages and tools</h2>
 
