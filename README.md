@@ -31,15 +31,15 @@
 
 <table>
     <tr>
-        <td><strong>Team name</strong></td>
+        <th>Team name</th>
         <td>Harmaniacz</td>
     </tr>
     <tr>
-        <td><strong>Product name</strong></td>
+        <th>Product name</th>
         <td>Harmony</td>
     </tr>
     <tr>
-        <td><strong>A brief product description</strong></td>
+        <th>A brief product description</th>
         <td>Harmony is a social media app which uses music preferences from other apps such as Spotify and Apple Music to connect people based on shared enjoyment of artists, individual songs, and genres.</td>
     </tr>
 </table>
@@ -66,8 +66,8 @@
 
 <table>
     <tr>
-        <th style="text-align: left;">Page</th>
-        <th style="text-align: left;">Contributor</th>
+        <th>Page</th>
+        <th>Contributor</th>
     </tr>
     <tr>
         <td><a href="https://harmaniacz.github.io/home" target="_blank">Home</a></td>
