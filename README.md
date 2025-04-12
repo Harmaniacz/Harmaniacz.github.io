@@ -64,7 +64,9 @@
     <img src="assets/pitch.png" alt="Harmony Creation" width="100%">
 </a>
 
-<table width="100%">
+<br>
+
+<table>
     <tr>
         <th>Page</th>
         <th>Contributor</th>
@@ -107,3 +109,14 @@
 <a href="https://harmaniacz.github.io/team" target="_blank">
     <img src="https://contrib.rocks/image?repo=Harmaniacz/Harmaniacz.github.io" alt="Contributors">
 </a>
+
+<br>
+
+<p style="display:flex;">
+    <a href="https://harmaniacz.github.io/index.html" target="_blank">
+        <img src="assets/open.png" height="40px" alt="Open website">
+    </a>
+    <a href="https://www.behance.net/gallery/216127593/Harmony-social-media-app" target="_blank">
+        <img src="assets/view.png" height="40px" alt="View pitch deck">
+    </a>
+</p>
