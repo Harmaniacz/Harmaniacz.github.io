@@ -24,10 +24,10 @@
 
 <p style="display:flex;">
     <a href="https://harmaniacz.github.io/index.html" target="_blank">
-        <img src="assets/open.png" height="40px">
+        <img src="assets/open.png" height="40px" alt="Open website">
     </a>
     <a href="https://www.behance.net/gallery/216127593/Harmony-social-media-app" target="_blank">
-        <img src="assets/view.png" height="40px">
+        <img src="assets/view.png" height="40px" alt="View pitch deck">
     </a>
 </p>
 
