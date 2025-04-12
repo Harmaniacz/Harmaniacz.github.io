@@ -32,25 +32,13 @@
 </p>
 
 <h2>Introduction</h2>
-
-<table>
-    <tr>
-        <th>Team name</th>
-        <td>Harmaniacz</td>
-    </tr>
-    <tr>
-        <th>Product name</th>
-        <td>Harmony</td>
-    </tr>
-    <tr>
-        <th>A brief product description</th>
-        <td>Harmony is a social media app which uses music preferences from other apps such as Spotify and Apple Music to connect people based on shared enjoyment of artists, individual songs, and genres.</td>
-    </tr>
-</table>
-
-<p>
-    Harmony connects people with new friends using the language of music. Created in three months by five Software Engineering students from the University of Ottawa for the SEG 2900 course, it uses HTML, CSS, JavaScript, Figma, and Git to build its website. Weekly team meetings ensured consistent progress. Harmony was one of three teams chosen from 28 groups to pitch their idea to a 200-person audience, including a panel of CEOs, ultimately securing second place in both audience and judges' categories.
-</p>
+<ul>
+    <li>🎵 Harmony connects people with new friends using the language of music.</li>
+    <li>⏱️ Developed within three months by five Software Engineering students from uOttawa for the SEG 2900 course.</li>
+    <li>📅 Weekly team meetings ensured consistent progress.</li>
+    <li>🌟 One of three teams chosen from 28 groups to pitch their idea to a 200-person audience, including a panel of CEOs.</li>
+    <li>🥈 Secured 2nd place in both audience and judges' categories.</li>
+</ul>
 
 <h2>Languages and tools</h2>
 
@@ -72,7 +60,11 @@
 
 <h2>Website links</h2>
 
-<table>
+<a href="https://harmaniacz.github.io" target="_blank">
+    <img src="assets/pitch.png" alt="Harmony Creation" width="100%">
+</a>
+
+<table width="100%">
     <tr>
         <th>Page</th>
         <th>Contributor</th>
@@ -112,6 +104,6 @@
 </table>
 
 <h2>Meet the team</h2>
-<a href="https://github.com/Harmaniacz/Harmaniacz.github.io/graphs/contributors" target="_blank">
+<a href="https://harmaniacz.github.io/team" target="_blank">
     <img src="https://contrib.rocks/image?repo=Harmaniacz/Harmaniacz.github.io" alt="Contributors">
 </a>
