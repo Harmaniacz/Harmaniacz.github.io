@@ -17,15 +17,25 @@
 <h1>Harmony</h1>
 
 <p>
+    <strong>
     A team of five uOttawa students designed and developed this source-controlled, responsive website to market a startup company as part of the SEG 2900 web technologies module.
+    </strong>
+</p>
+
+<p>
+    Harmony connects people with new friends using the language of music. Created in three months by five Software Engineering students from the University of Ottawa for the SEG 2900 course, it uses HTML, CSS, JavaScript, Figma, and Git to build its website. Weekly team meetings ensured consistent progress. Harmony was one of three teams chosen from 28 groups to pitch their idea to a 200-person audience, including a panel of CEOs, ultimately securing second place in both audience and judges' categories.
 </p>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-<div style="display:flex; gap: 20px;">
-    <a style="background-color:#E5737E;color:white;border-radius:15px;font-weight:bold;padding: 15px 20px 15px 20px;" href="https://harmaniacz.github.io/index.html" target="_blank">Open website <i style="margin-left:5px" class="bi bi-arrow-right"></i></a>
-    <a style="background-color:inherit;border:1px solid; border-color:#E5737E;color:#E5737E;border-radius:15px;font-weight:bold;padding: 15px 20px 15px 20px;" href="https://www.behance.net/gallery/216127593/Harmony-social-media-app" target="_blank">View design project<i style="margin-left:5px" class="bi bi-behance"></i></a>
-</div>
+<p style="display:flex;">
+    <a href="https://harmaniacz.github.io/index.html" target="_blank">
+        <img src="assets/open.png" height="40px">
+    </a>
+    <a href="https://www.behance.net/gallery/216127593/Harmony-social-media-app" target="_blank">
+        <img src="assets/view.png" height="40px">
+    </a>
+</p>
 
 <h2>Introduction</h2>
 
