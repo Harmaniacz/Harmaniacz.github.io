@@ -66,8 +66,8 @@
 
 <table>
     <tr>
-        <th>Page</th>
-        <th>Contributor</th>
+        <th align="left">Page</th>
+        <th align="left">Contributor</th>
     </tr>
     <tr>
         <td><a href="https://harmaniacz.github.io/home" target="_blank">Home</a></td>
