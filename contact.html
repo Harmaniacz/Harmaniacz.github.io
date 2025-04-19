@@ -139,17 +139,17 @@
                         <h1>Message us</h1>
                         <h3>We'll get back to you within 24 hours.</h3>
 
-                        <div class="form_box">
-
+                        <form class="form_box">
+                        
                             <div class="names_container">
-                                <input class="input_container" type="text" placeholder="First name" required>
-                                <input class="input_container" type="text" placeholder="Last name" required>
+                                <input class="input_container" type="text" placeholder="First name" minlength="1" required>
+                                <input class="input_container" type="text" placeholder="Last name" minlength="1" required>
                             </div>
-                            <input class="input_container" type="text" placeholder="Email" inputmode="email"required>
-                            <textarea class="input_container" type="text" placeholder="How can we help?" style="height:250px" required></textarea>
-                            <button onclick="form_submission()" id="form_button">Submit</button>
+                            <input class="input_container" type="email" placeholder="Email" inputmode="email" minlength="1" required>
+                            <textarea class="input_container" type="text" placeholder="How can we help?" minlength="10" style="height:250px" required></textarea>
+                            <input onclick="form_submission()" id="form_button" type="submit">
 
-                        </div>
+                        </form>
 
                     </div>
     
